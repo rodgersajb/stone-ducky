@@ -3,19 +3,54 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-poppins: "Poppins", sans-serif;
+  --font-dancingScript: "Dancing Script", cursive;
+}
+@layer base {
+  body {
+    @apply text-charcoal;
+  }
+}
+h1,
+h2 {
+  font-family: var(--font-dancingScript), cursive;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Apply Poppins to other elements */
+p,
+a,
+li,
+button {
+  font-family: var(--font-poppins), sans-serif;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-poppins), sans-serif; /* Default font */
+  line-height: 1.6;
+}
+@layer components {
+  .btn {
+    @apply py-2 px-6 rounded font-semibold uppercase transition ease-in-out delay-150 duration-300;
+  }
+
+  .btn-orange {
+    @apply bg-duckyOrange border border-duckyOrange text-whiteBG;
+  }
+
+  .btn-orange:hover {
+    @apply hover:-translate-y-1 hover:scale-110 hover:bg-whiteBG hover:text-duckyOrange;
+  }
+
+  .btn-blue {
+    @apply bg-duckyBlue border-2 border-duckyBlue text-whiteBG;
+  }
+
+  .btn-blue:hover {
+    @apply hover:-translate-y-1 hover:scale-110 hover:bg-whiteBG hover:text-duckyBlue;
+  }
 }
