@@ -38,7 +38,7 @@ const faqs = [
 
 export default function PartyAccordion() {
   return (
-    <section className="w-[75%] m-auto py-10">
+    <section className=" w-[95%] lg:w-[75%] m-auto py-10">
         <h2 className="text-center text-4xl">Frequently Asked Questions</h2>
       <Accordion  type="single" collapsible>
         {faqs.map((faq, index) => (

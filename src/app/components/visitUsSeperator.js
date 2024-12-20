@@ -12,7 +12,7 @@ export default function VisitUsSeparator() {
    const { scrollYProgress } = useScroll();
 
    // Map scroll position to opacity (0 to 1 as you scroll)
-  const opacity = useTransform(scrollYProgress, [0.2, 0.3, 0.6], [0, 1, 0]);
+  const opacity = useTransform(scrollYProgress, [0.2, 0.4, 0.6], [0, 1, 0]);
 
 
   return (

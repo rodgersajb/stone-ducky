@@ -10,14 +10,14 @@ export default function PopularDishesDivider() {
    const { scrollYProgress } = useScroll();
 
    // Map scroll position to opacity (0 to 1 as you scroll)
-   const opacity = useTransform(scrollYProgress, [0.3, 0.5, 1], [0, 1, 0]);
+   const opacity = useTransform(scrollYProgress, [0.5, 0.6, 0.8], [0, 1, 0]);
 
   
   return (
     <motion.div
       style={{ opacity }}
       ref={dishRef}
-      className="h-[500px] w-full flex my-10 flex-col items-center justify-center relative border-2 border-charcoal"
+      className="h-[500px] w-full flex z-10 flex-col items-center justify-center relative border-2 border-charcoal"
     >
       <Image
         className="absolute object-cover -z-1"

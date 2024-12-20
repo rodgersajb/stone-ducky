@@ -3,6 +3,8 @@
 import { useRef, useState } from "react";
 import DatePicker from "react-datepicker";
 import SubmitButton from "@/app/components/submitButton";
+import { sendPartyRequestEmail } from "@/actions/partyFormActions";
+import toast from "react-hot-toast";
 
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -16,7 +18,7 @@ export default function PartyForm() {
         action={async (formData) => {
           ref.current?.reset();
           try {
-            const response = await sendCateringEmail(formData);
+            const response = await sendPartyRequestEmail(formData);
             console.log("Catering Email Response:", response);
             toast.success("Catering Request Sent Successfully");
           } catch (error) {
@@ -102,10 +104,10 @@ export default function PartyForm() {
             <span className="text-duckyOrange">*</span>
           </label>
           <input
-            type="number"
+            type="text"
             name="time"
             id="time"
-            placeholder="5:00pm, 7:30pm etc."
+            placeholder="5:00 PM, 7:30 PM, etc."
             className="w-full pl-4 outline-none focus:border-duckyOrange focus:ring-1 focus:ring-duckyOrange focus:rounded"
           />
         </div>

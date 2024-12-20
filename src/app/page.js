@@ -30,7 +30,7 @@ export default function Home() {
         />
 
         <div className="min-h-dvh flex flex-col gap-8 items-center justify-center z-40">
-          <h2 className="text-5xl lg:w-1/3 text-center uppercase px-4 py-2 text-white  font-[var(--font-cormorant)] italic">
+          <h2 className="text-6xl lg:w-1/3 text-center px-4 py-2 text-white  font-[var(--font-cormorant)] italic">
             Inspired Dining with an Ocean Side View
           </h2>
           <div className="flex gap-4 lg:flex-row flex-col">
