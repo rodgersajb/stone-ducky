@@ -49,15 +49,15 @@ export default function Home() {
       </header>
 
       <About />
-      <MenuDivider />
-      <Menu />
+      {/* <MenuDivider />
+      <Menu /> */}
       <VisitUsSeparator />
       <VisitUs />
       <PopularDishesDivider />
       <PopularDishes />
 
-      <LargeEvents />
-      <Catering />
+      {/* <LargeEvents />
+      <Catering /> */}
       <Blogs />
     </main>
   );

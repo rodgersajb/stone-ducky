@@ -20,14 +20,14 @@ export default function MenuDivider() {
       style={{ opacity }} // Apply the opacity transition
     >
       <Image
-        className="object-cover -z-1"
+        className="object-cover -z-1 brightness-75"
         src="/images/salmon_chicken.webp"
         alt="Roasted Salmon and Chicken Dishes"
         fill
         sizes="100vw"
       />
-      <h2 className="bg-whiteBG text-charcoal z-10 text-4xl font-semibold py-4 px-8 rounded uppercase border border-charcoal">
-        Menu
+      <h2 className=" text-whiteBG z-10 text-6xl font-semibold rounded  ">
+        Menu.
       </h2>
     </motion.section>
   );

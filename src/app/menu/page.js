@@ -65,7 +65,7 @@ export default function Menu() {
   return (
     <main>
       <header className="flex flex-col items-center justify-center h-dvh w-full relative">
-        <Image src="/images/catering_steaks.webp" alt="Steak Dinner" fill className="object-cover brightness-75" />
+        <Image src="/images/catering_steaks.webp" alt="Steak Dinner" fill className="object-cover brightness-50" />
         <h1 className="z-10 font-semibold text-6xl text-white">Food & Drink</h1>
       </header>
       <section

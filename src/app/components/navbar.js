@@ -7,30 +7,30 @@ import { FiMenu, FiX } from "react-icons/fi";
 
 const navLinks = [
   { label: "Menu", href: "/menu" },
-  { label: "Large Parties", href: "/groups" },
+  { label: "Large Groups", href: "/groups" },
   { label: "Catering", href: "/catering" },
   { label: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-   const [isScrolled, setIsScrolled] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
-   useEffect(() => {
-     const handleScroll = () => {
-       if (window.scrollY > 50) {
-         setIsScrolled(true);
-       } else {
-         setIsScrolled(false);
-       }
-     };
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
 
-     window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
-     return () => {
-       window.removeEventListener("scroll", handleScroll);
-     };
-   }, []);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <nav
@@ -49,7 +49,7 @@ export default function Navbar() {
       >
         {isMenuOpen ? <FiX /> : <FiMenu />}
       </button>
-      <figure className="relative h-16 w-20 cursor-pointer z-50">
+      <figure className="relative h-32 w-36 cursor-pointer z-50">
         <Link className="" href="/">
           <Image
             src="/images/logo_stone_ducky.png"
@@ -59,7 +59,9 @@ export default function Navbar() {
         </Link>
       </figure>
       {/* Desktop Navigation */}
-      <ul className={`hidden md:flex items-center justify-center gap-10  text-xl z-50 ${isScrolled ? "text-charcoal" : "text-whiteBG"}` }>
+      <ul
+        className={`hidden md:flex items-center justify-center gap-10  text-xl z-50 ${isScrolled ? "text-charcoal" : "text-whiteBG"}`}
+      >
         <li className="">Order Online</li>
         {navLinks.map((link, index) => (
           <li key={index} className={`cursor-pointer `}>
@@ -67,7 +69,7 @@ export default function Navbar() {
           </li>
         ))}
         <li className="text-whiteBG  bg-duckyOrange py-4 px-4 rounded ">
-          Reservations
+            Book a Table
         </li>
       </ul>
 
