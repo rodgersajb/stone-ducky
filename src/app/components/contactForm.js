@@ -22,8 +22,8 @@ export default function ContactForm() {
       }}
       className="w-full flex flex-col gap-4 items-center lg:min-h-[400px]"
     >
-      <h2 className="text-4xl text-center">Contact Form</h2>
-      <div className="flex flex-col">
+      <h2 className="text-4xl text-center font-semibold">Contact Form</h2>
+      <div className="flex flex-col lg:w-full">
         <label htmlFor="name">Name <span className="text-duckyOrange pl-1">*</span></label>
         <input
           className="bg-warmBeige border-b-2 border-duckyOrange pl-2 focus:outline-none focus:border-duckyOrange"
@@ -32,7 +32,7 @@ export default function ContactForm() {
           placeholder="name"
         />
       </div>
-      <div className="flex flex-col">
+      <div className="flex flex-col lg:w-full">
         <label htmlFor="email">Email <span className="text-duckyOrange pl-1">*</span></label>
         <input
           className="bg-warmBeige border-b-2 border-duckyOrange pl-2 focus:outline-none  focus-duckyOrange"
@@ -41,13 +41,14 @@ export default function ContactForm() {
           placeholder="email"
         />
       </div>
-      <div className="flex flex-col">
+      <div className="flex flex-col lg:w-full">
         <label htmlFor="message">Message<span className="text-duckyOrange pl-1">*</span></label>
         <textarea
           className="bg-warmBeige border-b-2 border-duckyOrange pl-2 focus:outline-none focus-duckyOrange"
           name="message"
           id="message"
           placeholder="message"
+          rows={6}
         ></textarea>
       </div>
       <div>
