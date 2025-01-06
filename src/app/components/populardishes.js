@@ -79,7 +79,7 @@ export default function Test() {
                         : "opacity-0 translate-y-8"
                     }`}
                   >
-                    <h2 className="text-2xl font-semibold text-charcoal  bg-duckyLightBlue  bg-opacity-75 p-2 rounded">
+                    <h2 className="text-2xl lg:text-4xl font-semibold text-charcoal  bg-duckyLightBlue  bg-opacity-75 p-2 rounded">
                       {image.alt}
                     </h2>
                     <p className="text-lg text-charcoal mt-2 bg-duckyLightBlue  bg-opacity-75 p-2 rounded">

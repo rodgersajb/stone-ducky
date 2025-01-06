@@ -50,7 +50,7 @@ export default function Navbar() {
         {isMenuOpen ? <FiX /> : <FiMenu />}
       </button>
       
-        <Link className="" href="/">
+        <Link className="z-50 cursor-pointer" href="/">
           <Image
             src="/images/logo_stone_ducky.png"
             alt="Stone Ducky Logo"

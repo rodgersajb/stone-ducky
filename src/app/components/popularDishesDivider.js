@@ -10,25 +10,28 @@ export default function PopularDishesDivider() {
    const { scrollYProgress } = useScroll();
 
    // Map scroll position to opacity (0 to 1 as you scroll)
-   const opacity = useTransform(scrollYProgress, [0.5, 0.6, 0.8], [0, 1, 0]);
+   const opacity = useTransform(scrollYProgress, [0.5, 0.7, 1], [0, 1, 0]);
 
   
   return (
     <motion.div
       style={{ opacity }}
       ref={dishRef}
-      className="h-[500px] w-full flex z-10 flex-col items-center justify-center relative border-2 border-charcoal"
+      className="h-[400px] lg:h-[500px] w-full flex z-10 flex-col items-center justify-center relative border-2 border-charcoal"
     >
       <Image
-        className="absolute object-cover -z-1"
+        className="absolute object-cover brightness-75 -z-1"
         src="/images/shareable_pizza.webp"
         alt="Floral Duck section divider"
         fill
         sizes="100vw"
       />
-      <h2 className="text-4xl z-10 bg-whiteBG border border-charcoal py-4 px-8 rounded">
+      <h2 className="text-5xl z-10 text-whiteBG font-semibold text-center">
         Popular Dishes
       </h2>
+      <figure className="relative ">
+              <Image src="/images/squiggle.png" alt="Squiggly underline" width={200} height={20} />
+            </figure>
     </motion.div>
   );
 }
