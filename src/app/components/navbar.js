@@ -49,15 +49,16 @@ export default function Navbar() {
       >
         {isMenuOpen ? <FiX /> : <FiMenu />}
       </button>
-      <figure className="relative h-32 w-36 cursor-pointer z-50">
+      
         <Link className="" href="/">
           <Image
             src="/images/logo_stone_ducky.png"
             alt="Stone Ducky Logo"
-            fill
+            width={200}
+            height={160}
           />
         </Link>
-      </figure>
+      
       {/* Desktop Navigation */}
       <ul
         className={`hidden md:flex items-center justify-center gap-10  text-xl z-50 ${isScrolled ? "text-charcoal" : "text-whiteBG"}`}

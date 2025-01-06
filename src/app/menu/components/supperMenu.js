@@ -1,3 +1,4 @@
+"use client";   
 import supperMenu from "../data/menus/supperMenu";
 
 export default function SupperMenu() {
