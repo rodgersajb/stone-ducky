@@ -9,11 +9,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "chicken-pizza": "url('/images/onion_chicken_pizza.webp')",
         "ocean-side-view": "url('/images/ocean-side-view.webp')",
-        "wine-glasses": "url('/images/wine_glasses.jpg')",
-        "salad-soup-pasta": "url('/images/salad_soup_pasta.jpg')",
-        "arugula-pizza": "url('/images/the_arugula_pizza.webp')",
+
         "stone-ducky-icons-background":
           "url('/images/stone_ducky_background_1.svg')",
         "orange-BG": "url('/images/background_orange.webp')",

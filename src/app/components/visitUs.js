@@ -49,7 +49,7 @@ export default function VisitUs() {
       <figure className=" relative h-full w-full ">
         <Image
           className=" object-cover"
-          src="/images/stone_ducky_patio_winter_view.webp"
+          src="/images/shareables_birds_eye.webp"
           alt="Winter Patio View"
           fill
         />
