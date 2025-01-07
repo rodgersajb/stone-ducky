@@ -49,16 +49,17 @@ export default function Navbar() {
       >
         {isMenuOpen ? <FiX /> : <FiMenu />}
       </button>
-      
-        <Link className="z-50 cursor-pointer" href="/">
-          <Image
-            src="/images/logo_stone_ducky.png"
-            alt="Stone Ducky Logo"
-            width={200}
-            height={160}
-          />
-        </Link>
-      
+
+      <Link className="z-50 cursor-pointer" href="/">
+        <Image
+          src="/images/logo_stone_ducky.png"
+          alt="Stone Ducky Logo"
+          width={200}
+          height={160}
+          className={`transition-width duration-300 ease-in-out ${isScrolled ? "w-32" : ""}`}
+        />
+      </Link>
+
       {/* Desktop Navigation */}
       <ul
         className={`hidden md:flex items-center justify-center gap-10  text-xl z-50 ${isScrolled ? "text-charcoal" : "text-whiteBG"}`}
@@ -70,7 +71,7 @@ export default function Navbar() {
           </li>
         ))}
         <li className="text-whiteBG  bg-duckyOrange py-4 px-4 rounded ">
-            Book a Table
+          Book a Table
         </li>
       </ul>
 
