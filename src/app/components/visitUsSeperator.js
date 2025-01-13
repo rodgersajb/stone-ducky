@@ -23,7 +23,7 @@ export default function VisitUsSeparator() {
     >
       <Image
         className="-z-1 object-cover brightness-75 "
-        src="/images/stone_ducky_patio_view.webp"
+        src="/images/ducky_inside_view.jpg"
         alt="Stone Ducky Restaurant Patio View"
         fill
         sizes="100vw"

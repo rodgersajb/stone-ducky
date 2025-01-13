@@ -46,7 +46,7 @@ export default function Test() {
     <section className="relative w-full flex flex-col items-center justify-center ">
       <div className="flex w-full flex-wrap">
         {/* Left Section */}
-        <div className="w-full lg:w-1/2 bg-duckyLightBlue h-[550px] lg:h-[400px] flex flex-col items-center justify-center gap-8 lg:justify-center  lg:min-h-[600px]  ">
+        <div className="w-full lg:w-1/2  h-[550px] lg:h-[400px] flex flex-col items-center justify-center gap-8 lg:justify-center  lg:min-h-[600px] bg-softBlue  ">
           <h2 className="text-center text-xl lg:text-4xl px-4">
             Fan Favorites That <span className="text-duckyBlue"> Steal the Show</span>
           </h2>
@@ -64,7 +64,7 @@ export default function Test() {
         </div>
 
         {/* Right Section */}
-        <div className="w-full lg:w-1/2 relative flex flex-col items-center justify-center bg-warmBeige lg:min-h-[600px]">
+        <div className="w-full lg:w-1/2 relative flex flex-col items-center justify-center bg-darkBlueBG text-whiteBG lg:min-h-[600px]">
           <div className="relative w-full">
             <div className="overflow-hidden w-full" ref={emblaRef}>
               <div className="flex">
@@ -84,7 +84,7 @@ export default function Test() {
                     </div>
                     {/* Heading and Paragraph Outside Image */}
                     <div className="mt-4 grid place-items-center text-center">
-                      <h2 className="text-xl lg:text-4xl font-semibold text-charcoal">
+                      <h2 className="text-xl lg:text-4xl font-semibold ">
                         {image.alt}
                       </h2>
                       <figure className="relative ">
@@ -95,7 +95,7 @@ export default function Test() {
                           height={20}
                         />
                       </figure>
-                      <p className="text-sm lg:text-base text-gray-700 mt-2 w-3/4 ">
+                      <p className="text-sm lg:text-base mt-2 w-3/4 ">
                         {image.description}
                       </p>
                     </div>

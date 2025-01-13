@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 
 import Image from "next/image";
 import SupperMenu from "./components/supperMenu";
@@ -31,7 +31,7 @@ export default function Menu() {
     <main>
       <header className="flex flex-col items-center justify-center h-dvh w-full relative">
         <Image
-          src="/images/drinks_food_dessert.webp"
+          src="/images/chicken_salmon.webp"
           alt="Steak Dinner"
           fill
           className="object-cover "

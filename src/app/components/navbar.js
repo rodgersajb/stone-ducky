@@ -3,6 +3,8 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+
 import { FiMenu, FiX } from "react-icons/fi";
 
 const navLinks = [
@@ -10,12 +12,13 @@ const navLinks = [
   { label: "Large Groups", href: "/groups" },
   { label: "Catering", href: "/catering" },
   { label: "Contact", href: "/contact" },
-  {label: "Blog", href: "/posts" },
+  { label: "Blog", href: "/posts" },
 ];
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,7 +42,7 @@ export default function Navbar() {
         isMenuOpen
           ? "bg-warmBeige"
           : isScrolled
-            ? "bg-warmBeige shadow-lg"
+            ? "bg-warmBeige shadow-lg bg-duck-feet bg-no-repeat"
             : "bg-transparent text-whiteBG"
       }`}
     >
@@ -65,14 +68,26 @@ export default function Navbar() {
       <ul
         className={`hidden md:flex items-center justify-center gap-10  text-xl z-50 ${isScrolled ? "text-charcoal" : "text-whiteBG"}`}
       >
-        <li className="">Order Online</li>
+        <li>
+          <Link href="https://order.tbdine.com/pickup/50580/menu" className="">
+            Order Online
+          </Link>
+        </li>
         {navLinks.map((link, index) => (
-          <li key={index} className={`cursor-pointer `}>
+          <li
+            key={index}
+            className={`cursor-pointer ${
+              pathname === link.href ? "text-duckyOrange font-bold" : ""
+            }`}
+          >
             <Link href={link.href}>{link.label}</Link>
           </li>
         ))}
+
         <li className="text-whiteBG  bg-duckyOrange py-4 px-4 rounded ">
-          Book a Table
+          <Link href="https://www.tbdine.com/book/restaurant/stone-ducky?idApp=71672&language=en-us">
+            Book a Table
+          </Link>
         </li>
       </ul>
 

@@ -16,15 +16,13 @@ import Blogs from "./components/blog";
 import MenuDivider from "./components/menuDivider";
 import PopularDishesDivider from "./components/popularDishesDivider";
 
-
-
 export default function Home() {
   return (
     <main className="bg-whiteBG w-full overflow-x-hidden flex flex-col ">
-      <header className="relative h-svh lg:dvh w-full flex flex-col text-white z-1">
+      <header className="relative h-svh lg:h-[90dvh] w-full flex flex-col text-white z-1">
         <Image
-          className="object-cover  -z-1"
-          src="/images/homepage_header_design_03.webp"
+          className="object-cover  -z-1 "
+          src="/images/homepage_header_4.webp"
           alt="Summer View of the Stone Ducky Patio"
           fill
         />
@@ -58,7 +56,7 @@ export default function Home() {
 
       {/* <LargeEvents />
       <Catering /> */}
-      <Blogs />
+      
     </main>
   );
 }

@@ -22,6 +22,8 @@ module.exports = {
         "duck-feet-trail": "url('/images/duck_feet_trail.webp')",
         "mobile-duck-bg": "url('/images/mobile-nav-duck.webp')",
         "food-duck-feet-bg": "url('/images/food_duck_feet_bg.webp')",
+        "nav-waves": "url('/images/navbar_waves.png')",
+        "duck-feet": "url('/images/nav_duck_feet.png')",
       },
       colors: {
         whiteBG: "#f7f7f7",
@@ -31,6 +33,8 @@ module.exports = {
         duckyYellow: "#f6d166",
         warmBeige: "#faf3e0",
         charcoal: "#333333",
+        darkBlueBG: "#1c2b40",
+        softBlue: "#e3eaf4",
         card: {
           DEFAULT: "#ffffff",
           foreground: "#000000",
