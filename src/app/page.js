@@ -23,8 +23,8 @@ export default function Home() {
     <main className="bg-whiteBG w-full overflow-x-hidden flex flex-col ">
       <header className="relative h-svh lg:dvh w-full flex flex-col text-white z-1">
         <Image
-          className="object-cover brightness-75 -z-1"
-          src="/images/header_design_01.png"
+          className="object-cover  -z-1"
+          src="/images/homepage_header_design_03.webp"
           alt="Summer View of the Stone Ducky Patio"
           fill
         />

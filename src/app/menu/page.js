@@ -34,7 +34,7 @@ export default function Menu() {
           src="/images/drinks_food_dessert.webp"
           alt="Steak Dinner"
           fill
-          className="object-cover brightness-75"
+          className="object-cover "
         />
         <h1 className="z-10 font-semibold text-6xl text-white">Food & Drink</h1>
       </header>

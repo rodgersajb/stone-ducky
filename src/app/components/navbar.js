@@ -10,6 +10,7 @@ const navLinks = [
   { label: "Large Groups", href: "/groups" },
   { label: "Catering", href: "/catering" },
   { label: "Contact", href: "/contact" },
+  {label: "Blog", href: "/posts" },
 ];
 
 export default function Navbar() {

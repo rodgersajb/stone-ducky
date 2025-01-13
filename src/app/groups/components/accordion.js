@@ -10,29 +10,27 @@ const faqs = [
   {
     question: "How far in advance should I book for a large party?",
     answer:
-      "We recommend booking at least 2-3 weeks in advance for large parties to ensure availability, especially during peak dining times. For special events or holidays, booking even earlier is advised.",
+      "We recommend booking at least  weeks in advance of with a pre-ordered items received a week ahead of time.",
   },
   {
     question:
-      "Is there a minimum number of guests required to book a large party?",
-    answer:
-      "Yes, we typically require a minimum of 8-10 guests for large party bookings, depending on the size of the restaurant and the day of the week. Please contact us for specific requirements.",
+      "What is the maximum number of guests you can accommodate for a group booking?",
+    answer: "Our dining room seats 40 comfortably.",
   },
   {
-    question: "Can I customize the menu for a large party?",
-    answer:
-      "Yes, we offer options for customized menus, including set menus or family-style dining. Our team can work with you to create a menu that suits your group's preferences and dietary needs.",
+    question: "Is gratuity automatically added for large groups?",
+    answer: "There is an 18% gratuity for parties of 12 or more.",
   },
   {
-    question: "Do you charge a deposit for large party reservations?",
+    question: "Is there a private room or semi-private area available?",
     answer:
-      "A deposit may be required for large party bookings to secure the reservation, especially for private rooms or during peak times. The deposit will typically be applied to your final bill.",
+      "Unfortunately we do not have a private space set up for parties, however groups of 25+ will have a private indoor dining experience.",
   },
   {
     question:
-      "What happens if some guests in my large party cancel or don’t show up?",
+      "Is there a deposit required when booking a large party?",
     answer:
-      "We understand that plans can change. We ask that you notify us at least 24 hours in advance if there are any significant changes to your party size. For cancellations or no-shows, a fee may apply depending on the booking terms.",
+      "Yes, for parties of 15 people there will be a required deposit.",
   },
 ];
 
