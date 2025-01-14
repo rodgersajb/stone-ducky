@@ -65,6 +65,7 @@ const pizzaMenu = [
         price: 16,
         description:
           "Arugula, watermelon, feta, cucumber, red onion, blueberries, EVOO, balsamic glaze.",
+          glutenFree: true,
       },
       {
         name: "Panzanella",
@@ -77,11 +78,11 @@ const pizzaMenu = [
   {
     category: "Sides - Add Ons",
     items: [
-      { name: "Chicken (6oz)", price: 12 },
-      { name: "Shrimp (3)", price: 15 },
-      { name: "Brisket (4oz)", price: 7 },
-      { name: "Duck (4oz)", price: 7 },
-      { name: "Fries", price: 8 },
+      { name: "Chicken (6oz)", price: 12, glutenFree: true },
+      { name: "Shrimp (3)", price: 15, glutenFree: true },
+      { name: "Brisket (4oz)", price: 7, glutenFree: true },
+      { name: "Duck (4oz)", price: 7, glutenFree: true },
+      { name: "Fries", price: 8, glutenFree: true },
       { name: "Poutine", price: 4 },
       { name: "Dressing & Gravy", price: 2 },
     ],

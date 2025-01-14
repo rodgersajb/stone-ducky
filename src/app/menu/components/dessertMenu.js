@@ -4,7 +4,7 @@ import dessertMenu from "../data/menus/dessertMenu";
 export default function DessertMenu() {
   return (
     <section className="w-full">
-      <div className="w-3/4 m-auto">
+      <div className="lg:w-3/4 m-auto">
         {dessertMenu.map(({ category, items }) => (
           <div key={category} className="mb-8">
             <h2 className="lg:text-4xl text-2xl font-semibold text-duckyBlue border-b-2 pb-2 mb-4">

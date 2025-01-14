@@ -54,13 +54,13 @@ export default function Navbar() {
         {isMenuOpen ? <FiX /> : <FiMenu />}
       </button>
 
-      <Link className="z-50 cursor-pointer" href="/">
+      <Link className="z-50 cursor-pointer flex justify-end" href="/">
         <Image
           src="/images/logo_stone_ducky.png"
           alt="Stone Ducky Logo"
           width={200}
           height={160}
-          className={`transition-width duration-300 ease-in-out ${isScrolled ? "w-32" : ""}`}
+          className={`transition-width duration-300  ease-in-out ${isScrolled ? "w-32" : ""}`}
         />
       </Link>
 

@@ -13,22 +13,26 @@ const dessertMenu = [
         price: 10,
         description:
           "Daily rotating crumble, ask your server for today’s creation served with vanilla ice cream.",
+          glutenFree: true,
       },
       {
         name: "Chocolate Delice",
         price: 10,
         description: "Rich chocolate ganache, cherry sauce, whipped cream.",
+        glutenFree: true,
       },
       {
         name: "Screech Fruit Cake",
         price: 10,
         description: "Whipped cream, caramel sauce, vanilla ice cream.",
+        dairyFree: true,
       },
       {
         name: "Ice Cream",
         price: 8,
         description:
           "3 Scoops; choice of sauce: chocolate, caramel, or blueberry.",
+          glutenFree: true,
       },
     ],
   },

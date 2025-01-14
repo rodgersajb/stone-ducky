@@ -53,18 +53,22 @@ const lunchMenu = [
         price: 18,
         description:
           "One pound of juicy chicken wings, cooked to perfection and tossed in your choice of Mild, Medium, Hot, Honey Garlic, or our unique, made-in-house Bakeapple BBQ sauce for a flavor experience to savor.",
+          glutenFree: true,
+          dairyFree: true,
       },
       {
         name: "Fish & Chips",
         price: 18,
         description:
           "Cod that is delicately battered and fried to golden perfection, is served with a generous portion of fries. Accompanied by our house-made tartar sauce.",
+          dairyFree: true,
       },
       {
         name: "Chicken Fingers & Fries",
         price: 18,
         description:
           "5 tender strips of chicken, lightly battered and fried until golden and crispy. Perfectly accompanied by a handful of seasoned fries.",
+          dairyFree: true,
       },
     ],
   },
@@ -77,6 +81,7 @@ const lunchMenu = [
         description:
           "A vibrant mix of jalapeños, tomatoes, red onions, black olives, and green onions over house-made nacho chips. Perfectly baked, layered, and packed with flavor in every bite.",
         addOns: "Add Brisket or Duck for 5",
+        glutenFree: true,
       },
     ],
   },

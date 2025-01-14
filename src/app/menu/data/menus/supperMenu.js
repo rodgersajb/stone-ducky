@@ -5,6 +5,8 @@ const supperMenu = {
       price: 20,
       description:
         "Four succulent duck wings seared in a tangy orange-chili glaze, topped with toasted sesame seeds and fresh green onion.",
+      glutenFree: true,
+      dairyFree: true,
     },
     {
       title: "Duck Arancini",
@@ -17,6 +19,7 @@ const supperMenu = {
       price: 18,
       description:
         "One pound of juicy chicken wings, cooked to perfection and tossed in your choice of Mild, Medium, Hot, Honey Garlic, or our unique, made-in-house Bakeapple BBQ sauce for a flavour experience to savour.",
+      glutenFree: true,
     },
   ],
   Shareables: [
@@ -26,6 +29,7 @@ const supperMenu = {
       description:
         "A vibrant mix of jalapeños, tomatoes, red onions, black olives, and green onions over house-made nacho chips. Perfectly baked, layered, and packed with flavour in every bite.",
       additional: "Add Brisket or Duck: $5",
+      glutenFree: true,
     },
     {
       title: "Spinach & Artichoke Dip",
@@ -37,6 +41,7 @@ const supperMenu = {
       title: "Focaccia",
       price: 6,
       description: "House baked daily, EVOO & balsamic.",
+      dairyFree: true,
     },
   ],
   Entrees: [
@@ -57,12 +62,14 @@ const supperMenu = {
       price: 36,
       description:
         "Served on a creamy sun-dried tomato and basil risotto, creating a harmonious balance of textures and tastes in every bite.",
+      glutenFree: true,
     },
     {
       title: "8oz Striploin",
       price: 45,
       description:
         "Grilled to perfection and served with creamy dauphinoise potatoes, honey-roasted carrots, and a bright chimichurri sauce. A classic with a fresh twist.",
+      glutenFree: true,
     },
   ],
   Handhelds: [

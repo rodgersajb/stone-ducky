@@ -4,10 +4,10 @@ import drinkMenu from "../data/menus/drinkMenu";
 export default function DrinkMenu() {
   return (
     <section className="w-full">
-      <div className="w-3/4 m-auto">
+      <div className="lg:w-3/4 m-auto">
         {drinkMenu.map(({ category, items }) => (
           <div key={category} className="mb-8">
-            <h2 className="lg:text-4xl font-semibold text-duckyBlue border-b-2 pb-2 mb-4">
+            <h2 className=" text-3xl lg:text-4xl font-semibold text-duckyBlue border-b-2 pb-2 mb-4">
               {category}
             </h2>
             {items.map((item, index) => (
