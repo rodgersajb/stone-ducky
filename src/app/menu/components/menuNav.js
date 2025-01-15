@@ -22,6 +22,7 @@ const menus = [
 export default function MenuNav() {
   const [selectedMenu, setSelectedMenu] = useState("Supper");
 
+
   const SelectedMenuComponent = menus.find(
     (menu) => menu.title === selectedMenu
   )?.component;
@@ -41,7 +42,8 @@ export default function MenuNav() {
   };
   return (
     <>
-      <nav className="grid grid-cols-2 grid-rows-3 lg:flex lg:justify-center w-[95%] pb-4 m-auto lg:gap-8 pt-8 gap-2">
+      
+      <nav className="grid grid-cols-2 grid-rows-3 lg:flex lg:justify-center w-[95%] pb-4 m-auto lg:gap-8 pt-8 gap-2  z-50">
         {menus.map((menu, index) => (
           <button
             key={index}
@@ -58,13 +60,9 @@ export default function MenuNav() {
       </nav>
 
       <div ref={menuRef}  className=" flex flex-col z-40  p-4 w-[95%] m-auto ">
-       
-        {/* <h2 className="w-[95%] m-auto  text-4xl text-center font-semibold text-charcoal">{selectedMenu} Menu </h2>
-         <figure className="relative grid place-items-center">
-                <Image src="/images/squiggle.png" alt="Squiggly underline" width={200} height={20} />
-              </figure> */}
+
         
-        {SelectedMenuComponent && <SelectedMenuComponent />}
+        {SelectedMenuComponent && <SelectedMenuComponent /> }
       </div>
     </>
   );
