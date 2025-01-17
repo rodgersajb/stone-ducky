@@ -44,29 +44,32 @@
   .btn {
     @apply py-2 px-6 rounded font-semibold uppercase transition ease-in-out delay-150 duration-300;
   }
-
-  .btn-orange {
-    @apply bg-mutedOrange border border-mutedOrange text-creamBG;
-  }
-
-  .btn-orange:hover {
-    @apply hover:-translate-y-1 hover:scale-110 hover:bg-creamBG hover:text-mutedOrange;
-  }
-
-  .btn-navy {
+  .btn-richNavy {
     @apply bg-richNavy border-2 border-richNavy text-creamBG;
   }
-
-  .btn-navy:hover {
+  .btn-richNavy:hover {
     @apply hover:-translate-y-1 hover:scale-110 hover:bg-creamBG hover:text-richNavy;
   }
 
-  .btn-green {
-    @apply bg-tealGreen border-2 border-tealGreen text-creamBG;
+  .btn-mutedOrange {
+    @apply bg-mutedOrange border-2 border-mutedOrange text-creamBG;
+  }
+  .btn-mutedOrange:hover {
+    @apply hover:-translate-y-1 hover:scale-110 hover:bg-creamBG hover:text-mutedOrange;
   }
 
-  .btn-green:hover {
+  .btn-tealGreen {
+    @apply bg-tealGreen border-2 border-tealGreen text-creamBG;
+  }
+  .btn-tealGreen:hover {
     @apply hover:-translate-y-1 hover:scale-110 hover:bg-creamBG hover:text-tealGreen;
+  }
+
+  .btn-creamTeal {
+    @apply bg-creamBG border-2 border-tealGreen text-tealGreen font-bold;
+  }
+  .btn-creamTeal:hover {
+    @apply hover:-translate-y-1 hover:scale-110 hover:bg-tealGreen hover:text-creamBG;
   }
 
   .btn-yellow {

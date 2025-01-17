@@ -52,7 +52,7 @@ export default function Home() {
       <VisitUs />
       <PopularDishesDivider />
       <PopularDishes /> */}
-      <section className="w-full py-12 flex flex-col items-center justify-center bg-warmBeige">
+      <section className="w-full py-12 flex flex-col items-center justify-center bg-whiteBG">
         <div className="flex flex-col lg:grid lg:grid-cols-2 w-[90%] m-auto gap-4 ">
           <Image
             src="/images/mushroom_fritter_soup.webp"
@@ -158,10 +158,10 @@ export default function Home() {
             <p>Closed Mondays</p>
           </div>
           <div className="flex lg:flex-row flex-col gap-8 z-10">
-            <button className="border-2 rounded py-4 px-8 border-richNavy bg-richNavy text-creamBG font-semibold uppercase transition hover:bg-tealGreen hover:text-creamBG hover:scale-105">
+            <button className="btn btn-richNavy btn-richNavy:hover">
               Reserve a Table
             </button>
-            <button className="border-2 rounded py-4 px-8 border-mutedOrange bg-mutedOrange text-creamBG font-semibold uppercase transition hover:bg-goldenYellow hover:text-coolGray hover:scale-105">
+            <button className="btn btn-mutedOrange btn-mutedOrange:hover">
               Order Online
             </button>
           </div>
@@ -175,10 +175,10 @@ export default function Home() {
             we'll make sure to make your next event a memorable one.
           </p>
           <div className="grid grid-rows-2 lg:grid-cols-2 gap-4">
-            <button className="border-2 rounded py-4 px-8 border-whiteBG bg-whiteBG text-darkBlueBG">
+            <button className="btn btn-mutedOrange btn-mutedOrange:hover">
               <Link href="/groups">Book a Party</Link>
             </button>
-            <button className="border-2 rounded py-4 px-8 border-whiteBG bg-whiteBG text-darkBlueBG">
+            <button className="btn btn-tealGreen btn-tealGreen:hover">
               <Link href="/groups">Book Catering</Link>
             </button>
           </div>
@@ -212,7 +212,7 @@ export default function Home() {
             Our Blog for the Latest!
           </p>
           <div>
-            <button className="border-2 rounded py-4 px-8 border-richNavy bg-creamBG text-richNavy font-semibold uppercase transition hover:bg-mutedOrange hover:text-creamBG hover:scale-105">
+            <button className="btn btn-richNavy btn-richNavy:hover">
               <Link href="/blog">Read More</Link>
             </button>
           </div>

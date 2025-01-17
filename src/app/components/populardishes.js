@@ -59,7 +59,7 @@ export default function Test() {
             A Vibrant Dining Experience with Fantastic Cuisine, Clear Vision,
             and Exceptional Service.
           </h3>
-          <button className="flex gap-2 items-center uppercase font-semibold transition bg-creamBG border-richNavy text-richNavy border-2 rounded px-4 py-2 hover:bg-richNavy hover:text-creamBG hover:scale-105">
+          <button className="btn btn-creamTeal btn-creamTeal:hover">
             <Link href="/menu">View Menu</Link>
           </button>
         </div>
