@@ -54,7 +54,7 @@ export default function Navbar() {
         {isMenuOpen ? <FiX /> : <FiMenu />}
       </button>
 
-      <Link className="z-50 cursor-pointer flex justify-end" href="/">
+      <Link className=" hidden z-50 cursor-pointer lg:flex justify-end" href="/">
         <Image
           src="/images/logo_stone_ducky.png"
           alt="Stone Ducky Logo"
@@ -99,7 +99,7 @@ export default function Navbar() {
             : "-translate-y-full opacity-0"
         }`}
       >
-        <ul className="flex flex-col items-start z-50 gap-4 p-4 text-lg  bg-warmBeige border-2 border-duckyOrange rounded">
+        <ul className="flex flex-col items-end justify-start z-50 gap-4 p-4 text-lg    w-full min-h-[50svh]">
           {navLinks.map((link, index) => (
             <li key={index} className="cursor-pointer hover:underline">
               <Link href={link.href} onClick={() => setIsMenuOpen(false)}>
