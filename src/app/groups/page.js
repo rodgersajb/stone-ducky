@@ -42,7 +42,7 @@ export default function LargeGroups() {
   };
 
   return (
-    <main>
+    <main className="">
       <header className="h-svh lg:h-dvh flex flex-col items-center justify-center gap-4 w-full relative text-white text-center">
         <Image
           src="/images/ducky_restaurant_inside.webp"
@@ -80,7 +80,7 @@ export default function LargeGroups() {
       <div ref={faqRef}>
         <PartyAccordion />
       </div>
-      <h2 className="lg:text-4xl text-2xl text-center">
+      <h2 className="lg:text-4xl text-2xl text-center pb-8">
         Submit Your Request for Your Large Party Reservation
       </h2>
       <div ref={formRef}>

@@ -6,6 +6,7 @@ import LunchMenu from "./lunchMenu";
 import PizzaMenu from "./pizzaMenu";
 import DessertMenu from "./dessertMenu";
 import DrinkMenu from "./drinkMenu";
+import SaladsSidesMenu from "./saladsSides";
 
 import Image from "next/image";
 
@@ -16,6 +17,7 @@ const menus = [
   { title: "Pizza", component: PizzaMenu },
   { title: "Dessert", component: DessertMenu },
   { title: "Drinks", component: DrinkMenu },
+  {title: "Shareables", component: SaladsSidesMenu}
 ];
 
 

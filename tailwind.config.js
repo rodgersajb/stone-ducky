@@ -31,10 +31,16 @@ module.exports = {
         duckyBlue: "#164997",
         duckyLightBlue: "#D0E4F2",
         duckyYellow: "#f6d166",
-        warmBeige: "#faf3e0",
+        warmBeige: "#D7CAB1",
         charcoal: "#333333",
         darkBlueBG: "#1c2b40",
         softBlue: "#e3eaf4",
+        creamBG: "#F5F2ED",
+        richNavy: "#1c3d72",
+        text: "#4A4A4A",
+        mutedOrange: "#E89E38",
+        tealGreen: "#2A746E",
+
         card: {
           DEFAULT: "#ffffff",
           foreground: "#000000",

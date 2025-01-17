@@ -15,7 +15,7 @@ export default async function Contact() {
         <h1 className="z-10 text-white text-6xl">Contact</h1>
       </figure>
       <section className="grid grid-rows-2 lg:grid-cols-2 lg:grid-rows-1 place-items-start w-[95%] lg:w-[80%] m-auto  pt-4 lg:gap-12 lg:py-8">
-        <div className="flex flex-col gap-4 min-h-[400px]">
+        <div className="flex flex-col text-center gap-4 min-h-[400px]">
           <h2 className="text-4xl text-center font-semibold">Contact Info</h2>
           <p>
             If you’re passionate about Italian flavors and fresh seafood, Stone

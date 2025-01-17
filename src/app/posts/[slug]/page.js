@@ -11,7 +11,7 @@ export default async function PostPage({ params }) {
   }
 
   return (
-    <article className="max-w-3xl mx-auto p-6">
+    <article className="max-w-3xl mx-auto pt-14 p-6">
       <h1 className="text-4xl font-bold mb-6">{post.title}</h1>
       {post.featuredImage && (
         <img
