@@ -1,3 +1,6 @@
+const glutenFree = "/images/gluten-free.png";
+const dairyFree = "/images/dairy-free.png";
+
 const lunchMenu = {
   Subs: [
     {
@@ -59,6 +62,7 @@ const lunchMenu = {
         "One pound of juicy chicken wings, cooked to perfection and tossed in your choice of Mild, Medium, Hot, Honey Garlic, or our unique, made-in-house Bakeapple BBQ sauce for a flavor experience to savor.",
       glutenFree: true,
       dairyFree: true,
+      image: [glutenFree, dairyFree],
     },
     {
       title: "Fish & Chips",
@@ -67,6 +71,7 @@ const lunchMenu = {
         "Cod that is delicately battered and fried to golden perfection, is served with a generous portion of fries. Accompanied by our house-made tartar sauce.",
       glutenFree: false,
       dairyFree: true,
+      image: dairyFree,
     },
     {
       title: "Chicken Fingers & Fries",
@@ -75,6 +80,7 @@ const lunchMenu = {
         "5 tender strips of chicken, lightly battered and fried until golden and crispy. Perfectly accompanied by a handful of seasoned fries.",
       glutenFree: false,
       dairyFree: true,
+      image: dairyFree,
     },
   ],
   Shareables: [
@@ -83,9 +89,10 @@ const lunchMenu = {
       price: 21,
       description:
         "A vibrant mix of jalapeños, tomatoes, red onions, black olives, and green onions over house-made nacho chips. Perfectly baked, layered, and packed with flavor in every bite.",
-      addOns: "Add Brisket or Duck for 5",
+      additional: "Add Brisket or Duck: $5",
       glutenFree: true,
       dairyFree: false,
+      image: glutenFree,
     },
   ],
 };

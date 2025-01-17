@@ -1,3 +1,6 @@
+const glutenFree = "/images/gluten-free.png";
+const dairyFree = "/images/dairy-free.png";
+
 const dessertMenu = {
   Desserts: [
     {
@@ -15,6 +18,7 @@ const dessertMenu = {
         "Daily rotating crumble, ask your server for today’s creation served with vanilla ice cream.",
       glutenFree: true,
       dairyFree: false,
+      image: glutenFree,
     },
     {
       title: "Chocolate Delice",
@@ -22,6 +26,7 @@ const dessertMenu = {
       description: "Rich chocolate ganache, cherry sauce, whipped cream.",
       glutenFree: true,
       dairyFree: false,
+      image: glutenFree,
     },
     {
       title: "Screech Fruit Cake",
@@ -29,6 +34,7 @@ const dessertMenu = {
       description: "Whipped cream, caramel sauce, vanilla ice cream.",
       glutenFree: false,
       dairyFree: true,
+      image: dairyFree,
     },
     {
       title: "Ice Cream",
@@ -37,6 +43,7 @@ const dessertMenu = {
         "3 Scoops; choice of sauce: chocolate, caramel, or blueberry.",
       glutenFree: true,
       dairyFree: false,
+      image: glutenFree,
     },
   ],
   Coffee: [
@@ -45,6 +52,7 @@ const dessertMenu = {
       price: 4,
       glutenFree: true,
       dairyFree: true,
+      image: [glutenFree, dairyFree],
     },
     {
       title: "Tea",
@@ -52,12 +60,14 @@ const dessertMenu = {
       description: "Tetley, Green, Peppermint, Earl Grey.",
       glutenFree: true,
       dairyFree: true,
+      image: [glutenFree, dairyFree],
     },
     {
       title: "Iced Coffee",
       price: 5,
       glutenFree: true,
       dairyFree: true,
+      image: [glutenFree, dairyFree],
     },
     {
       title: "Hot Chocolate",

@@ -1,3 +1,5 @@
+const glutenFree = "/images/gluten-free.png";
+const dairyFree = "/images/dairy-free.png";
 
 const saladSidesMenu = {
   Salads: [
@@ -15,6 +17,7 @@ const saladSidesMenu = {
         "Arugula, watermelon, feta, cucumber, red onion, blueberries, EVOO, balsamic glaze.",
       glutenFree: true,
       dairyFree: false,
+      image: glutenFree,
     },
     {
       title: "Panzanella",
@@ -26,12 +29,47 @@ const saladSidesMenu = {
     },
   ],
   "Sides - Add Ons": [
-    { title: "Chicken (6oz)", price: 12, glutenFree: true, dairyFree: true },
-    { title: "Shrimp (3)", price: 15, glutenFree: true, dairyFree: true },
-    { title: "Brisket (4oz)", price: 7, glutenFree: true, dairyFree: true },
-    { title: "Duck (4oz)", price: 7, glutenFree: true, dairyFree: true },
-    { title: "Fries", price: 8, glutenFree: true, dairyFree: true },
-    { title: "Poutine", price: 4, glutenFree: false, dairyFree: false },
+    {
+      title: "Chicken (6oz)",
+      price: 12,
+      glutenFree: true,
+      dairyFree: true,
+      image: [glutenFree, dairyFree],
+    },
+    {
+      title: "Shrimp (3)",
+      price: 15,
+      glutenFree: true,
+      dairyFree: true,
+      image: [glutenFree, dairyFree],
+    },
+    {
+      title: "Brisket (4oz)",
+      price: 7,
+      glutenFree: true,
+      dairyFree: true,
+      image: [glutenFree, dairyFree],
+    },
+    {
+      title: "Duck (4oz)",
+      price: 7,
+      glutenFree: true,
+      dairyFree: true,
+      image: [glutenFree, dairyFree],
+    },
+    {
+      title: "Fries",
+      price: 8,
+      glutenFree: true,
+      dairyFree: true,
+      image: [glutenFree, dairyFree],
+    },
+    {
+      title: "Poutine",
+      price: 4,
+      glutenFree: false,
+      dairyFree: false,
+    },
     {
       title: "Dressing & Gravy",
       price: 2,

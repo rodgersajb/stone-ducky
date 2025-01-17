@@ -1,3 +1,6 @@
+const glutenFree = "/images/gluten-free.png";
+const dairyFree = "/images/dairy-free.png";
+
 const supperMenu = {
   Starters: [
     {
@@ -7,6 +10,7 @@ const supperMenu = {
         "Four succulent duck wings seared in a tangy orange-chili glaze, topped with toasted sesame seeds and fresh green onion.",
       glutenFree: true,
       dairyFree: true,
+      image: [glutenFree, dairyFree],
     },
     {
       title: "Duck Arancini",
@@ -23,6 +27,7 @@ const supperMenu = {
         "One pound of juicy chicken wings, cooked to perfection and tossed in your choice of Mild, Medium, Hot, Honey Garlic, or our unique, made-in-house Bakeapple BBQ sauce for a flavour experience to savour.",
       glutenFree: true,
       dairyFree: false,
+      image: glutenFree,
     },
   ],
   Shareables: [
@@ -34,6 +39,7 @@ const supperMenu = {
       additional: "Add Brisket or Duck: $5",
       glutenFree: true,
       dairyFree: false,
+      image: glutenFree,
     },
     {
       title: "Spinach & Artichoke Dip",
@@ -49,6 +55,7 @@ const supperMenu = {
       description: "House baked daily, EVOO & balsamic.",
       glutenFree: false,
       dairyFree: true,
+      image: dairyFree,
     },
   ],
   Entrees: [
@@ -75,6 +82,7 @@ const supperMenu = {
         "Served on a creamy sun-dried tomato and basil risotto, creating a harmonious balance of textures and tastes in every bite.",
       glutenFree: true,
       dairyFree: false,
+      image: glutenFree,
     },
     {
       title: "8oz Striploin",
@@ -83,6 +91,7 @@ const supperMenu = {
         "Grilled to perfection and served with creamy dauphinoise potatoes, honey-roasted carrots, and a bright chimichurri sauce. A classic with a fresh twist.",
       glutenFree: true,
       dairyFree: false,
+      image: glutenFree,
     },
   ],
   Handhelds: [
