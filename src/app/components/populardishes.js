@@ -43,11 +43,10 @@ export default function Test() {
   }, [embla]);
 
   return (
-    <section className=" w-full flex flex-col items-center justify-center bg-duckyOrange ">
-      <div className=" lg:flex flex-col w-full flex-wrap">
+    <section className=" w-full flex flex-col items-center justify-center bg-mutedOrange ">
+      <div className=" lg:flex lg:flex-row flex-col w-full ">
         {/* Left Section */}
         <div className=" relative w-full min-h-[500px] lg:w-1/2 m-auto  flex flex-col items-center justify-center gap-10 z-10 text-whiteBG">
-          
           {/* <Image
             className="lg:w-1/3 w-1/4"
             src="/images/the_duck_chef.webp"
@@ -60,7 +59,7 @@ export default function Test() {
             A Vibrant Dining Experience with Fantastic Cuisine, Clear Vision,
             and Exceptional Service.
           </h3>
-          <button className="flex gap-2 items-center uppercase font-semibold transition bg-warmBeige border-warmBeige text-duckyOrange border-2 rounded px-4 py-2">
+          <button className="flex gap-2 items-center uppercase font-semibold transition bg-creamBG border-richNavy text-richNavy border-2 rounded px-4 py-2 hover:bg-richNavy hover:text-creamBG hover:scale-105">
             <Link href="/menu">View Menu</Link>
           </button>
         </div>

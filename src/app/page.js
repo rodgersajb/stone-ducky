@@ -19,7 +19,7 @@ import PopularDishesDivider from "./components/popularDishesDivider";
 export default function Home() {
   return (
     <main className="bg-whiteBG w-full overflow-x-hidden flex flex-col ">
-      <header className="relative h-svh lg:h-[90dvh] w-full flex flex-col text-white z-1">
+      <header className="relative h-svh lg:h-dvh w-full flex flex-col text-white z-1">
         <Image
           className="object-cover  -z-1 "
           src="/images/homepage_header_4.webp"
@@ -63,12 +63,12 @@ export default function Home() {
           />
           <div className=" flex flex-col items-start justify-center gap-4">
             <div className="flex justify-between items-center">
-              <h3 className="text-3xl lg:text-4xl w-2/3 lg:w-1/2 font-semibold text-charcoal">
+              <h3 className="text-3xl lg:text-4xl w-2/3 lg:w-1/2 font-semibold text-mutedOrange">
                 Unique Dining Experience With Stunning Oceanfront Views
               </h3>
             </div>
 
-            <p className="text-charcoal font-semibold ">
+            <p className="text-coolGray font-semibold ">
               Stone Ducky is a casual and intimate restaurant offering fresh,
               homemade pizza and creatively inspired dishes. Close proximity to
               the ocean provides scenic view to enhance your dining experience.
@@ -120,16 +120,16 @@ export default function Home() {
           <PopularDishes />
         </div>
       </section>
-      <section className="lg:grid lg:grid-cols-2 flex flex-col-reverse w-full  bg-warmBeige ">
+      <section className="lg:grid lg:grid-cols-2 flex flex-col-reverse w-full  bg-softBlue ">
         <div className="h-[400px]  lg:min-h-[500px] w-[90%] m-auto lg:w-full relative">
           <Image
             src="/images/ducky_restaurant_inside.webp"
             alt="Inside of Stone Ducky"
             fill
-            className="object-contain"
+            className="object-contain lg:object-cover"
           />
         </div>
-        <div className="min-h-[625px] w-full text-charcoal flex flex-col items-center justify-evenly lg:justify-center gap-4">
+        <div className="min-h-[625px] lg:min-h-[500px] w-full text-charcoal flex flex-col items-center justify-evenly lg:justify-center gap-4">
           <div className=" z-10 relative ">
             <h2 className="text-4xl lg:text-6xl relative pb-2 ">Visit Us</h2>
           </div>
@@ -167,7 +167,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className=" flex flex-col  lg:grid  lg:grid-cols-2 bg-darkBlueBG">
+      <section className=" flex flex-col  lg:grid  lg:grid-cols-2 bg-richNavy">
         <div className="min-h-[500px] w-full  text-whiteBG flex flex-col items-center justify-around lg:justify-center lg:gap-4">
           <h2 className="text-5xl text-center">Large Groups & Catering</h2>
           <p className="text-xl text-center lg:w-[75%] ">
@@ -188,7 +188,7 @@ export default function Home() {
             src="/images/ducky_whales-min.webp"
             alt="Whales"
             fill
-            className="object-contain"
+            className="object-contain lg:object-cover"
           />
         </figure>
       </section>
@@ -196,13 +196,13 @@ export default function Home() {
         <figure className="min-[500px] w-full relative"></figure>
         <div className="min-[500px] w-full bg-duckyBlue text-whiteBG flex flex-col items-center justify-center gap-4"></div>
       </section>
-      <section className="flex flex-col-reverse lg:grid lg:grid-cols-2 bg-duckyYellow">
+      <section className="flex flex-col-reverse lg:grid lg:grid-cols-2 bg-tealGreen">
         <figure className="h-[400px]  lg:min-h-[500px] w-[90%] m-auto lg:w-full relative">
           <Image
             src="/images/shareables_birds_eye.webp"
             alt="Birds eye view of entrees, appetizers, soups and cocktails"
             fill
-            className="object-contain"
+            className="object-contain lg:object-cover"
           />
         </figure>
         <div className="min-h-[400px] lg:min-h-[500px] w-full  text-whiteBG flex flex-col items-center justify-around lg:justify-center text-center gap-4">

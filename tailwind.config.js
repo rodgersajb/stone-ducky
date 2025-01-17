@@ -37,9 +37,10 @@ module.exports = {
         softBlue: "#e3eaf4",
         creamBG: "#F5F2ED",
         richNavy: "#1c3d72",
-        text: "#4A4A4A",
+        coolGray: "#4A4A4A",
         mutedOrange: "#E89E38",
         tealGreen: "#2A746E",
+        goldenYellow: "#F9D77E",
 
         card: {
           DEFAULT: "#ffffff",

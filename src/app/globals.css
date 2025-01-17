@@ -2,55 +2,78 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Define custom fonts */
 :root {
   --font-poppins: "Poppins", sans-serif;
   --font-dancingScript: "Dancing Script", cursive;
 }
+
+/* Base styles */
 @layer base {
   body {
-    @apply text-charcoal;
+    @apply text-coolGray; /* Default text color */
+  }
+
+  h1,
+  h2 {
+    font-family: var(--font-dancingScript), cursive; /* Apply Dancing Script to headings */
+  }
+
+  p,
+  a,
+  li,
+  button {
+    font-family: var(--font-poppins), sans-serif; /* Apply Poppins to other elements */
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-poppins), sans-serif; /* Default font */
+    line-height: 1.6;
+    background-color: #f5f2ed; /* Set default background to creamBG */
   }
 }
-h1,
-h2 {
-  font-family: var(--font-dancingScript), cursive;
-}
 
-/* Apply Poppins to other elements */
-p,
-a,
-li,
-button {
-  font-family: var(--font-poppins), sans-serif;
-}
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: var(--font-poppins), sans-serif; /* Default font */
-  line-height: 1.6;
-}
+/* Components */
 @layer components {
   .btn {
     @apply py-2 px-6 rounded font-semibold uppercase transition ease-in-out delay-150 duration-300;
   }
 
   .btn-orange {
-    @apply bg-duckyOrange border border-duckyOrange text-whiteBG;
+    @apply bg-mutedOrange border border-mutedOrange text-creamBG;
   }
 
   .btn-orange:hover {
-    @apply hover:-translate-y-1 hover:scale-110 hover:bg-whiteBG hover:text-duckyOrange;
+    @apply hover:-translate-y-1 hover:scale-110 hover:bg-creamBG hover:text-mutedOrange;
   }
 
-  .btn-blue {
-    @apply bg-duckyBlue border-2 border-duckyBlue text-whiteBG;
+  .btn-navy {
+    @apply bg-richNavy border-2 border-richNavy text-creamBG;
   }
 
-  .btn-blue:hover {
-    @apply hover:-translate-y-1 hover:scale-110 hover:bg-whiteBG hover:text-duckyBlue;
+  .btn-navy:hover {
+    @apply hover:-translate-y-1 hover:scale-110 hover:bg-creamBG hover:text-richNavy;
+  }
+
+  .btn-green {
+    @apply bg-tealGreen border-2 border-tealGreen text-creamBG;
+  }
+
+  .btn-green:hover {
+    @apply hover:-translate-y-1 hover:scale-110 hover:bg-creamBG hover:text-tealGreen;
+  }
+
+  .btn-yellow {
+    @apply bg-goldenYellow border border-goldenYellow text-coolGray;
+  }
+
+  .btn-yellow:hover {
+    @apply hover:-translate-y-1 hover:scale-110 hover:bg-coolGray hover:text-goldenYellow;
   }
 }

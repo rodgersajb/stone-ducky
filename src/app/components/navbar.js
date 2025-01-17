@@ -42,7 +42,7 @@ export default function Navbar() {
         isMenuOpen
           ? "bg-warmBeige"
           : isScrolled
-            ? "bg-warmBeige shadow-lg bg-duck-feet bg-no-repeat"
+            ? "bg-whiteBG shadow-lg"
             : "bg-transparent text-whiteBG"
       }`}
     >
