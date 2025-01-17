@@ -10,7 +10,6 @@ module.exports = {
     extend: {
       backgroundImage: {
         "ocean-side-view": "url('/images/ocean-side-view.webp')",
-
         "stone-ducky-icons-background":
           "url('/images/stone_ducky_background_1.svg')",
         "orange-BG": "url('/images/background_orange.webp')",

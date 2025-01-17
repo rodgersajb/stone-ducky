@@ -52,7 +52,7 @@ export default function Home() {
       <VisitUs />
       <PopularDishesDivider />
       <PopularDishes /> */}
-      <section className="w-full py-12 flex flex-col items-center justify-center">
+      <section className="w-full py-12 flex flex-col items-center justify-center bg-warmBeige">
         <div className="flex flex-col lg:grid lg:grid-cols-2 w-[90%] m-auto gap-4 ">
           <Image
             src="/images/mushroom_fritter_soup.webp"
@@ -120,7 +120,7 @@ export default function Home() {
           <PopularDishes />
         </div>
       </section>
-      <section className="lg:grid lg:grid-cols-2 flex flex-col-reverse w-full  bg-softBlue ">
+      <section className="lg:grid lg:grid-cols-2 flex flex-col-reverse w-full  bg-warmBeige ">
         <div className="h-[400px]  lg:min-h-[500px] w-[90%] m-auto lg:w-full relative">
           <Image
             src="/images/ducky_restaurant_inside.webp"
@@ -129,7 +129,7 @@ export default function Home() {
             className="object-contain lg:object-cover"
           />
         </div>
-        <div className="min-h-[625px] lg:min-h-[500px] w-full text-charcoal flex flex-col items-center justify-evenly lg:justify-center gap-4">
+        <div className="min-h-[625px] lg:min-h-[500px] w-full text-coolGray flex flex-col items-center justify-evenly lg:justify-center gap-4">
           <div className=" z-10 relative ">
             <h2 className="text-4xl lg:text-6xl relative pb-2 ">Visit Us</h2>
           </div>
@@ -158,17 +158,17 @@ export default function Home() {
             <p>Closed Mondays</p>
           </div>
           <div className="flex lg:flex-row flex-col gap-8 z-10">
-            <button className="border-2 rounded py-4 px-8 border-charcoal bg-charcoal text-whiteBG">
+            <button className="border-2 rounded py-4 px-8 border-richNavy bg-richNavy text-creamBG font-semibold uppercase transition hover:bg-tealGreen hover:text-creamBG hover:scale-105">
               Reserve a Table
             </button>
-            <button className="border-2 rounded py-4 px-8 border-duckyOrange bg-duckyOrange text-whiteBG">
+            <button className="border-2 rounded py-4 px-8 border-mutedOrange bg-mutedOrange text-creamBG font-semibold uppercase transition hover:bg-goldenYellow hover:text-coolGray hover:scale-105">
               Order Online
             </button>
           </div>
         </div>
       </section>
       <section className=" flex flex-col  lg:grid  lg:grid-cols-2 bg-richNavy">
-        <div className="min-h-[500px] w-full  text-whiteBG flex flex-col items-center justify-around lg:justify-center lg:gap-4">
+        <div className="min-h-[500px] w-full  text-whiteBG flex flex-col items-center justify-around lg:gap-4">
           <h2 className="text-5xl text-center">Large Groups & Catering</h2>
           <p className="text-xl text-center lg:w-[75%] ">
             Host your next event with Stone Ducky. Whether it is here or there
@@ -205,14 +205,14 @@ export default function Home() {
             className="object-contain lg:object-cover"
           />
         </figure>
-        <div className="min-h-[400px] lg:min-h-[500px] w-full  text-whiteBG flex flex-col items-center justify-around lg:justify-center text-center gap-4">
+        <div className="min-h-[400px] lg:min-h-[500px] w-full  text-whiteBG flex flex-col items-center justify-around lg:justify-center lg:gap-12 text-center gap-4">
           <h2 className="text-5xl">Updates & Happenings</h2>
-          <p>
+          <p className="lg:w-2/3 text-center">
             Explore Bay Bulls and Savor the Stone Ducky Experience – Check Out
             Our Blog for the Latest!
           </p>
           <div>
-            <button className="border-2 rounded py-4 px-8 border-duckyYellow bg-whiteBG text-duckyYellow">
+            <button className="border-2 rounded py-4 px-8 border-richNavy bg-creamBG text-richNavy font-semibold uppercase transition hover:bg-mutedOrange hover:text-creamBG hover:scale-105">
               <Link href="/blog">Read More</Link>
             </button>
           </div>
