@@ -38,7 +38,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full px-4 py-4 z-50 flex items-center justify-between  font-semibold gap-4 text-whiteBG  transition-colors duration-300 ${
+      className={`fixed top-0 left-0 w-full px-4 py-4 z-50 flex items-center justify-between  font-semibold gap-4 text-whiteBG  transition-colors duration-300  ${
         isMenuOpen
           ? "bg-warmBeige"
           : isScrolled
@@ -60,7 +60,7 @@ export default function Navbar() {
           alt="Stone Ducky Logo"
           width={200}
           height={160}
-          className={`transition-width duration-300  ease-in-out ${isScrolled ? "w-32" : ""}`}
+          className={`transition-width duration-300  ease-in-out object-contain ${isScrolled ? "w-32" : ""}`}
         />
       </Link>
 

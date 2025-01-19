@@ -21,7 +21,7 @@ export default function MenuContent({
                 checked={isGlutenFree}
                 onChange={() => setIsGlutenFree(!isGlutenFree)}
               />
-              Gluten-Free Options
+              Gluten-Free By Request Options
             </label>
             <Image
               src="/images/gluten-free.png"
