@@ -2,19 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { FaChevronCircleRight } from "react-icons/fa";
-import About from "./components/about";
+
 import PopularDishes from "./components/populardishes";
-import VisitUs from "./components/visitUs";
-import Menu from "./components/menu";
-import VisitUsSeparator from "./components/visitUsSeperator";
+import FadeInImageContainer from "./components/fadeInImageContainer";
 
-import LargeEvents from "./components/largeEvents";
-
-import Catering from "./components/catering";
-
-import Blogs from "./components/blog";
-import MenuDivider from "./components/menuDivider";
-import PopularDishesDivider from "./components/popularDishesDivider";
 import Visit from "./components/visit";
 
 export default function Home() {
@@ -54,14 +45,19 @@ export default function Home() {
       <PopularDishesDivider />
       <PopularDishes /> */}
       <section className="w-full py-12 flex flex-col items-center justify-center bg-whiteBG">
-        <div className="flex flex-col lg:grid lg:grid-cols-2 w-[90%] m-auto gap-4 ">
-          <Image
-            src="/images/mushroom_fritter_soup.webp"
-            alt="Mushroom Fritter Soup"
-            height={400}
-            width={600}
-            className="object-cover "
-          />
+        <div className="flex flex-col lg:grid lg:grid-cols-2 w-[90%] m-auto ">
+          <FadeInImageContainer
+            className="min-h-[275px] lg:min-h-[500px] w-[90%] m-auto lg:w-full"
+            delay={0.5}
+          >
+            <Image
+              src="/images/mushroom_fritter_soup.webp"
+              alt="Mushroom Fritter Soup"
+              height={400}
+              width={600}
+              className="object-cover "
+            />
+          </FadeInImageContainer>
           <div className=" flex flex-col items-start justify-center gap-4">
             <div className="flex justify-between items-center">
               <h3 className="text-3xl lg:text-4xl w-2/3 lg:w-1/2 font-semibold text-mutedOrange">
@@ -77,45 +73,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* <section className="w-full bg-darkBlueBG text-whiteBG py-8">
-        <div className="w-[90%] m-auto grid grid-cols-4 gap-4 min-h-[500px] py-8">
-          <div className="col-span-1 flex flex-col items-center justify-center h-[400px] ">
-            <figure className="relative w-[90%] aspect-square ">
-              <Image
-                src="/images/mushroom_fritter_soup.webp"
-                alt="Mushroom Fritter Soup"
-                fill
-                className="object-cover rounded-full"
-              />
-            </figure>
-          </div>
-          <div className="col-span-1 flex flex-col items-end justify-end">
-            <figure className="relative w-[70%] aspect-square rounded-full ">
-              <Image
-                src="/images/stone_ducky_patio_view.webp"
-                alt="Stone Ducky Patio View"
-                fill
-                className="object-cover rounded-full"
-              />
-            </figure>
-          </div>
-          <div className="col-span-2 flex flex-col items-start justify-center gap-4">
-            <h2 className="text-2xl">Stone Ducky</h2>
-            <h3 className="text-4xl">About</h3>
-            <p>
-              Stone Ducky is a casual and intimate restaurant offering fresh,
-              homemade pizza and creatively inspired dishes. Close proximity to
-              the ocean provides scenic view to enhance your dining experience.
-            </p>
-          </div>
-        </div>
-      </section>
-      <figure className="relative h-[150px] w-full">
-        <Image src="/images/wavesOpacity.svg" alt="Waves" fill />
-      </figure>
-      <section className="">
-        <PopularDishes />
-      </section> */}
+
       <section className="w-full">
         <div className=" m-auto">
           <PopularDishes />
@@ -138,28 +96,35 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <figure className="h-[400px]  lg:min-h-[500px] w-[90%] m-auto lg:w-full relative">
+        <FadeInImageContainer
+          className="h-[400px] lg:min-h-[500px] w-[90%] m-auto lg:w-full"
+          delay={0.5}
+        >
           <Image
             src="/images/ducky_whales-min.webp"
             alt="Whales"
             fill
             className="object-contain lg:object-cover"
           />
-        </figure>
+        </FadeInImageContainer>
       </section>
       <section className="grid grid-cols-2">
         <figure className="min-[500px] w-full relative"></figure>
         <div className="min-[500px] w-full bg-duckyBlue text-whiteBG flex flex-col items-center justify-center gap-4"></div>
       </section>
       <section className="flex flex-col-reverse lg:grid lg:grid-cols-2 bg-tealGreen">
-        <figure className="h-[400px]  lg:min-h-[500px] w-[90%] m-auto lg:w-full relative">
+        <FadeInImageContainer
+          className="h-[400px] lg:min-h-[500px] w-[90%] m-auto lg:w-full"
+          delay={0.5}
+        >
           <Image
             src="/images/shareables_birds_eye.webp"
             alt="Birds eye view of entrees, appetizers, soups and cocktails"
             fill
             className="object-contain lg:object-cover"
           />
-        </figure>
+        </FadeInImageContainer>
+
         <div className="min-h-[400px] lg:min-h-[500px] w-full  text-whiteBG flex flex-col items-center justify-around lg:justify-center lg:gap-12 text-center gap-4">
           <h2 className="text-5xl">Updates & Happenings</h2>
           <p className="lg:w-2/3 text-center">

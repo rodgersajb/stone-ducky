@@ -2,27 +2,21 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import FadeInImageContainer from "./fadeInImageContainer";
 
 export default function Visit() {
   
 
   return (
     <section className="lg:grid lg:grid-cols-2 flex flex-col-reverse w-full bg-warmBeige">
-      <motion.div
-        className="h-[400px] lg:min-h-[500px] w-[90%] m-auto lg:w-full relative"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        delay={0.4}
-        viewport={{ once: true }} 
-      >
+     <FadeInImageContainer className="h-[400px] lg:min-h-[500px] w-[90%] m-auto lg:w-full" delay={0.5}>
         <Image
           src="/images/ducky_restaurant_inside.webp"
           alt="Inside of Stone Ducky"
           fill
           className="object-contain lg:object-cover"
         />
-      </motion.div>
+      </FadeInImageContainer>
       <div className="min-h-[625px] lg:min-h-[500px] w-full text-coolGray flex flex-col items-center justify-evenly lg:justify-center gap-4">
         <div className="z-10 relative">
           <h2 className="text-4xl lg:text-6xl relative pb-2">Visit Us</h2>

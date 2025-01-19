@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function FadeInImageContainer({ children, className, delay = 0.4 }) {
   return (
-    <motion.div
+    <motion.figure
       className={`relative ${className}`}
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -13,6 +13,6 @@ export default function FadeInImageContainer({ children, className, delay = 0.4 
       viewport={{ once: true }}
     >
       {children}
-    </motion.div>
+    </motion.figure>
   );
 }
