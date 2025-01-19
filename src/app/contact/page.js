@@ -6,9 +6,9 @@ export default async function Contact() {
     <main className=" bg-warmBeige overflow-x-hidden">
       <figure className="relative h-svh lg:h-screen w-full flex items-center justify-center z-20">
         <Image
-          className="object-cover -z-1"
-          src="/images/ingredients_pantry.jpg"
-          alt="Ingredients Pantry"
+          className="object-cover brightness-75  -z-1"
+          src="/images/popular_dishes.webp"
+          alt="Popular Stone Ducky dishes on a table"
           fill
         />
 

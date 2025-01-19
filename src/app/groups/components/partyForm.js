@@ -19,15 +19,15 @@ export default function PartyForm() {
         ref.current?.reset();
         try {
           const response = await sendPartyRequestEmail(formData);
-          console.log("Catering Email Response:", response);
-          toast.success("Catering Request Sent Successfully");
+          console.log("Party Email Response:", response);
+          toast.success("Request sent successfully, we'll be in touch!");
         } catch (error) {
           toast.error(
-            "Something went wrong while sending the catering request"
+            "Something went wrong while sending the party request"
           );
         }
       }}
-      className="flex flex-col w-full items-start justify-center px-2 py-4 gap-4 bg-warmBeige lg:text-xl lg:grid lg:grid-cols-2 lg:grid-rows-[repeat(8,min-content)] lg:place-items-center lg:gap-x-8 lg:px-14"
+      className="flex flex-col w-full items-start justify-start px-2 py-4 gap-4 bg-warmBeige lg:text-xl lg:grid lg:grid-cols-2 lg:grid-rows-[repeat(7,min-content)]  lg:gap-x-8 lg:px-14"
     >
       <div className="flex flex-col w-full lg:col-span-1 lg:row-span-1">
         <label htmlFor="name">
@@ -112,7 +112,7 @@ export default function PartyForm() {
         />
       </div>
 
-      <div className="flex flex-col w-full lg:col-span-1 lg:row-span-1">
+      <div className="flex flex-col w-full lg:col-span-2 lg:row-span-1">
         <label htmlFor="special-requests">
           Special Requests<span className="text-duckyOrange">*</span>
         </label>
@@ -127,7 +127,7 @@ export default function PartyForm() {
         />
       </div>
 
-      <div className="lg:col-span-1 lg:row-span-1 w-full md:w-2/3 lg:w-1/2">
+      <div className="lg:col-span-1 lg:row-span-1 w-full ">
         <SubmitButton />
       </div>
     </form>
