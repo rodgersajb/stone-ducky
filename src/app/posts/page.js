@@ -9,9 +9,11 @@ export default async function Blog() {
 
   return (
     <main className="flex flex-col gap-8">
-      <header className="h-svh lg:h-dvh w-full relative">
+      <header className="h-svh lg:h-dvh w-full relative flex flex-col items-center justify-center z-20 gap-4">
 
-        <Image src="/images/whales_houses_duck.webp" alt="A corner inside Stone Ducky restaurant with a whale, colorful houses and the Stone Ducky Logo displayed on the wall." fill className="object-cover" />
+        <Image src="/images/whales_houses_duck.webp" alt="A corner inside Stone Ducky restaurant with a whale, colorful houses and the Stone Ducky Logo displayed on the wall." fill className="object-cover -z-1 brightness-75" />
+        <h1 className="z-10 lg:text-6xl text-4xl text-whiteBG">Ducky Blog</h1>
+        <h3 className="z-10 lg:text-2xl text-xl text-whiteBG">What to Do on the Southern Shore</h3>
       </header>
       <div className="space-y-12 flex items-center justify-end w-[95%] m-auto pb-8">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
