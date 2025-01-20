@@ -38,11 +38,10 @@ export default function Home() {
         </div>
       </header>
 
- 
       <section className="w-full py-12 flex flex-col items-center justify-center bg-whiteBG">
-        <div className="flex flex-col lg:grid lg:grid-cols-2 w-[90%] m-auto ">
+        <div className="flex flex-col lg:min-h-[500px] lg:grid lg:grid-cols-2 w-[90%] m-auto lg:gap-8 items-center justify-center ">
           <FadeInImageContainer
-            className="min-h-[275px] lg:min-h-[500px] w-[90%] m-auto lg:w-full"
+            className="min-h-[275px]  w-[90%] m-auto lg:w-full"
             delay={0.5}
           >
             <Image

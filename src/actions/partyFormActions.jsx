@@ -39,7 +39,7 @@ export const sendPartyRequestEmail = async (formData) => {
     // Send email via Resend
     const response = await resend.emails.send({
       from: "Party Request Form <onboarding@resend.dev>",
-      to: "rodgersajbdev@gmail.com",
+      to: "info@stoneducky.ca",
       subject: "New Party Request Submission",
       reply_to: senderEmail,
       text: `

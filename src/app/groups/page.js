@@ -49,22 +49,22 @@ export default function LargeGroups() {
           alt="Ducky Restaurant Inside"
           fill
           priority
-          className="-z-1 object-cover brightness-90"
+          className="-z-1 object-cover brightness-75"
         />
         <h1 className="z-10 font-semibold text-6xl">Party Reservations</h1>
-        <h2 className="z-10 text-xl lg:text-2xl font-semibold">
+        <h3 className="z-10 text-xl lg:text-2xl font-semibold">
           Celebrations, Meetings, and Everything In Between
-        </h2>
+        </h3>
         <div className="grid grid-cols-2 gap-4">
           <button
             onClick={() => scrollToSection(formRef)}
-            className="btn btn-orange z-10  rounded font-semibold gap-2 text-center"
+            className="btn btn-mutedOrange btn-mutedOrange:hover z-10  rounded font-semibold gap-2 text-center"
           >
             Party Request 
           </button>
           <button
             onClick={() => scrollToSection(faqRef)}
-            className="btn btn-blue z-10 font-semibold gap-2 text-center"
+            className="btn btn-tealGreen btn-tealGreen:hover z-10 font-semibold gap-2 text-center"
           >
             party questions 
           </button>
