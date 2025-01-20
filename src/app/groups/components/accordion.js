@@ -10,7 +10,7 @@ const faqs = [
   {
     question: "How far in advance should I book for a large party?",
     answer:
-      "We recommend booking 2 weeks in advance of with a pre-ordered items received a week ahead of time.",
+      "We recommend booking 2 weeks in advance of with pre-ordered items received a week ahead of time.",
   },
   {
     question:

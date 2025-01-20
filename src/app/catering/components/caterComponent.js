@@ -45,11 +45,11 @@ export default function CaterComponent() {
           width={250}
           height={250}
           loading="lazy"
-          className="w-1/2 lg:w-auto lg:h-auto"
+          className="w-1/2 lg:w-[15%] lg:h-[15%]"
         />
-        <h2 className="w-[95%] m-auto text-center text-2xl lg:text-4xl">
+        <h2 className="w-[95%] lg:w-[50%] m-auto text-center text-2xl lg:text-4xl">
           Celebrate in Style with Fresh, Flavorful Catering from Stone Ducky
-          Restaurant!
+          Restaurant.
         </h2>
       </section>
       <CateringCarousel />

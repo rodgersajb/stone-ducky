@@ -4,8 +4,10 @@
 
 /* Define custom fonts */
 :root {
-  --font-poppins: "Poppins", sans-serif;
+  /* --font-poppins: "Poppins", sans-serif; */
   --font-dancingScript: "Dancing Script", cursive;
+  --font-libreBaskerville: "Libre Baskerville", serif;
+  --font-PlayfairDisplay: "Playfair Display", serif;
 }
 
 /* Base styles */
@@ -16,15 +18,10 @@
 
   h1,
   h2 {
-    font-family: var(--font-dancingScript), cursive; /* Apply Dancing Script to headings */
+    font-family: var(--font-PlayfairDisplay), serif; /* Apply Dancing Script to headings */
   }
 
-  p,
-  a,
-  li,
-  button {
-    font-family: var(--font-poppins), sans-serif; /* Apply Poppins to other elements */
-  }
+  
 
   html {
     scroll-behavior: smooth;

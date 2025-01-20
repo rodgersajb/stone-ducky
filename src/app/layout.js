@@ -2,7 +2,14 @@ import "react-datepicker/dist/react-datepicker.css";
 import "./globals.css";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
-import { Poppins, Cormorant_Garamond, Dancing_Script } from "next/font/google";
+import {
+  Poppins,
+  Libre_Baskerville,
+  Dancing_Script,
+  Source_Sans_3,
+  Lato,
+  Playfair_Display
+} from "next/font/google";
 import { Toaster } from "react-hot-toast";
 const poppins = Poppins({
   subsets: ["latin"],
@@ -10,11 +17,22 @@ const poppins = Poppins({
   variable: "--font-poppins", // Define a CSS variable for this font.
 });
 
-const cormorantGaramond = Cormorant_Garamond({
+const lato = Lato({
   subsets: ["latin"],
-  weight: ["400", "600", "700"], // Select the weights you need
-  style: ["italic", "normal"], // Include italic styles
-  variable: "--font-cormorant",
+  weight: ["400", "700"],
+  variable: "--font-lato",
+});
+
+const sourceSans = Source_Sans_3({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  variable: "--font-source-sans",
+});
+
+const libreBaskerville = Libre_Baskerville({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-libre-baskerville",
 });
 
 const dancingScript = Dancing_Script({
@@ -36,9 +54,9 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${poppins.variable} ${dancingScript.variable}`}
+      className={`$lato.variable} ${dancingScript.variable}`}
     >
-      <body className="font-poppins antialiased">
+      <body className="font-lato antialiased">
         <Navbar />
         {children}
         <Toaster position="bottom-center" />

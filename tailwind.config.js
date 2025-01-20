@@ -1,3 +1,5 @@
+const { Libre_Baskerville } = require("next/font/google");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
@@ -49,6 +51,8 @@ module.exports = {
           poppins: ["var(--font-poppins)", "sans-serif"],
           cormorant: ["var(--font-cormorant)", "serif"],
           dancingScript: ["var(--font-dancing-script)", "cursive"],
+          Libre_Baskerville: ["var(--font-libre-baskerville)", "serif"],
+          playfairDisplay: ["var(--font-playfair-display)", "serif"],
         },
         popover: {
           DEFAULT: "#ffffff",
