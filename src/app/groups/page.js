@@ -18,8 +18,8 @@ const images = [
     alt: "Wine glasses hanging and liquor bottles on a shelf",
   },
   {
-    src: "/images/catering_steaks.webp",
-    alt: "New York Striploin Steak with honey roasted carrots, dauphinoise potatoes, and balsamic reduction",
+    src: "/images/set_table_birds_eye.webp",
+    alt: "Birds eye view of a set table with plates, utensils, and napkins and delicious Stone Ducky food and cocktails",
   },
   {
     src: "/images/restaurant_inside_patio_view-min.webp",
