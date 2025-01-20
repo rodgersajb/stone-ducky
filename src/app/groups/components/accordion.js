@@ -41,8 +41,8 @@ export default function PartyAccordion() {
       <Accordion  type="single" collapsible>
         {faqs.map((faq, index) => (
           <AccordionItem value={`faq-${index}`} key={index}>
-            <AccordionTrigger>{faq.question}</AccordionTrigger>
-            <AccordionContent>{faq.answer}</AccordionContent>
+            <AccordionTrigger className="text-xl font-semibold ">{faq.question}</AccordionTrigger>
+            <AccordionContent className="text-lg text-charcoal">{faq.answer}</AccordionContent>
           </AccordionItem>
         ))}
       </Accordion>

@@ -47,14 +47,8 @@ export default function Test() {
       <div className=" lg:flex lg:flex-row flex-col w-full ">
         {/* Left Section */}
         <div className=" relative w-full min-h-[500px] lg:w-1/2 m-auto  flex flex-col items-center justify-center gap-10 z-10 text-whiteBG">
-          {/* <Image
-            className="lg:w-1/3 w-1/4"
-            src="/images/the_duck_chef.webp"
-            alt="Duck Chef Icon"
-            height={250}
-            width={250}
-          /> */}
-          <h2 className="lg:text-5xl text-4xl text-center">Our Menu</h2>
+        
+          <h2 className="lg:text-4xl text-2xl font-semibold text-center">Our Menu</h2>
           <h3 className=" text-2xl px-2 lg:text-2xl text-center lg:px-8 ">
             A Vibrant Dining Experience with Fantastic Cuisine, Clear Vision,
             and Exceptional Service.
@@ -84,7 +78,7 @@ export default function Test() {
                       />
                       {/* Text Overlay */}
                       <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white p-4">
-                        <h2 className="text-xl lg:text-4xl font-semibold mb-2">
+                        <h2 className="text-xl lg:text-4xl font-semibold mb-2 text-center">
                           {image.alt}
                         </h2>
                         <figure className="relative mb-2">
@@ -95,7 +89,7 @@ export default function Test() {
                             height={15}
                           />
                         </figure>
-                        <p className="text-sm lg:text-base w-3/4 text-center">
+                        <p className="text-sm lg:text-xl font-semibold w-3/4 text-center">
                           {image.description}
                         </p>
                       </div>

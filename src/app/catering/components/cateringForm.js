@@ -123,8 +123,8 @@ export default function CateringForm() {
 
       <figure className="relative hidden lg:block w-full h-[400px] lg:h-[600px] lg:col-start-2 lg:col-span-1 lg:row-start-1 lg:row-span-7">
         <Image
-          src="/images/catering_cake.webp"
-          alt="Chocolate cake with pecans and brownie crumble"
+          src="/images/catering_chicken_dish.webp"
+          alt="Oven Roasted Chicken with Arugula, Balsamic Drizzle and a Dauphinoise Potato"
           fill
           className="object-cover rounded"
         />

@@ -26,6 +26,7 @@ module.exports = {
         "nav-waves": "url('/images/navbar_waves.png')",
         "duck-feet": "url('/images/nav_duck_feet.png')",
         "circle-scribble": "url('/images/squiggle.svg')",
+        "navbar-waves": "url('/images/waves-2-large.svg')",
       },
       colors: {
         whiteBG: "#f7f7f7",

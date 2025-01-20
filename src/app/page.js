@@ -8,6 +8,7 @@ import FadeInImageContainer from "./components/fadeInImageContainer";
 
 import Visit from "./components/visit";
 
+
 export default function Home() {
   return (
     <main className="bg-whiteBG w-full overflow-x-hidden flex flex-col ">
@@ -76,7 +77,9 @@ export default function Home() {
       <Visit />
       <section className=" flex flex-col  lg:grid  lg:grid-cols-2 bg-richNavy">
         <div className="min-h-[500px] w-full  text-whiteBG flex flex-col items-center justify-around lg:gap-4">
-          <h2 className="text-5xl text-center">Large Groups & Catering</h2>
+          <h2 className="text-2xl lg:text-4xl text-center">
+            Large Groups & Catering
+          </h2>
           <p className="text-xl text-center lg:w-[75%] ">
             Host your next event with Stone Ducky. Whether it is here or there
             we'll make sure to make your next event a memorable one.
@@ -120,7 +123,7 @@ export default function Home() {
         </FadeInImageContainer>
 
         <div className="min-h-[400px] lg:min-h-[500px] w-full  text-whiteBG flex flex-col items-center justify-around lg:justify-center lg:gap-12 text-center gap-4">
-          <h2 className="text-5xl">Updates & Happenings</h2>
+          <h2 className="text-2xl lg:text-4xl">Updates & Happenings</h2>
           <p className="lg:w-2/3 text-center">
             Explore Bay Bulls and Savor the Stone Ducky Experience – Check Out
             Our Blog for the Latest!

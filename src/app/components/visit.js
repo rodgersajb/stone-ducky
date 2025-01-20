@@ -22,20 +22,20 @@ export default function Visit() {
       </FadeInImageContainer>
       <div className="min-h-[625px] lg:min-h-[500px] w-full text-coolGray flex flex-col items-center justify-evenly lg:justify-center gap-4">
         <div className="z-10 relative">
-          <h2 className="text-4xl lg:text-6xl relative pb-2">Visit Us</h2>
+          <h2 className="text-2xl lg:text-4xl relative pb-2">Visit Us</h2>
         </div>
 
-        <div className="lg:text-xl text-center">
+        <div className="lg:text-xl text-center font-semibold">
           <p>56 St Johns Rd</p>
           <p>Bay Bulls, NL A0A 1C0</p>
           <p>(709) 334-3825</p>
         </div>
 
-        <div className="flex gap-2 lg:text-xl">
+        <div className="flex gap-2 lg:text-xl font-semibold">
           <p>Tuesday/Thursday</p>
           <p>11:00 am - 8:00 pm</p>
         </div>
-        <div className="z-10 flex gap-2 lg:text-xl">
+        <div className="z-10 flex gap-2 lg:text-xl font-semibold">
           <p>Friday/Sunday</p>
           <p>11:00 am - 10:00 pm</p>
         </div>
@@ -46,7 +46,7 @@ export default function Visit() {
             height={100}
             width={100}
           />
-          <p className="relative before:content-[''] before:block before:h-48 before:w-48 before:bg-circle-scribble before:bg-contain before:bg-no-repeat before:absolute before:-top-8 before:-left-8 before:text-mutedOrange ">
+          <p className="relative before:content-[''] before:block before:h-52 before:w-52 before:bg-circle-scribble before:bg-contain before:bg-no-repeat before:absolute before:-top-10 before:-left-8 before:text-mutedOrange font-semibold ">
             Closed Mondays
           </p>
         </div>

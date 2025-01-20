@@ -27,9 +27,9 @@ export default function CaterComponent() {
         <h1 className="text-4xl lg:text-6xl z-10 text-center text-whiteBG font-semibold">
           Stone Ducky Catering
         </h1>
-        <h2 className="text-xl lg:text-3xl z-10 text-center text-whiteBG font-semibold">
+        <h3 className="text-xl lg:text-3xl z-10 text-center text-whiteBG font-semibold">
           Tailored Catering Solutions for Gatherings Big and Small
-        </h2>
+        </h3>
         <button
           className="z-10 bg-duckyOrange font-semibold text-whiteBG border border-duckyOrange py-4 px-6 rounded text-sm lg:text-xl"
           onClick={handleScroll}
@@ -47,7 +47,7 @@ export default function CaterComponent() {
           loading="lazy"
           className="w-1/2 lg:w-[15%] lg:h-[15%]"
         />
-        <h2 className="w-[95%] lg:w-[50%] m-auto text-center text-2xl lg:text-4xl">
+        <h2 className="w-[95%] lg:w-[60%] m-auto text-center text-2xl lg:text-4xl">
           Celebrate in Style with Fresh, Flavorful Catering from Stone Ducky
           Restaurant.
         </h2>

@@ -7,6 +7,9 @@ import { usePathname } from "next/navigation";
 
 import { FiMenu, FiX } from "react-icons/fi";
 
+import OrangeWave from "./orangeWave";
+import BlueWave from "./blueWave";
+
 const navLinks = [
   { label: "Menu", href: "/menu" },
   { label: "Large Groups", href: "/groups" },
@@ -38,11 +41,11 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full px-4 py-4 z-50 flex items-center justify-between  font-semibold gap-4 text-whiteBG  transition-colors duration-300  ${
+      className={`fixed top-0 left-0 w-full px-4 py-4 z-50 flex items-center justify-between font-semibold gap-4 text-whiteBG transition-colors duration-300 ${
         isMenuOpen
-          ? "bg-warmBeige"
+          ? "bg-warmBeige "
           : isScrolled
-            ? "bg-whiteBG shadow-lg"
+            ? "bg-whiteBG shadow-lg "
             : "bg-transparent text-whiteBG"
       }`}
     >
@@ -54,19 +57,31 @@ export default function Navbar() {
         {isMenuOpen ? <FiX /> : <FiMenu />}
       </button>
 
-      <Link className=" hidden z-50 cursor-pointer lg:flex justify-end" href="/">
+      <Link className="hidden z-50 cursor-pointer lg:flex justify-end" href="/">
         <Image
           src="/images/logo_stone_ducky.png"
           alt="Stone Ducky Logo"
           width={200}
           height={160}
-          className={`transition-width duration-300  ease-in-out object-contain ${isScrolled ? "w-32" : ""}`}
+          className={`transition-width duration-300 ease-in-out object-contain ${
+            isScrolled ? "w-32" : ""
+          }`}
         />
       </Link>
 
+      {isScrolled && (
+        <>
+        
+        <BlueWave />
+        <OrangeWave />
+        </>
+      )}
+
       {/* Desktop Navigation */}
       <ul
-        className={`hidden md:flex items-center justify-center gap-10  text-xl z-50 ${isScrolled ? "text-charcoal" : "text-whiteBG"}`}
+        className={`hidden md:flex items-center justify-center gap-10 text-xl z-50 ${
+          isScrolled ? "text-charcoal" : "text-whiteBG"
+        }`}
       >
         <li>
           <Link href="https://order.tbdine.com/pickup/50580/menu" className="">
@@ -84,7 +99,7 @@ export default function Navbar() {
           </li>
         ))}
 
-        <li className="text-whiteBG  bg-duckyOrange py-4 px-4 rounded ">
+        <li className="text-whiteBG bg-duckyOrange py-4 px-4 rounded ">
           <Link href="https://www.tbdine.com/book/restaurant/stone-ducky?idApp=71672&language=en-us">
             Book a Table
           </Link>
@@ -99,7 +114,7 @@ export default function Navbar() {
             : "-translate-y-full opacity-0"
         }`}
       >
-        <ul className="flex flex-col items-end justify-start z-50 gap-4 p-4 text-lg    w-full min-h-[50svh]">
+        <ul className="flex flex-col items-end justify-start z-50 gap-4 p-4 text-lg w-full min-h-[50svh]">
           {navLinks.map((link, index) => (
             <li key={index} className="cursor-pointer hover:underline">
               <Link href={link.href} onClick={() => setIsMenuOpen(false)}>
