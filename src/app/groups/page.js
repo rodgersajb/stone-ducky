@@ -51,14 +51,14 @@ export default function LargeGroups() {
           priority
           className="-z-1 object-cover brightness-75"
         />
-        <h1 className="z-10 font-semibold text-4xl lg:text-6xl">Party Reservations</h1>
-        <h3 className="z-10 text-xl lg:text-2xl  font-semibold">
+        <h1 className="z-10 font-semibold text-4xl lg:text-6xl px-2">Group Bookings</h1>
+        <h3 className="z-10 text-xl lg:text-2xl  font-semibold px-2">
           Celebrations, Meetings, and Everything In Between
         </h3>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-rows-2 lg:grid-cols-2 gap-4">
           <button
             onClick={() => scrollToSection(formRef)}
-            className="btn btn-mutedOrange btn-mutedOrange:hover z-10  rounded font-semibold gap-2 text-center"
+            className="btn btn-richNavy btn-richNavy:hover z-10  rounded font-semibold gap-2 text-center"
           >
             Party Request 
           </button>

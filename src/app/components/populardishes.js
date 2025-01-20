@@ -49,7 +49,7 @@ export default function Test() {
         <div className=" relative w-full min-h-[500px] lg:w-1/2 m-auto  flex flex-col items-center justify-center gap-10 z-10 text-whiteBG">
         
           <h2 className="lg:text-4xl text-2xl font-semibold text-center">Our Menu</h2>
-          <h3 className=" text-2xl px-2 lg:text-2xl text-center lg:px-8 ">
+          <h3 className=" text-xl px-2 lg:text-2xl text-center lg:px-8 ">
             A Vibrant Dining Experience with Fantastic Cuisine, Clear Vision,
             and Exceptional Service.
           </h3>
@@ -99,25 +99,13 @@ export default function Test() {
               </div>
             </div>
 
-            {/* Navigation Buttons */}
-            {/* <button
-              onClick={() => embla && embla.scrollPrev()}
-              className="absolute left-8 top-1/3 transform -translate-y-1/2  text-duckyOrange rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-700"
-            >
-              <GrLinkPrevious className="text-2xl" />
-            </button>
-            <button
-              onClick={() => embla && embla.scrollNext()}
-              className="absolute right-10 top-1/3 transform -translate-y-1/2  text-duckyOrange rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-700"
-            >
-              <GrLinkNext className="text-2xl" />
-            </button> */}
+           
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex gap-2 pb-8 lg:pb-0">
               {images.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => embla && embla.scrollTo(index)}
-                  className={`w-3 h-3 rounded-full transition ${
+                  className={`w-3 h-3 rounded-full transition mb-4 ${
                     selectedIndex === index ? "bg-white" : "bg-gray-500"
                   }`}
                 />

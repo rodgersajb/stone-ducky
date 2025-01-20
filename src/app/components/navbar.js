@@ -12,7 +12,7 @@ import BlueWave from "./blueWave";
 
 const navLinks = [
   { label: "Menu", href: "/menu" },
-  { label: "Large Groups", href: "/groups" },
+  { label: "Group Bookings", href: "/groups" },
   { label: "Catering", href: "/catering" },
   { label: "Contact", href: "/contact" },
   { label: "Blog", href: "/posts" },
@@ -43,9 +43,9 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 w-full px-4 py-4 z-50 flex items-center justify-between font-semibold gap-4 text-whiteBG transition-colors duration-300 ${
         isMenuOpen
-          ? "bg-warmBeige "
+          ? "bg-softBlue "
           : isScrolled
-            ? "bg-whiteBG shadow-lg "
+            ? "bg-creamBG shadow-lg "
             : "bg-transparent text-whiteBG"
       }`}
     >
@@ -71,16 +71,15 @@ export default function Navbar() {
 
       {isScrolled && (
         <>
-        
-        <BlueWave />
-        <OrangeWave />
+          <BlueWave />
+          <OrangeWave />
         </>
       )}
 
       {/* Desktop Navigation */}
       <ul
         className={`hidden md:flex items-center justify-center gap-10 text-xl z-50 ${
-          isScrolled ? "text-charcoal" : "text-whiteBG"
+          isScrolled ? "text-coolGray" : "text-whiteBG"
         }`}
       >
         <li>
@@ -108,13 +107,13 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`absolute top-full left-0 w-full h-svh flex flex-col items-center justify-center bg-warmBeige bg-contain bg-no-repeat border-t-2 z-49 border-t-duckyOrange text-duckyOrange bg-mobile-duck-bg shadow-lg transition-all duration-300 ease-in-out ${
+        className={`absolute top-full left-0 w-full h-svh flex flex-col items-center justify-center bg-softBlue bg-contain bg-no-repeat border-t-2 z-49 border-t-duckyOrange text-duckyOrange bg-mobile-duck-bg shadow-lg transition-all duration-300 ease-in-out ${
           isMenuOpen
             ? "translate-y-0 opacity-100"
             : "-translate-y-full opacity-0"
         }`}
       >
-        <ul className="flex flex-col items-end justify-start z-50 gap-4 p-4 text-lg w-full min-h-[50svh]">
+        <ul className="flex flex-col items-end justify-start z-50 gap-4 p-4 text-lg w-full min-h-[60svh] text-duckyBlue font-Libre_Baskerville">
           {navLinks.map((link, index) => (
             <li key={index} className="cursor-pointer hover:underline">
               <Link href={link.href} onClick={() => setIsMenuOpen(false)}>
@@ -122,6 +121,19 @@ export default function Navbar() {
               </Link>
             </li>
           ))}
+          <li>
+            <Link
+              href="https://order.tbdine.com/pickup/50580/menu"
+              className=""
+            >
+              Order Online
+            </Link>
+          </li>
+          <li className="  ">
+            <Link href="https://www.tbdine.com/book/restaurant/stone-ducky?idApp=71672&language=en-us">
+              Book a Table
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>

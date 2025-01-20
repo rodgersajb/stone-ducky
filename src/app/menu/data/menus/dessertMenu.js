@@ -33,8 +33,8 @@ const dessertMenu = {
       price: 10,
       description: "Whipped cream, caramel sauce, vanilla ice cream.",
       glutenFree: false,
-      dairyFree: true,
-      image: dairyFree,
+      dairyFree: false,
+      
     },
     {
       title: "Ice Cream",

@@ -80,7 +80,7 @@ export default function Home() {
           <h2 className="text-2xl lg:text-4xl text-center">
             Large Groups & Catering
           </h2>
-          <p className="text-xl text-center lg:w-[75%] ">
+          <p className="lg:text-xl text-center lg:w-[75%] font-semibold w-[95%]">
             Host your next event with Stone Ducky. Whether it is here or there
             we'll make sure to make your next event a memorable one.
           </p>
@@ -124,7 +124,7 @@ export default function Home() {
 
         <div className="min-h-[400px] lg:min-h-[500px] w-full  text-whiteBG flex flex-col items-center justify-around lg:justify-center lg:gap-12 text-center gap-4">
           <h2 className="text-2xl lg:text-4xl">Updates & Happenings</h2>
-          <p className="lg:w-2/3 text-center">
+          <p className="lg:w-2/3 text-center font-semibold">
             Explore Bay Bulls and Savor the Stone Ducky Experience – Check Out
             Our Blog for the Latest!
           </p>

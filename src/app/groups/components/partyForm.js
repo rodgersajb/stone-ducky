@@ -5,6 +5,7 @@ import DatePicker from "react-datepicker";
 import SubmitButton from "@/app/components/submitButton";
 import { sendPartyRequestEmail } from "@/actions/partyFormActions";
 import toast from "react-hot-toast";
+import Image from "next/image";
 
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -27,7 +28,7 @@ export default function PartyForm() {
           );
         }
       }}
-      className="flex flex-col w-full items-start justify-start px-2 py-4 gap-4 bg-warmBeige lg:text-xl lg:grid lg:grid-cols-2 lg:grid-rows-[repeat(7,min-content)]  lg:gap-x-8 lg:px-14"
+      className="flex flex-col w-full items-start justify-start px-2 py-4 gap-4 bg-creamBG lg:text-xl lg:grid lg:grid-cols-2 lg:grid-rows-[repeat(7,min-content)]  lg:gap-x-8 lg:px-14"
     >
       <div className="flex flex-col w-full lg:col-span-1 lg:row-span-1">
         <label htmlFor="name">
@@ -112,7 +113,7 @@ export default function PartyForm() {
         />
       </div>
 
-      <div className="flex flex-col w-full lg:col-span-2 lg:row-span-1">
+      <div className="flex flex-col w-full lg:col-span-1 lg:row-span-1">
         <label htmlFor="special-requests">
           Special Requests<span className="text-duckyOrange">*</span>
         </label>
@@ -130,6 +131,15 @@ export default function PartyForm() {
       <div className="lg:col-span-1 lg:row-span-1 w-full ">
         <SubmitButton />
       </div>
+
+       <figure className="relative hidden lg:block w-full h-[400px] lg:h-[600px] lg:col-start-2 lg:col-span-1 lg:row-start-1 lg:row-span-7">
+              <Image
+                src="/images/cocktails_dishes.webp"
+                alt="Red Wine, Pasta, Pepporoni Pizza, Desserts and a refreshing cocktail named the Amore"
+                fill
+                className="object-cover rounded"
+              />
+            </figure>
     </form>
   );
 }
