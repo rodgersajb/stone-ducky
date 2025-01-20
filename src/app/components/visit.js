@@ -9,7 +9,10 @@ export default function Visit() {
 
   return (
     <section className="lg:grid lg:grid-cols-2 flex flex-col-reverse w-full bg-warmBeige">
-     <FadeInImageContainer className="h-[400px] lg:min-h-[500px] w-[90%] m-auto lg:w-full" delay={0.5}>
+      <FadeInImageContainer
+        className="h-[400px] lg:min-h-[500px] w-[90%] m-auto lg:w-full"
+        delay={0.5}
+      >
         <Image
           src="/images/ducky_restaurant_inside.webp"
           alt="Inside of Stone Ducky"
@@ -43,7 +46,9 @@ export default function Visit() {
             height={100}
             width={100}
           />
-          <p>Closed Mondays</p>
+          <p className="relative before:content-[''] before:block before:h-48 before:w-48 before:bg-circle-scribble before:bg-contain before:bg-no-repeat before:absolute before:-top-8 before:-left-8 before:text-mutedOrange ">
+            Closed Mondays
+          </p>
         </div>
         <div className="flex lg:flex-row flex-col gap-8 z-10">
           <button className="btn btn-richNavy btn-richNavy:hover">

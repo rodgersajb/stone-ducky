@@ -24,7 +24,7 @@ export default function CaterComponent() {
           priority={true}
           className="-z-1 object-cover brightness-50"
         />
-        <h1 className="text-6xl z-10 text-center text-whiteBG font-semibold">
+        <h1 className="text-4xl lg:text-6xl z-10 text-center text-whiteBG font-semibold">
           Stone Ducky Catering
         </h1>
         <h2 className="text-xl lg:text-3xl z-10 text-center text-whiteBG font-semibold">

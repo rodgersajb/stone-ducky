@@ -25,6 +25,7 @@ module.exports = {
         "food-duck-feet-bg": "url('/images/food_duck_feet_bg.webp')",
         "nav-waves": "url('/images/navbar_waves.png')",
         "duck-feet": "url('/images/nav_duck_feet.png')",
+        "circle-scribble": "url('/images/squiggle.svg')",
       },
       colors: {
         whiteBG: "#f7f7f7",
@@ -48,9 +49,6 @@ module.exports = {
           foreground: "#000000",
         },
         fontFamily: {
-          poppins: ["var(--font-poppins)", "sans-serif"],
-          cormorant: ["var(--font-cormorant)", "serif"],
-          dancingScript: ["var(--font-dancing-script)", "cursive"],
           Libre_Baskerville: ["var(--font-libre-baskerville)", "serif"],
           playfairDisplay: ["var(--font-playfair-display)", "serif"],
         },

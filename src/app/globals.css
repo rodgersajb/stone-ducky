@@ -8,6 +8,8 @@
   --font-dancingScript: "Dancing Script", cursive;
   --font-libreBaskerville: "Libre Baskerville", serif;
   --font-PlayfairDisplay: "Playfair Display", serif;
+  --font-sourceSansPro: "Source Sans Pro", sans-serif;
+  --font-loto: "Lato", sans-serif;
 }
 
 /* Base styles */
@@ -18,10 +20,8 @@
 
   h1,
   h2 {
-    font-family: var(--font-PlayfairDisplay), serif; /* Apply Dancing Script to headings */
+    font-family: var(--font-libreBaskerville), serif; /* Apply Dancing Script to headings */
   }
-
-  
 
   html {
     scroll-behavior: smooth;
@@ -30,7 +30,7 @@
   body {
     margin: 0;
     padding: 0;
-    font-family: var(--font-poppins), sans-serif; /* Default font */
+    font-family: var(--font-sourceSansPro), sans-serif; /* Default font */
     line-height: 1.6;
     background-color: #f5f2ed; /* Set default background to creamBG */
   }

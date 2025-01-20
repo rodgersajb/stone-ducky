@@ -18,7 +18,7 @@ export default function Menu() {
           fill
           className="object-cover "
         />
-        <h1 className="z-10 font-semibold text-6xl text-white">Food & Drink</h1>
+        <h1 className="z-10 font-semibold text-center  text-4xl lg:text-6xl text-white">Food & Drink</h1>
       </header>
       <section className="w-full pt-20 bg-stone-ducky-icons-background bg-contain">
         <figure className="flex flex-col justify-center items-center">

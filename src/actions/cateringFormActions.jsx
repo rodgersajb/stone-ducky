@@ -33,7 +33,7 @@ export const sendCateringEmail = async (formData) => {
   try {
     // Send email via Resend
     const response = await resend.emails.send({
-      from: "Catering Form <onboarding@resend.dev>",
+      from: "Catering Form <info@stoneducky.ca>",
       to: "info@stoneducky.ca",
       subject: "New Catering Request Submission",
       reply_to: senderEmail,

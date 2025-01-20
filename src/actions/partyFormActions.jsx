@@ -38,7 +38,7 @@ export const sendPartyRequestEmail = async (formData) => {
   try {
     // Send email via Resend
     const response = await resend.emails.send({
-      from: "Party Request Form <onboarding@resend.dev>",
+      from: "Party Request Form <info@stoneducky.ca>",
       to: "info@stoneducky.ca",
       subject: "New Party Request Submission",
       reply_to: senderEmail,

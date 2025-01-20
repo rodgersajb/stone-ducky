@@ -13,14 +13,14 @@ export default function Home() {
     <main className="bg-whiteBG w-full overflow-x-hidden flex flex-col ">
       <header className="relative h-svh lg:h-dvh w-full flex flex-col text-white z-1">
         <Image
-          className="object-cover  -z-1 "
+          className="object-cover brightness-75  -z-1 "
           src="/images/homepage_header_4.webp"
           alt="Summer View of the Stone Ducky Patio"
           fill
         />
 
         <div className="min-h-dvh flex flex-col gap-8 items-center justify-center z-40">
-          <h2 className="text-6xl lg:w-1/3 text-center px-4 py-2 text-white  font-[var(--font-cormorant)] italic">
+          <h2 className="text-4xl lg:text-6xl lg:w-1/3 text-center px-4 py-2 text-white   ">
             Inspired Dining with an Ocean View
           </h2>
           <div className="flex gap-4 lg:flex-row flex-col">
@@ -54,7 +54,7 @@ export default function Home() {
           </FadeInImageContainer>
           <div className=" flex flex-col items-start justify-center gap-4">
             <div className="flex justify-between items-center">
-              <h3 className="text-3xl lg:text-4xl w-2/3 lg:w-1/2 font-semibold text-mutedOrange">
+              <h3 className="text-3xl lg:text-4xl w-2/3 lg:w-1/2  font-semibold text-mutedOrange ">
                 Unique Dining Experience With Stunning Oceanfront Views
               </h3>
             </div>

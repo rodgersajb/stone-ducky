@@ -51,8 +51,8 @@ export default function LargeGroups() {
           priority
           className="-z-1 object-cover brightness-75"
         />
-        <h1 className="z-10 font-semibold text-6xl">Party Reservations</h1>
-        <h3 className="z-10 text-xl lg:text-2xl font-semibold">
+        <h1 className="z-10 font-semibold text-4xl lg:text-6xl">Party Reservations</h1>
+        <h3 className="z-10 text-xl lg:text-2xl  font-semibold">
           Celebrations, Meetings, and Everything In Between
         </h3>
         <div className="grid grid-cols-2 gap-4">
