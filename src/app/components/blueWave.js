@@ -2,7 +2,7 @@
 
 export default function BlueWave() {
   return (
-    <figure className="absolute -top-8 left-0 w-full overflow-hidden leading-none h-[100px]">
+    <figure className="absolute -top-12 left-0 w-full overflow-hidden leading-none h-[100px]">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1000 100"

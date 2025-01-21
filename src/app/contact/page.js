@@ -1,6 +1,12 @@
 import Image from "next/image";
 import ContactForm from "../components/contactForm";
 
+export const metadata = {
+  title: "Contact",
+  description:
+    "Contact Stone Ducky to plan your visit or inquire about our menu and services. Conveniently located near St. John’s, we’re happy to help.",
+};
+
 export default async function Contact() {
   return (
     <main className=" bg-warmBeige overflow-x-hidden">

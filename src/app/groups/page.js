@@ -1,12 +1,14 @@
-"use client";
-import { GiForkKnifeSpoon } from "react-icons/gi";
-import { IoIosImages } from "react-icons/io";
-
 import Image from "next/image";
-import { useRef } from "react";
 import PartyAccordion from "./components/accordion";
 import PartyForm from "./components/partyForm";
 import PartyImages from "./components/partyImages";
+import ScrollButtons from "./components/scrollButtons";
+
+export const metadata = {
+  title: "Catering ",
+  description:
+    "Planning an event? Stone Ducky offers full-service catering with a menu crafted to your needs. Conveniently located near St. John’s for seamless event planning",
+};
 
 const images = [
   {
@@ -32,15 +34,6 @@ const images = [
 ];
 
 export default function LargeGroups() {
-  const faqRef = useRef(null);
-  const formRef = useRef(null);
-
-  const scrollToSection = (ref) => {
-    ref.current?.scrollIntoView({
-      behavior: "smooth",
-    });
-  };
-
   return (
     <main className="">
       <header className="h-svh lg:h-dvh flex flex-col items-center justify-center gap-4 w-full relative text-white text-center">
@@ -51,24 +44,14 @@ export default function LargeGroups() {
           priority
           className="-z-1 object-cover brightness-75"
         />
-        <h1 className="z-10 font-semibold text-4xl lg:text-6xl px-2">Group Bookings</h1>
-        <h3 className="z-10 text-xl lg:text-2xl  font-semibold px-2">
+        <h1 className="z-10 font-semibold text-4xl lg:text-6xl px-2">
+          Group Bookings
+        </h1>
+        <h3 className="z-10 text-xl lg:text-2xl font-semibold px-2">
           Celebrations, Meetings, and Everything In Between
         </h3>
-        <div className="grid grid-rows-2 lg:grid-cols-2 gap-4">
-          <button
-            onClick={() => scrollToSection(formRef)}
-            className="btn btn-richNavy btn-richNavy:hover z-10  rounded font-semibold gap-2 text-center"
-          >
-            Party Request 
-          </button>
-          <button
-            onClick={() => scrollToSection(faqRef)}
-            className="btn btn-tealGreen btn-tealGreen:hover z-10 font-semibold gap-2 text-center"
-          >
-            party questions 
-          </button>
-        </div>
+        
+        <ScrollButtons />
       </header>
       <section className="bg-whiteBG flex flex-col z-30 py-10">
         <ul className="grid grid-cols-3 grid-rows-3 gap-4 w-[90%] m-auto max-h-[1000px]">
@@ -77,13 +60,13 @@ export default function LargeGroups() {
           ))}
         </ul>
       </section>
-      <div ref={faqRef}>
+      <div id="faq-section">
         <PartyAccordion />
       </div>
       <h2 className="lg:text-4xl text-2xl text-center pb-8">
         Submit Your Request for Your Large Party Reservation
       </h2>
-      <div ref={formRef}>
+      <div id="form-section">
         <PartyForm />
       </div>
     </main>

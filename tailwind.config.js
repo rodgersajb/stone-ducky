@@ -12,8 +12,6 @@ module.exports = {
     extend: {
       backgroundImage: {
         "ocean-side-view": "url('/images/ocean-side-view.webp')",
-        "stone-ducky-icons-background":
-          "url('/images/stone_ducky_background_1.svg')",
         "orange-BG": "url('/images/background_orange.webp')",
         "summer-patio": "url('/images/stone_ducky_patio_view.webp')",
         "blue-duck-BG": "url('/images/ducky_blue_BG.webp')",
@@ -27,6 +25,7 @@ module.exports = {
         "duck-feet": "url('/images/nav_duck_feet.png')",
         "circle-scribble": "url('/images/squiggle.svg')",
         "navbar-waves": "url('/images/waves-2-large.svg')",
+        "navbar-ducks": "url('/images/blue_seperator.webp')",
       },
       colors: {
         whiteBG: "#f7f7f7",

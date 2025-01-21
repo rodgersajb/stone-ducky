@@ -1,5 +1,6 @@
 const pizzaMenu = {
   Pizzas: [
+    { title: "Gluten-Free crusts are available for small pizzas only" },
     {
       title: "Margherita",
       price: 20,
@@ -65,7 +66,6 @@ const pizzaMenu = {
       dairyFree: false,
     },
   ],
- 
 };
 
 export default pizzaMenu;

@@ -23,7 +23,7 @@ export const metadata = {
     template: "%s | Stone Ducky Restaurant",
   },
   description:
-    "Stone Ducky is a casual and intimate restaurant offering fresh, homemade pizza and creatively inspired dishes. Close proximity to the ocean provides scenic view to enhance your dining experience.",
+    "Stone Ducky is a cozy, oceanfront restaurant offering fresh, homemade pizza and creatively inspired dishes. Just a 30-minute drive from downtown St. John’s, enjoy scenic views and a memorable dining experience.",
 };
 
 export default function RootLayout({ children }) {

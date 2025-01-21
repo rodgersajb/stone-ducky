@@ -49,7 +49,7 @@ export default function Navbar() {
         isMenuOpen
           ? "bg-softBlue "
           : isScrolled
-            ? "bg-creamBG shadow-lg "
+            ? "bg-creamBG bg-navbar-ducks bg-cover shadow-lg "
             : "bg-transparent text-whiteBG"
       }`}
     >
@@ -73,12 +73,12 @@ export default function Navbar() {
         />
       </Link>
 
-      {isScrolled && (
+      {/* {isScrolled && (
         <>
           <BlueWave />
           <OrangeWave />
         </>
-      )}
+      )} */}
 
       {/* Desktop Navigation */}
       <ul
@@ -117,9 +117,14 @@ export default function Navbar() {
             : "-translate-y-full opacity-0"
         }`}
       >
-        <ul className="flex flex-col mt-8 items-start border-2 border-mutedOrange rounded justify-center z-50 gap-4 p-4 text-lg w-[80%]   bg-softBlue text-sm text-mutedOrange font-Libre_Baskerville">
+        <ul className="flex flex-col mt-8 items-start border-2 border-mutedOrange rounded justify-center z-50 gap-4 p-4  w-[80%]   bg-softBlue text-sm text-mutedOrange font-Libre_Baskerville">
           {navLinks.map((link, index) => (
-            <li key={index} className="cursor-pointer hover:underline">
+            <li
+              key={index}
+              className={`cursor-pointer ${
+                pathname === link.href ? "text-duckyBlue font-bold" : ""
+              }`}
+            >
               <Link href={link.href} onClick={() => setIsMenuOpen(false)}>
                 {link.label}
               </Link>

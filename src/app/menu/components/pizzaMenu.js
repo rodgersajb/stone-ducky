@@ -9,6 +9,9 @@ const { filteredMenu, isGlutenFree, isDairyFree, setIsGlutenFree, setIsDairyFree
 
   // reusable Menu Component that will display the filtered menu
    return (
-     <MenuContent filteredMenu={filteredMenu} isDairyFree={isDairyFree} isGlutenFree={isGlutenFree} setIsDairyFree={setIsDairyFree} setIsGlutenFree={setIsGlutenFree} />
+    <>
+    
+    <MenuContent filteredMenu={filteredMenu} isDairyFree={isDairyFree} isGlutenFree={isGlutenFree} setIsDairyFree={setIsDairyFree} setIsGlutenFree={setIsGlutenFree} />
+    </>
    );
 }
