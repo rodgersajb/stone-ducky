@@ -8,14 +8,14 @@ export default function PartyImages({ image, index }) {
         key={index}
         className={`z-10 ${
           index === 0
-            ? "col-span-2 row-span-1" // First image spans 2 columns
+            ? "col-span-2 row-span-1" 
             : index === 1
-              ? "col-span-1 row-span-2" // Second image spans 2 rows
+              ? "col-span-1 row-span-2" 
               : index === 2
-                ? "col-span-2 row-span-1" // Third image spans 2 columns
+                ? "col-span-2 row-span-1" 
                 : index === 3
-                  ? "col-span-1 row-span-1" // Fourth image takes 1 cell
-                  : "col-span-2 row-span-1" // Fifth image spans 2 columns
+                  ? "col-span-1 row-span-1" 
+                  : "col-span-2 row-span-1" 
         }`}
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}

@@ -8,7 +8,6 @@ import FadeInImageContainer from "./components/fadeInImageContainer";
 
 import Visit from "./components/visit";
 
-
 export default function Home() {
   return (
     <main className="bg-whiteBG w-full overflow-x-hidden flex flex-col ">
@@ -42,10 +41,7 @@ export default function Home() {
 
       <section className="w-full py-12 flex flex-col items-center justify-center bg-whiteBG">
         <div className="flex flex-col lg:min-h-[500px] lg:grid lg:grid-cols-2 w-[90%] m-auto lg:gap-8 items-center justify-center ">
-          <FadeInImageContainer
-            className="min-h-[275px]  w-[90%] m-auto lg:w-full"
-            delay={0.5}
-          >
+          <FadeInImageContainer className="min-h-[275px]  w-[90%] m-auto lg:w-full">
             <Image
               src="/images/mushroom_fritter_soup.webp"
               alt="Mushroom Fritter Soup"
@@ -71,13 +67,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full">
-        <div className=" m-auto">
+      <section className="lg:w-[95%] lg:m-auto">
+        
           <PopularDishes />
-        </div>
+        
       </section>
-      <Visit />
-      <section className=" flex flex-col  lg:grid  lg:grid-cols-2 bg-richNavy">
+      <section className="lg:w-[95%] lg:m-auto">
+        <Visit />
+      </section>
+      <section className=" flex flex-col lg:w-[95%] lg:m-auto lg:grid  lg:grid-cols-2 bg-richNavy">
         <div className="min-h-[500px] w-full  text-whiteBG flex flex-col items-center justify-around lg:gap-4">
           <h2 className="text-2xl lg:text-4xl text-center">
             Large Groups & Catering
@@ -108,11 +106,8 @@ export default function Home() {
           />
         </FadeInImageContainer>
       </section>
-      <section className="grid grid-cols-2">
-        <figure className="min-[500px] w-full relative"></figure>
-        <div className="min-[500px] w-full bg-duckyBlue text-whiteBG flex flex-col items-center justify-center gap-4"></div>
-      </section>
-      <section className="flex flex-col-reverse lg:grid lg:grid-cols-2 bg-tealGreen">
+
+      <section className="flex flex-col-reverse lg:w-[95%] lg:m-auto lg:grid lg:grid-cols-2 bg-tealGreen">
         <FadeInImageContainer
           className="h-[400px] lg:min-h-[500px] w-[90%] m-auto lg:w-full"
           delay={0.5}
@@ -138,6 +133,9 @@ export default function Home() {
             </button>
           </div>
         </div>
+      </section>
+      <section className="relative w-full m-auto h-[100px] ">
+        <Image src="/images/flower_pattern.png" alt="Duck Feet" fill loading="lazy" className="object-cover"/>
       </section>
     </main>
   );
