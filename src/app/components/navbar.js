@@ -7,6 +7,10 @@ import { usePathname } from "next/navigation";
 
 import { FiMenu, FiX } from "react-icons/fi";
 
+import { FaFacebookF } from "react-icons/fa";
+import { GrInstagram } from "react-icons/gr";
+import { FaTiktok } from "react-icons/fa";
+
 import OrangeWave from "./orangeWave";
 import BlueWave from "./blueWave";
 
@@ -68,7 +72,6 @@ export default function Navbar() {
           }`}
         />
       </Link>
-      
 
       {isScrolled && (
         <>
@@ -108,13 +111,13 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`absolute top-full left-0 w-full h-svh flex flex-col items-center justify-center bg-softBlue bg-contain bg-no-repeat border-t-2 z-49 border-t-duckyOrange text-duckyOrange bg-mobile-duck-bg shadow-lg transition-all duration-300 ease-in-out ${
+        className={`absolute top-full left-0 w-full h-svh flex flex-col items-center justify-start bg-softBlue bg-contain bg-no-repeat border-t-2 z-49 border-t-duckyOrange text-duckyOrange bg-mobile-duck-bg shadow-lg transition-all duration-300 ease-in-out ${
           isMenuOpen
             ? "translate-y-0 opacity-100"
             : "-translate-y-full opacity-0"
         }`}
       >
-        <ul className="flex flex-col items-end justify-start z-50 gap-4 p-4 text-lg w-full min-h-[60svh] text-duckyBlue font-Libre_Baskerville">
+        <ul className="flex flex-col mt-8 items-start border-2 border-mutedOrange rounded justify-center z-50 gap-4 p-4 text-lg w-[80%]   bg-softBlue text-sm text-mutedOrange font-Libre_Baskerville">
           {navLinks.map((link, index) => (
             <li key={index} className="cursor-pointer hover:underline">
               <Link href={link.href} onClick={() => setIsMenuOpen(false)}>
@@ -122,7 +125,7 @@ export default function Navbar() {
               </Link>
             </li>
           ))}
-          <li>
+          <li className="cursor-pointer text-center grid place-items-center w-full py-2 px-4 border-2 border-duckyBlue text-duckyBlue  rounded">
             <Link
               href="https://order.tbdine.com/pickup/50580/menu"
               className=""
@@ -130,9 +133,20 @@ export default function Navbar() {
               Order Online
             </Link>
           </li>
-          <li className="  ">
+          <li className=" cursor-pointer text-center grid place-items-center w-full py-2 px-4 bg-duckyBlue text-creamBG rounded">
             <Link href="https://www.tbdine.com/book/restaurant/stone-ducky?idApp=71672&language=en-us">
               Book a Table
+            </Link>
+          </li>
+          <li className="flex items-center justify-evenly w-full text-mutedOrange">
+            <Link href="https://www.facebook.com/p/Stone-Ducky-NL-61553172230504/">
+              <FaFacebookF />
+            </Link>
+            <Link href="https://www.instagram.com/stoneduckynl/">
+              <GrInstagram />
+            </Link>
+            <Link href="https://www.tiktok.com/@stoneduckynl3">
+              <FaTiktok />
             </Link>
           </li>
         </ul>
