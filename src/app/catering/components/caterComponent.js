@@ -43,7 +43,7 @@ export default function CaterComponent() {
           alt="Catering Duck"
           width={250}
           height={250}
-          lazy
+          lazy="true"
           className="w-1/2 lg:w-[15%] lg:h-[15%]"
         />
         <h2 className="w-[95%] lg:w-[60%] m-auto text-center text-2xl lg:text-4xl">

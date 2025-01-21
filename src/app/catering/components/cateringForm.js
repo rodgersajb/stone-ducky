@@ -127,7 +127,7 @@ export default function CateringForm() {
           alt="Oven Roasted Chicken with Arugula, Balsamic Drizzle and a Dauphinoise Potato"
           fill
           className="object-cover rounded"
-          lazy
+          lazy="true"
         />
       </figure>
     </form>

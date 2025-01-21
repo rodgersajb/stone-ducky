@@ -16,7 +16,7 @@ export default async function Contact() {
           src="/images/popular_dishes.webp"
           alt="Popular Stone Ducky dishes on a table"
           fill
-          priority
+          priority={true}
         />
 
         <h1 className="z-10 text-white text-6xl">Contact</h1>

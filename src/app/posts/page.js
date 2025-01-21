@@ -12,7 +12,7 @@ export default async function Blog() {
           src="/images/whales_houses_duck.webp"
           alt="A corner inside Stone Ducky restaurant with a whale, colorful houses and the Stone Ducky Logo displayed on the wall."
           fill
-          priority
+          priority={true}
           className="object-cover -z-1 brightness-75"
         />
         <h1 className="z-10 lg:text-6xl text-4xl text-whiteBG">Ducky Blog</h1>
@@ -33,7 +33,7 @@ export default async function Blog() {
                 height="263"
                 src={post.featuredImage.url}
                 width="350"
-                lazy
+                lazy="true"
               />
               <div className="flex-1 p-6">
                 <Link href={`/posts/${post.slug}`}>

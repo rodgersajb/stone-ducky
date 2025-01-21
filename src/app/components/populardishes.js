@@ -47,8 +47,9 @@ export default function Test() {
       <div className=" lg:flex lg:flex-row flex-col w-full ">
         {/* Left Section */}
         <div className=" relative w-full min-h-[500px] lg:w-1/2 m-auto  flex flex-col items-center justify-center gap-10 z-10 text-whiteBG">
-        
-          <h2 className="lg:text-4xl text-2xl font-semibold text-center">Our Menu</h2>
+          <h2 className="lg:text-4xl text-2xl font-semibold text-center">
+            Our Menu
+          </h2>
           <h3 className=" text-xl px-2 lg:text-2xl text-center lg:px-8 ">
             A Vibrant Dining Experience with Fantastic Cuisine, Clear Vision,
             and Exceptional Service.
@@ -75,7 +76,7 @@ export default function Test() {
                         alt={image.alt}
                         fill
                         className="object-cover shadow-lg"
-                        lazy
+                        lazy="true"
                       />
                       {/* Text Overlay */}
                       <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white p-4">
@@ -88,7 +89,7 @@ export default function Test() {
                             alt="Squiggly underline"
                             width={150}
                             height={15}
-                            lazy
+                            lazy="true"
                           />
                         </figure>
                         <p className="text-sm lg:text-xl font-semibold w-3/4 text-center">
@@ -101,7 +102,6 @@ export default function Test() {
               </div>
             </div>
 
-           
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex gap-2 pb-8 lg:pb-0">
               {images.map((_, index) => (
                 <button

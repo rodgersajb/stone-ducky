@@ -49,7 +49,7 @@ export default async function PostPage({ params }) {
           src="/images/whales_houses_duck.webp"
           alt="A corner inside Stone Ducky restaurant with a whale, colorful houses and the Stone Ducky Logo displayed on the wall."
           fill
-          priority
+          priority={true}
           className="object-cover -z-1 brightness-75"
         />
       </header>
@@ -66,7 +66,7 @@ export default async function PostPage({ params }) {
             width={600}
             height={800}
             className="w-full h-auto rounded-lg mb-6"
-            priority
+            priority={true}
           />
         )}
 

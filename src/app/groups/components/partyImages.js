@@ -29,7 +29,7 @@ export default function PartyImages({ image, index }) {
           alt={image.alt}
           height={600}
           width={800}
-          lazy
+          lazy="true"
         />
       </motion.li>
     );

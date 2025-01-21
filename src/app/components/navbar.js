@@ -73,12 +73,7 @@ export default function Navbar() {
         />
       </Link>
 
-      {/* {isScrolled && (
-        <>
-          <BlueWave />
-          <OrangeWave />
-        </>
-      )} */}
+  
 
       {/* Desktop Navigation */}
       <ul
