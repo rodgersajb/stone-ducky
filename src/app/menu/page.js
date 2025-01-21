@@ -17,6 +17,7 @@ export default function Menu() {
           alt="Steak Dinner"
           fill
           className="object-cover "
+          priority
         />
         <h1 className="z-10 font-semibold text-center  text-4xl lg:text-6xl text-white">
           Food & Drink
@@ -29,6 +30,7 @@ export default function Menu() {
             alt="blue ducky icon"
             width={200}
             height={200}
+            lazy
           />
           <h2 className="text-center text-4xl text-duckyBlue font-semibold">
             Explore Our Menus

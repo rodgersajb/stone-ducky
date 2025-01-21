@@ -18,6 +18,7 @@ export default function Home() {
           src="/images/homepage_header_4.webp"
           alt="Summer View of the Stone Ducky Patio"
           fill
+          priority
         />
 
         <div className="min-h-dvh flex flex-col gap-8 items-center justify-center z-40">
@@ -51,6 +52,7 @@ export default function Home() {
               height={400}
               width={600}
               className="object-cover "
+              lazy
             />
           </FadeInImageContainer>
           <div className=" flex flex-col items-start justify-center gap-4">
@@ -102,6 +104,7 @@ export default function Home() {
             alt="Whales"
             fill
             className="object-contain lg:object-cover"
+            lazy
           />
         </FadeInImageContainer>
       </section>
@@ -119,6 +122,7 @@ export default function Home() {
             alt="Birds eye view of entrees, appetizers, soups and cocktails"
             fill
             className="object-contain lg:object-cover"
+            lazy
           />
         </FadeInImageContainer>
 

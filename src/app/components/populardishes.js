@@ -75,6 +75,7 @@ export default function Test() {
                         alt={image.alt}
                         fill
                         className="object-cover shadow-lg"
+                        lazy
                       />
                       {/* Text Overlay */}
                       <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white p-4">
@@ -87,6 +88,7 @@ export default function Test() {
                             alt="Squiggly underline"
                             width={150}
                             height={15}
+                            lazy
                           />
                         </figure>
                         <p className="text-sm lg:text-xl font-semibold w-3/4 text-center">

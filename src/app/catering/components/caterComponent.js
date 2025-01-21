@@ -21,7 +21,7 @@ export default function CaterComponent() {
           src="/images/mushroom_fritter_soup.webp"
           alt="Mushroom Fritter Soup"
           fill
-          priority={true}
+          priority
           className="-z-1 object-cover brightness-50"
         />
         <h1 className="text-4xl lg:text-6xl z-10 text-center text-whiteBG font-semibold">
@@ -43,7 +43,7 @@ export default function CaterComponent() {
           alt="Catering Duck"
           width={250}
           height={250}
-          loading="lazy"
+          lazy
           className="w-1/2 lg:w-[15%] lg:h-[15%]"
         />
         <h2 className="w-[95%] lg:w-[60%] m-auto text-center text-2xl lg:text-4xl">
@@ -51,7 +51,7 @@ export default function CaterComponent() {
           Restaurant.
         </h2>
       </section>
-      
+
       <div
         className="w-full px-8 m-auto flex flex-col items-center gap-8 py-8 bg-warmBeige"
         ref={formRef}
