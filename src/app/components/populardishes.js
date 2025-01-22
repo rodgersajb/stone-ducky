@@ -43,10 +43,10 @@ export default function Test() {
   }, [embla]);
 
   return (
-    <section className=" w-full flex flex-col items-center justify-center bg-mutedOrange ">
+    <section className=" w-full flex flex-col items-center justify-center bg-softBlue ">
       <div className=" lg:flex lg:flex-row flex-col w-full ">
         {/* Left Section */}
-        <div className=" relative w-full min-h-[500px] lg:w-1/2 m-auto  flex flex-col items-center justify-center gap-10 z-10 text-whiteBG">
+        <div className=" relative w-[95%] min-h-[500px]  lg:w-1/2 m-auto  flex flex-col items-center justify-center gap-10 z-10 text-richNavy">
           <h2 className="lg:text-4xl text-2xl font-semibold text-center">
             Our Menu
           </h2>
@@ -54,7 +54,7 @@ export default function Test() {
             A Vibrant Dining Experience with Fantastic Cuisine, Clear Vision,
             and Exceptional Service.
           </h3>
-          <button className="btn btn-creamTeal" aria-label="View our menu">
+          <button className="btn btn-richNavy w-full lg:w-1/4 " aria-label="View our menu">
             <Link href="/menu">
               <span>View Menu</span>
             </Link>

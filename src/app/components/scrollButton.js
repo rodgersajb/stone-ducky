@@ -19,7 +19,8 @@ export default function ScrollButton() {
   return (
     <button
       onClick={() => scrollToSection("about-section")}
-      className="border-2 p-2 bg-duckyBlue   rounded flex z-40"
+      className="border-2 p-2 bg-duckyBlue rounded flex z-40 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-duckyBlue"
+      aria-label="Scroll to About Section"
     >
       <FaArrowDown className="text-2xl" />
     </button>

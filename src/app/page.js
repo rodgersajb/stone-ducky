@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { FaChevronCircleRight } from "react-icons/fa";
+
 
 import PopularDishes from "./components/populardishes";
 import FadeInImageContainer from "./components/fadeInImageContainer";
@@ -33,8 +33,8 @@ export default function Home() {
         id="about-section"
         className="w-full py-12 flex flex-col items-center justify-center bg-whiteBG"
       >
-        <div className="flex flex-col lg:min-h-[500px] lg:grid lg:grid-cols-2 w-[90%] m-auto lg:gap-8 items-center justify-center ">
-          <FadeInImageContainer className="min-h-[275px]  w-[90%] m-auto lg:w-full">
+        <div className="flex flex-col lg:min-h-[500px] lg:grid lg:grid-cols-2 w-[90%] m-auto lg:gap-8 items-center justify-between ">
+          <FadeInImageContainer className=" min-h-[250px]  w-[90%] m-auto lg:w-full">
             <Image
               src="/images/mushroom_fritter_soup.webp"
               alt="Mushroom Fritter Soup"
@@ -66,8 +66,8 @@ export default function Home() {
       <section className="lg:w-[95%] lg:m-auto">
         <Visit />
       </section>
-      <section className=" flex flex-col lg:w-[95%] lg:m-auto lg:grid  lg:grid-cols-2 bg-richNavy">
-        <div className="min-h-[500px] w-full  text-whiteBG flex flex-col items-center justify-around lg:gap-4">
+      <section className=" flex flex-col w-full lg:w-[95%] lg:m-auto lg:grid  lg:grid-cols-2 bg-richNavy">
+        <div className="min-h-[500px] w-[95%] lg:w-full  text-whiteBG flex flex-col items-center justify-around m-auto lg:gap-4">
           <h2 className="text-2xl lg:text-4xl text-center">
             Large Groups & Catering
           </h2>
@@ -75,13 +75,13 @@ export default function Home() {
             Host your next event with Stone Ducky. Whether it is here or there
             we'll make sure to make your next event a memorable one.
           </p>
-          <div className="grid grid-rows-2 lg:grid-cols-2 gap-4">
-            <button className="btn btn-mutedOrange" aria-label="Book a party">
+          <div className="grid grid-rows-2 place-items-center lg:grid-cols-2 gap-4 w-[95%] ">
+            <button className="btn btn-mutedOrange w-full " aria-label="Book a party">
               <Link href="/groups">
                 <span>Book a Party</span>
               </Link>
             </button>
-            <button className="btn btn-tealGreen" aria-label="Book catering">
+            <button className="btn btn-tealGreen  w-full " aria-label="Book catering">
               <Link href="/groups">
                 <span>Book Catering</span>
               </Link>
@@ -89,7 +89,7 @@ export default function Home() {
           </div>
         </div>
         <FadeInImageContainer
-          className="h-[400px] lg:min-h-[500px] w-[90%] m-auto lg:w-full"
+          className="h-[400px] lg:min-h-[500px] w-[95%] m-auto lg:w-full"
           delay={0.5}
         >
           <Image
@@ -102,9 +102,9 @@ export default function Home() {
         </FadeInImageContainer>
       </section>
 
-      <section className="flex flex-col-reverse lg:w-[95%] lg:m-auto lg:grid lg:grid-cols-2 bg-tealGreen">
+      <section className="flex flex-col-reverse items-center justify-center lg:w-[95%] lg:m-auto lg:grid lg:grid-cols-2 bg-tealGreen">
         <FadeInImageContainer
-          className="h-[400px] lg:min-h-[500px] w-[90%] m-auto lg:w-full"
+          className="relative h-[400px] lg:min-h-[500px] w-[90%] m-auto lg:w-full"
           delay={0.5}
         >
           <Image
@@ -116,7 +116,7 @@ export default function Home() {
           />
         </FadeInImageContainer>
 
-        <div className="min-h-[400px] lg:min-h-[500px] w-full  text-whiteBG flex flex-col items-center justify-around lg:justify-center lg:gap-12 text-center gap-4">
+        <div className="min-h-[400px] lg:min-h-[500px]   text-whiteBG flex flex-col items-center justify-around lg:justify-center lg:gap-12 text-center gap-4 w-[95%] m-auto">
           <h2 className="text-2xl lg:text-4xl">Updates & Happenings</h2>
           <p className="lg:w-2/3 text-center font-semibold">
             Explore Bay Bulls and Savor the Stone Ducky Experience – Check Out
@@ -124,11 +124,11 @@ export default function Home() {
           </p>
 
           <button
-            className="btn btn-richNavy"
+            className="btn btn-richNavy w-full lg:w-1/"
             aria-label="Read more about our blog"
           >
             <Link href="/blog">
-              <span>Read More</span>
+              <span>Get in the Know</span>
             </Link>
           </button>
         </div>

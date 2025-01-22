@@ -3,10 +3,9 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import FadeInImageContainer from "./fadeInImageContainer";
+import Link from "next/link";
 
 export default function Visit() {
-  
-
   return (
     <section className="lg:grid lg:grid-cols-2 flex flex-col-reverse w-full bg-warmBeige">
       <FadeInImageContainer
@@ -20,7 +19,7 @@ export default function Visit() {
           className="object-contain lg:object-cover"
         />
       </FadeInImageContainer>
-      <div className="min-h-[625px] lg:min-h-[500px] w-full text-coolGray flex flex-col items-center justify-evenly lg:justify-center gap-4">
+      <div className="min-h-[625px] lg:min-h-[500px] w-full text-coolGray flex flex-col items-center justify-evenly gap-4">
         <div className="z-10 relative">
           <h2 className="text-2xl lg:text-4xl relative pb-2">Visit Us</h2>
         </div>
@@ -50,12 +49,25 @@ export default function Visit() {
             Closed Mondays
           </p>
         </div>
-        <div className="flex lg:flex-row flex-col gap-8 z-10">
-          <button className="btn btn-richNavy btn-richNavy:hover">
-            Reserve a Table
+        <div className="flex lg:flex-row flex-col gap-8 z-10 w-[95%] lg:w-full items-center justify-center">
+          <button
+            className="btn btn-richNavy btn-richNavy:hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-duckyBlue w-full lg:w-1/3"
+            aria-label="Book A Table"
+          >
+            <Link href="https://www.tbdine.com/book/restaurant/stone-ducky?idApp=71672&language=en-us">
+              <span>Book a Table</span>
+            </Link>
           </button>
-          <button className="btn btn-mutedOrange btn-mutedOrange:hover">
-            Order Online
+          <button
+            className="btn btn-mutedOrange btn-mutedOrange:hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-duckyBlue w-full lg:w-1/3"
+            aria-label="Order Online"
+          >
+            <Link
+              href="https://order.tbdine.com/pickup/50580/menu"
+              className=""
+            >
+              <span>Order Online</span>
+            </Link>
           </button>
         </div>
       </div>
