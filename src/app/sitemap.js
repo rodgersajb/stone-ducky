@@ -2,7 +2,7 @@ import { getAllPosts } from "../../lib/api";
 
 export default async function sitemap() {
   //   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
-  const baseUrl = "http://localhost:3000";
+  const baseUrl = "https://stoneducky.ca";
   // Static pages
   const navLinks = [
     { label: "Menu", href: "/menu" },
