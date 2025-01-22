@@ -71,7 +71,7 @@ const navItems = [
 export default function FooterNav() {
   return (
     <nav className="lg:w-[60%] lg:m-auto ">
-      <ul className="grid grid-cols-4 grid-row-2 lg:grid-row-1 lg:grid-cols-4 gap-4 justify-between lg:place-items-center pb-4">
+      <ul className="grid grid-cols-2 place-items-center  grid-row-4 lg:grid-row-1 lg:grid-cols-4 gap-4 justify-between lg:place-items-center pb-4">
         {navItems.map((item, index) => (
           <motion.li
             key={index}
@@ -86,7 +86,7 @@ export default function FooterNav() {
               className="grid place-items-center lg:col-span-1 col-span-2"
             >
               {item.icon}
-              <Link href={item.href} className="text-charcoal font-semibold">
+              <Link href={item.href} className="text-coolGray font-semibold">
                 {item.label}
               </Link>
             </button>
