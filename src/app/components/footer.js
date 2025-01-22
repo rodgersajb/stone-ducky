@@ -33,7 +33,7 @@ export default function Footer() {
         <ul className="flex gap-4 items-center">
           {socialIcons.map((social, index) => (
             <li key={index}>
-              <Link href={social.href}>{social.icon}</Link>
+              <Link href={social.href} aria-label={`Visit our ${social.label} page`}>{social.icon}</Link>
             </li>
           ))}
         </ul>

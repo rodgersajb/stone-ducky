@@ -11,9 +11,6 @@ import { FaFacebookF } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
 import { FaTiktok } from "react-icons/fa";
 
-import OrangeWave from "./orangeWave";
-import BlueWave from "./blueWave";
-
 const navLinks = [
   { label: "Menu", href: "/menu" },
   { label: "Group Bookings", href: "/groups" },
@@ -72,8 +69,6 @@ export default function Navbar() {
           }`}
         />
       </Link>
-
-  
 
       {/* Desktop Navigation */}
       <ul
@@ -138,14 +133,23 @@ export default function Navbar() {
               Book a Table
             </Link>
           </li>
-          <li className="flex items-center justify-evenly w-full text-mutedOrange">
+          <li
+            className="flex items-center justify-evenly w-full text-mutedOrange"
+            aria-label="Visit our FaceBook Page"
+          >
             <Link href="https://www.facebook.com/p/Stone-Ducky-NL-61553172230504/">
               <FaFacebookF />
             </Link>
-            <Link href="https://www.instagram.com/stoneduckynl/">
+            <Link
+              href="https://www.instagram.com/stoneduckynl/"
+              aria-label="Visit our Instagram Page"
+            >
               <GrInstagram />
             </Link>
-            <Link href="https://www.tiktok.com/@stoneduckynl3">
+            <Link
+              href="https://www.tiktok.com/@stoneduckynl3"
+              aria-label="Visit our TikTok Page"
+            >
               <FaTiktok />
             </Link>
           </li>
