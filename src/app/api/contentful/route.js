@@ -12,7 +12,7 @@ export async function GET() {
     const response = await client.getEntries({
       content_type: process.env.CONTENTFUL_CONTENT_TYPE,
     });
-    console.log(response, "API RESPONSE");
+    
     return NextResponse.json(response);
   } catch (error) {
     console.error("Error fetching entries:", error);

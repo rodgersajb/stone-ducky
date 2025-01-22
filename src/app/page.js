@@ -21,7 +21,7 @@ export default function Home() {
           priority={true}
         />
 
-        <div className="lg:min-h-[75dvh] flex flex-col gap-8 items-center justify-around z-40">
+        <div className="lg:min-h-[75dvh] min-h-[75svh] flex flex-col gap-8 items-center justify-around z-40">
           <h2 className="text-4xl lg:text-6xl lg:w-1/3 text-center px-4 py-2 text-white   ">
             Inspired Dining with an Ocean View
           </h2>
