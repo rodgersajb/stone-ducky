@@ -130,7 +130,7 @@ export default function Home() {
           </p>
 
           <button
-            className="btn btn-richNavy w-full lg:w-1/"
+            className="btn btn-richNavy w-full lg:w-1/3"
             aria-label="Read more about our blog"
           >
             <Link href="/blog">

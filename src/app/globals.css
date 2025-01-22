@@ -5,11 +5,11 @@
 /* Define custom fonts */
 :root {
   /* --font-poppins: "Poppins", sans-serif; */
-  --font-dancingScript: "Dancing Script", cursive;
+  
   --font-libreBaskerville: "Libre Baskerville", serif;
-  --font-PlayfairDisplay: "Playfair Display", serif;
+  
   --font-sourceSansPro: "Source Sans Pro", sans-serif;
-  --font-loto: "Lato", sans-serif;
+  
 }
 
 /* Base styles */
@@ -36,44 +36,69 @@
   }
 }
 
-/* Components */
 @layer components {
   .btn {
-    @apply py-2 px-6 rounded font-semibold uppercase transition ease-in-out delay-150 duration-300;
+    @apply py-3 px-8 rounded font-semibold uppercase transition ease-in-out delay-150 duration-300;
+    touch-action: manipulation; /* Improve button behavior on touch devices */
   }
+
+  /* Rich Navy Button */
   .btn-richNavy {
     @apply bg-richNavy border-2 border-richNavy text-creamBG;
   }
-  .btn-richNavy:hover {
+  .btn-richNavy:hover,
+  .btn-richNavy:focus-visible {
     @apply hover:-translate-y-1 hover:scale-110 hover:bg-creamBG hover:text-richNavy;
   }
+  .btn-richNavy:active {
+    @apply scale-100 bg-richNavy text-creamBG shadow-inner; /* Press effect */
+  }
 
+  /* Muted Orange Button */
   .btn-mutedOrange {
     @apply bg-mutedOrange border-2 border-mutedOrange text-creamBG;
   }
-  .btn-mutedOrange:hover {
+  .btn-mutedOrange:hover,
+  .btn-mutedOrange:focus-visible {
     @apply hover:-translate-y-1 hover:scale-110 hover:bg-creamBG hover:text-mutedOrange;
   }
+  .btn-mutedOrange:active {
+    @apply scale-100 bg-mutedOrange text-creamBG shadow-inner;
+  }
 
+  /* Teal Green Button */
   .btn-tealGreen {
     @apply bg-tealGreen border-2 border-tealGreen text-creamBG;
   }
-  .btn-tealGreen:hover {
+  .btn-tealGreen:hover,
+  .btn-tealGreen:focus-visible {
     @apply hover:-translate-y-1 hover:scale-110 hover:bg-creamBG hover:text-tealGreen;
   }
+  .btn-tealGreen:active {
+    @apply scale-100 bg-tealGreen text-creamBG shadow-inner;
+  }
 
+  /* Cream Teal Button */
   .btn-creamTeal {
     @apply bg-creamBG border-2 border-tealGreen text-tealGreen font-bold;
   }
-  .btn-creamTeal:hover {
+  .btn-creamTeal:hover,
+  .btn-creamTeal:focus-visible {
     @apply hover:-translate-y-1 hover:scale-110 hover:bg-tealGreen hover:text-creamBG;
   }
+  .btn-creamTeal:active {
+    @apply scale-100 bg-tealGreen text-creamBG shadow-inner;
+  }
 
+  /* Yellow Button */
   .btn-yellow {
     @apply bg-goldenYellow border border-goldenYellow text-coolGray;
   }
-
-  .btn-yellow:hover {
+  .btn-yellow:hover,
+  .btn-yellow:focus-visible {
     @apply hover:-translate-y-1 hover:scale-110 hover:bg-coolGray hover:text-goldenYellow;
+  }
+  .btn-yellow:active {
+    @apply scale-100 bg-goldenYellow text-coolGray shadow-inner;
   }
 }
