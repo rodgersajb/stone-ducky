@@ -48,15 +48,15 @@ export default function Navbar() {
           ? "bg-softBlue "
           : isScrolled
             ? "bg-creamBG lg:bg-navbar-ducks lg:bg-cover shadow-lg "
-            : "bg-transparent text-whiteBG"
+            : "bg-transparent text-mutedOrange"
       }`}
     >
       <button
-        className="text-3xl md:hidden flex z-50 text-whiteBG"
+        className="text-3xl md:hidden flex z-50 text-mutedOrange"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         aria-label="Toggle menu"
       >
-        {isMenuOpen ? <FiX className="text-duckyBlue" /> : <FiMenu />}
+        {isMenuOpen ? <FiX /> : <FiMenu />}
       </button>
 
       <Link className="hidden z-50 cursor-pointer lg:flex justify-end" href="/">
