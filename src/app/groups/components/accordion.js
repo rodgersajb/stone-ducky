@@ -1,4 +1,4 @@
-"use client";
+ lg:"use client";
 import {
   Accordion,
   AccordionContent,
@@ -41,8 +41,8 @@ export default function PartyAccordion() {
       <Accordion  type="single" collapsible>
         {faqs.map((faq, index) => (
           <AccordionItem value={`faq-${index}`} key={index}>
-            <AccordionTrigger className="text-xl font-semibold ">{faq.question}</AccordionTrigger>
-            <AccordionContent className="text-lg text-charcoal">{faq.answer}</AccordionContent>
+            <AccordionTrigger className="text-lg lg:text-xl font-semibold ">{faq.question}</AccordionTrigger>
+            <AccordionContent className=" lg:text-lg text-charcoal">{faq.answer}</AccordionContent>
           </AccordionItem>
         ))}
       </Accordion>

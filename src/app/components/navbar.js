@@ -12,6 +12,7 @@ import { GrInstagram } from "react-icons/gr";
 import { FaTiktok } from "react-icons/fa";
 
 const navLinks = [
+  { label: "Home", href: "/" },
   { label: "Menu", href: "/menu" },
   { label: "Group Bookings", href: "/groups" },
   { label: "Catering", href: "/catering" },
@@ -46,7 +47,7 @@ export default function Navbar() {
         isMenuOpen
           ? "bg-softBlue "
           : isScrolled
-            ? "bg-creamBG bg-navbar-ducks bg-cover shadow-lg "
+            ? "bg-creamBG lg:bg-navbar-ducks lg:bg-cover shadow-lg "
             : "bg-transparent text-whiteBG"
       }`}
     >

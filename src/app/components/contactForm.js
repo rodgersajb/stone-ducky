@@ -22,7 +22,7 @@ export default function ContactForm() {
       }}
       className="w-full flex flex-col gap-4 items-start lg:min-h-[400px]"
     >
-      <h2 className="text-4xl text-center font-semibold w-full">Contact Form</h2>
+      <h2 className="text-2xl lg:text-4xl text-center font-semibold w-full">Contact Form</h2>
       <div className="flex flex-col w-full">
         <label htmlFor="name">Name <span className="text-duckyOrange pl-1">*</span></label>
         <input
