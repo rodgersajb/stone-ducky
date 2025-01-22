@@ -1,8 +1,9 @@
 export default function robots() {
   return {
     rules: {
-      userAgent: "*",
-      disallow: "/",
+      userAgent: "*", 
+      allow: "/", 
     },
+    sitemap: "https://stoneducky.ca/sitemap.xml", 
   };
 }
