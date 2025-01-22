@@ -80,11 +80,13 @@ export default function MenuNav() {
           <button
             key={index}
             onClick={() => handleButtonClick(menu.title)}
-            className={`px-6 py-2 w-full m-auto text-center lg:min-h-[50px] lg:text-2xl font-semibold border transition-all rounded ease-in-out duration-300 cursor-pointer lg:last:text-xl  hover:text-whiteBG hover:bg-duckyBlue border-charcoal ${
+            className={`px-6 py-2 w-full m-auto text-center lg:min-h-[50px] lg:text-2xl font-semibold border transition-all rounded ease-in-out duration-300 cursor-pointer lg:last:text-xl hover:text-whiteBG hover:bg-duckyBlue border-charcoal ${
               selectedMenu === menu.title
                 ? "bg-richNavy text-whiteBG"
                 : "bg-whiteBG"
-            }`}
+            } focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-duckyBlue`}
+            aria-label={`View the ${menu.title} menu`}
+            aria-current={selectedMenu === menu.title ? "true" : undefined}
           >
             {menu.title}
           </button>
@@ -101,9 +103,10 @@ export default function MenuNav() {
       {showToTopButton && (
         <button
           onClick={handleButtonToTopClick}
-          className="border fixed p-4 bg-richNavy text-warmBeige z-50 right-8 bottom-8 rounded shadow-lg hover:bg-richNavy hover:text-creamBG transition-all"
+          className="border fixed p-4 bg-richNavy text-warmBeige z-50 right-8 bottom-8 rounded shadow-lg hover:bg-richNavy hover:text-creamBG transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-warmBeige"
+          aria-label="Scroll to top of the menu navigation"
         >
-          <FaChevronUp />
+          <FaChevronUp aria-hidden="true" />
         </button>
       )}
     </>

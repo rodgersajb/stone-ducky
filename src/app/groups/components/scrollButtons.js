@@ -18,13 +18,15 @@ export default function ScrollButtons() {
     <div className="grid grid-rows-2 lg:grid-cols-2 gap-4">
       <button
         onClick={() => scrollToSection("form-section")}
-        className="btn btn-richNavy btn-richNavy:hover z-10 rounded font-semibold gap-2 text-center"
+        className="btn btn-richNavy z-10 rounded font-semibold gap-2 text-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-richNavy"
+        aria-label="Scroll to party request form"
       >
         Party Request
       </button>
       <button
         onClick={() => scrollToSection("faq-section")}
-        className="btn btn-tealGreen btn-tealGreen:hover z-10 font-semibold gap-2 text-center"
+        className="btn btn-tealGreen z-10 font-semibold gap-2 text-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-tealGreen"
+        aria-label="Scroll to party questions section"
       >
         Party Questions
       </button>

@@ -31,8 +31,9 @@ export default function CaterComponent() {
           Tailored Catering Solutions for Gatherings Big and Small
         </h3>
         <button
-          className="z-10 bg-duckyOrange font-semibold text-whiteBG border border-duckyOrange py-4 px-6 rounded text-sm lg:text-xl"
+          className="z-10 bg-mutedOrange font-semibold text-whiteBG border border-mutedOrange py-4 px-6 rounded text-sm lg:text-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-mutedOrange"
           onClick={handleScroll}
+          aria-label="Schedule a catering request"
         >
           Schedule a Catering Request
         </button>

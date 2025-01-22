@@ -7,11 +7,12 @@ import PopularDishes from "./components/populardishes";
 import FadeInImageContainer from "./components/fadeInImageContainer";
 
 import Visit from "./components/visit";
+import ScrollButton from "./components/scrollButton";
 
 export default function Home() {
   return (
     <main className="bg-whiteBG w-full overflow-x-hidden flex flex-col ">
-      <header className="relative h-svh lg:h-dvh w-full flex flex-col text-white z-1">
+      <header className="relative h-svh lg:h-dvh w-full flex flex-col justify-end text-white z-1">
         <Image
           className="object-cover brightness-75  -z-1 "
           src="/images/homepage_header_4.webp"
@@ -20,26 +21,18 @@ export default function Home() {
           priority={true}
         />
 
-        <div className="min-h-dvh flex flex-col gap-8 items-center justify-center z-40">
+        <div className="lg:min-h-[75dvh] flex flex-col gap-8 items-center justify-around z-40">
           <h2 className="text-4xl lg:text-6xl lg:w-1/3 text-center px-4 py-2 text-white   ">
             Inspired Dining with an Ocean View
           </h2>
-          <div className="flex gap-4 lg:flex-row flex-col">
-            <button className="bg-duckyOrange py-2 px-6 border border-duckyOrange rounded uppercase font-semibold  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-whiteBG hover:text-duckyOrange duration-300">
-              Reserve a Table
-            </button>
-            <button className="uppercase border-2 bg-duckyBlue border-duckyBlue text-whiteBG py-2 px-6 rounded font-semibold transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-whiteBG hover:text-duckyBlue duration-300">
-              Order Online
-            </button>
-          </div>
-          <button className="flex gap-2 items-center uppercase font-semibold transition">
-            <Link href="/menu">View Menu</Link>
-            <FaChevronCircleRight />
-          </button>
+          <ScrollButton />
         </div>
       </header>
 
-      <section className="w-full py-12 flex flex-col items-center justify-center bg-whiteBG">
+      <section
+        id="about-section"
+        className="w-full py-12 flex flex-col items-center justify-center bg-whiteBG"
+      >
         <div className="flex flex-col lg:min-h-[500px] lg:grid lg:grid-cols-2 w-[90%] m-auto lg:gap-8 items-center justify-center ">
           <FadeInImageContainer className="min-h-[275px]  w-[90%] m-auto lg:w-full">
             <Image
@@ -68,9 +61,7 @@ export default function Home() {
       </section>
 
       <section className="lg:w-[95%] lg:m-auto">
-        
-          <PopularDishes />
-        
+        <PopularDishes />
       </section>
       <section className="lg:w-[95%] lg:m-auto">
         <Visit />
@@ -85,11 +76,15 @@ export default function Home() {
             we'll make sure to make your next event a memorable one.
           </p>
           <div className="grid grid-rows-2 lg:grid-cols-2 gap-4">
-            <button className="btn btn-mutedOrange btn-mutedOrange:hover">
-              <Link href="/groups">Book a Party</Link>
+            <button className="btn btn-mutedOrange" aria-label="Book a party">
+              <Link href="/groups">
+                <span>Book a Party</span>
+              </Link>
             </button>
-            <button className="btn btn-tealGreen btn-tealGreen:hover">
-              <Link href="/groups">Book Catering</Link>
+            <button className="btn btn-tealGreen" aria-label="Book catering">
+              <Link href="/groups">
+                <span>Book Catering</span>
+              </Link>
             </button>
           </div>
         </div>
@@ -127,16 +122,26 @@ export default function Home() {
             Explore Bay Bulls and Savor the Stone Ducky Experience – Check Out
             Our Blog for the Latest!
           </p>
-          <div>
-            <button className="btn btn-richNavy btn-richNavy:hover">
-              <Link href="/blog">Read More</Link>
-            </button>
-          </div>
+
+          <button
+            className="btn btn-richNavy"
+            aria-label="Read more about our blog"
+          >
+            <Link href="/blog">
+              <span>Read More</span>
+            </Link>
+          </button>
         </div>
       </section>
-      <section className="relative w-full m-auto h-[100px] ">
-        <Image src="/images/flower_pattern.png" alt="Duck Feet" fill loading="lazy" className="object-cover"/>
-      </section>
+      {/* <section className="relative w-full m-auto h-[100px] ">
+        <Image
+          src="/images/flower_pattern.png"
+          alt="Duck Feet"
+          fill
+          loading="lazy"
+          className="object-cover"
+        />
+      </section> */}
     </main>
   );
 }

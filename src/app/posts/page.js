@@ -36,22 +36,24 @@ export default async function Blog() {
                 lazy="true"
               />
               <div className="flex-1 p-6">
-                <Link href={`/posts/${post.slug}`}>
-                  <h3 className="text-2xl font-bold leading-tight text-mutedOrange py-4">
-                    {post.title}
-                  </h3>
-                </Link>
+                <h3 className="text-2xl font-bold leading-tight text-mutedOrange py-4">
+                  {post.title}
+                </h3>
+
                 <article className="max-w-none text-zinc-500 mt-4 mb-2 text-sm dark:text-zinc-400">
                   {post.summary || "Read more about this topic!"}
                 </article>
-                <div className="flex justify-end">
+                <button
+                  className="flex justify-end w-full"
+                  aria-label={`Read more about ${post.title}`}
+                >
                   <Link
-                    className="inline-flex h-10 items-center justify-center text-md  text-duckyBlue font-semibold "
+                    className="inline-flex h-10 items-center justify-center text-md  text-coolGray font-semibold "
                     href={`/posts/${post.slug}`}
                   >
-                    Read More →
+                    <span>Read More →</span>
                   </Link>
-                </div>
+                </button>
               </div>
             </article>
           ))}

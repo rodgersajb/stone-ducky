@@ -54,8 +54,10 @@ export default function Test() {
             A Vibrant Dining Experience with Fantastic Cuisine, Clear Vision,
             and Exceptional Service.
           </h3>
-          <button className="btn btn-creamTeal btn-creamTeal:hover">
-            <Link href="/menu">View Menu</Link>
+          <button className="btn btn-creamTeal" aria-label="View our menu">
+            <Link href="/menu">
+              <span>View Menu</span>
+            </Link>
           </button>
         </div>
 
@@ -110,6 +112,8 @@ export default function Test() {
                   className={`w-3 h-3 rounded-full transition mb-4 ${
                     selectedIndex === index ? "bg-white" : "bg-gray-500"
                   }`}
+                  aria-label={`Go to slide ${index + 1}`}
+                  aria-current={selectedIndex === index ? "true" : undefined}
                 />
               ))}
             </div>
