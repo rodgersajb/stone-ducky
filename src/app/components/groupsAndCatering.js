@@ -15,7 +15,7 @@ export default function GroupsAndCatering() {
           </p>
           <div className="grid grid-rows-2 place-items-center lg:grid-cols-2 gap-4 w-[95%] ">
             <button
-              className="btn btn-mutedOrange w-full "
+              className="btn btn-mutedOrange w-full  "
               aria-label="Book a party"
             >
               <Link href="/groups">
@@ -23,7 +23,7 @@ export default function GroupsAndCatering() {
               </Link>
             </button>
             <button
-              className="btn btn-tealGreen  w-full "
+              className="btn btn-tealGreen  w-full  "
               aria-label="Book catering"
             >
               <Link href="/catering">

@@ -59,6 +59,15 @@ export default function Navbar() {
         {isMenuOpen ? <FiX /> : <FiMenu />}
       </button>
 
+      <Link className="lg:hidden md:hidden z-50 cursor-pointer" href="/">
+        <Image
+          src="/images/logo_stone_ducky.png"
+          alt="Stone Ducky Logo"
+          width={100}
+          height={80}
+          
+        />
+      </Link>
       <Link className="hidden z-50 cursor-pointer lg:flex justify-end" href="/">
         <Image
           src="/images/logo_stone_ducky.png"
