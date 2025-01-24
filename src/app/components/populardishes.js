@@ -51,8 +51,7 @@ export default function Test() {
             Our Menu
           </h2>
           <h3 className=" text-xl px-2 lg:text-2xl text-center lg:px-8 ">
-            A Vibrant Dining Experience with Fantastic Cuisine, Clear Vision,
-            and Exceptional Service.
+            A Vibrant Dining Experience with Fantastic Cuisine and Exceptional Service.
           </h3>
           <button className="btn btn-richNavy w-full lg:w-1/4 " aria-label="View our menu">
             <Link href="/menu">
