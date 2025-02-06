@@ -26,10 +26,10 @@ export default function UpdatesAndHappenings() {
           </p>
 
           <button
-            className="btn btn-richNavy w-full lg:w-1/3"
+            className="btn btn-richNavy w-full lg:w-1/2"
             aria-label="Read more about our blog"
           >
-            <Link href="/blog">
+            <Link href="/posts">
               <span>Get in the Know</span>
             </Link>
           </button>

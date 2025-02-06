@@ -13,7 +13,7 @@ export default function Home() {
 
       <About />
 
-      <section className="lg:w-[95%] lg:m-auto">
+      <section className="lg:w-[95%] lg:m-auto relative">
         <PopularDishes />
       </section>
       <section className="lg:w-[95%] lg:m-auto">

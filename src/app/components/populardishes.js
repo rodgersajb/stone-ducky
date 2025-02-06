@@ -44,16 +44,30 @@ export default function Test() {
 
   return (
     <section className=" w-full flex flex-col items-center justify-center bg-softBlue ">
-      <div className=" lg:flex lg:flex-row flex-col w-full ">
+      <div className=" lg:flex lg:flex-row flex-col w-full relative ">
         {/* Left Section */}
+        
+          {/* <Image
+            src="images/blue_duck.svg"
+            alt="Blue Duck"
+            width={150}
+            height={150}
+            className=" absolute left-4 bottom-0 z-10 "
+            loading="lazy"
+          />
+         */}
         <div className=" relative w-[95%] min-h-[500px]  lg:w-1/2 m-auto  flex flex-col items-center justify-center gap-10 z-10 text-richNavy">
           <h2 className="lg:text-4xl text-2xl font-semibold text-center">
             Our Menu
           </h2>
           <h3 className=" text-xl px-2 lg:text-2xl text-center lg:px-8 ">
-            A Vibrant Dining Experience with Fantastic Cuisine and Exceptional Service.
+            A Vibrant Dining Experience with Fantastic Cuisine and Exceptional
+            Service.
           </h3>
-          <button className="btn btn-richNavy w-full lg:w-1/4 " aria-label="View our menu">
+          <button
+            className="btn btn-richNavy w-full lg:w-1/2 "
+            aria-label="View our menu"
+          >
             <Link href="/menu">
               <span>View Menu</span>
             </Link>
