@@ -81,15 +81,13 @@ export default function FooterNav() {
             viewport={{ once: true }}
             custom={index}
           >
-            <button
-              key={index}
-              className="grid place-items-center lg:col-span-1 col-span-2"
+            <Link
+              href={item.href}
+              className="grid place-items-center lg:col-span-1 col-span-2 text-coolGray font-semibold"
             >
               {item.icon}
-              <Link href={item.href} className="text-coolGray font-semibold">
-                {item.label}
-              </Link>
-            </button>
+              {item.label}
+            </Link>
           </motion.li>
         ))}
       </ul>
