@@ -1,13 +1,13 @@
 "use client";
 import Image from "next/image";
-
+import HeaderFadeContainer from "@/app/components/headerFadeContainer";
 
 
 
 export default function Header() {
  
     return (
-        <header className="h-svh lg:h-dvh w-full relative flex flex-col items-center justify-center gap-8">
+        <HeaderFadeContainer>
                 <Image
                   src="/images/mushroom_fritter_soup.webp"
                   alt="Mushroom Fritter Soup"
@@ -22,6 +22,6 @@ export default function Header() {
                   Tailored Catering Solutions for Gatherings Big and Small
                 </h2>
                 
-              </header>
+              </HeaderFadeContainer>
     )
 }

@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import MenuNav from "./components/menuNav";
+import HeaderFadeContainer from "../components/headerFadeContainer";
 
 export const metadata = {
   title: "Stone Ducky Menus ",
@@ -11,7 +12,7 @@ export const metadata = {
 export default function Menu() {
   return (
     <main>
-      <header className="flex flex-col items-center justify-center h-svh lg:h-dvh w-full relative">
+      <HeaderFadeContainer>
         <Image
           src="/images/chicken_salmon.webp"
           alt="Steak Dinner"
@@ -22,7 +23,7 @@ export default function Menu() {
         <h1 className="z-10 font-semibold text-center  text-4xl lg:text-6xl text-white">
           Food & Drink
         </h1>
-      </header>
+      </HeaderFadeContainer>
       <section className="w-full pt-20 bg-stone-ducky-icons-background bg-contain">
         <figure className="flex flex-col justify-center items-center">
           <Image

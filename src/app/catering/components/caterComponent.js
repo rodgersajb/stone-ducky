@@ -1,7 +1,7 @@
 "use client";
 
 import CateringForm from "./cateringForm";
-import CateringCarousel from "./carousel";
+import HeaderFadeContainer from "@/app/components/headerFadeContainer";
 import { useRef } from "react";
 
 import Image from "next/image";
@@ -16,7 +16,7 @@ export default function CaterComponent() {
   };
   return (
     <>
-      <header className="h-svh lg:h-dvh w-full relative flex flex-col items-center justify-center gap-8">
+      <HeaderFadeContainer className="h-svh lg:h-dvh w-full relative flex flex-col items-center justify-center gap-8">
         <Image
           src="/images/mushroom_fritter_soup.webp"
           alt="Mushroom Fritter Soup"
@@ -37,7 +37,7 @@ export default function CaterComponent() {
         >
           Schedule a Catering Request
         </button>
-      </header>
+      </HeaderFadeContainer>
       <section className="w-full flex flex-col items-center justify-center gap-4 pb-8 bg-white">
         <Image
           src="/images/cater_duck_blue.webp"

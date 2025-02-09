@@ -1,5 +1,7 @@
 import Image from "next/image";
 import ContactForm from "../components/contactForm";
+import HeaderFadeContainer from "../components/headerFadeContainer";
+
 
 export const metadata = {
   title: "Contact",
@@ -10,7 +12,7 @@ export const metadata = {
 export default async function Contact() {
   return (
     <main className=" bg-warmBeige overflow-x-hidden">
-      <figure className="relative h-svh lg:h-screen w-vw lg:w-full flex items-center justify-center z-20">
+      <HeaderFadeContainer>
         <Image
           className="object-cover brightness-75  -z-1"
           src="/images/popular_dishes.webp"
@@ -20,7 +22,7 @@ export default async function Contact() {
         />
 
         <h1 className="z-10 text-white text-4xl lg:text-6xl">Contact</h1>
-      </figure>
+      </HeaderFadeContainer>
       <section className="grid grid-rows-2 lg:grid-cols-2 lg:grid-rows-1 place-items-start w-[95%] lg:w-[80%] m-auto  pt-4 lg:gap-12 lg:py-8">
         <div className="flex flex-col text-center gap-4 min-h-[400px]">
           <h2 className="text-2xl lg:text-4xl text-center font-semibold">Contact Info</h2>

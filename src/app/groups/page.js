@@ -1,8 +1,8 @@
-import Image from "next/image";
+
 import PartyAccordion from "./components/accordion";
 import PartyForm from "./components/partyForm";
 import PartyImages from "./components/partyImages";
-import ScrollButtons from "./components/scrollButtons";
+import Header from "./components/header";
 
 export const metadata = {
   title: "Catering ",
@@ -36,23 +36,7 @@ const images = [
 export default function LargeGroups() {
   return (
     <main className="">
-      <header className="h-svh lg:h-dvh flex flex-col items-center justify-center gap-4 w-full relative text-white text-center">
-        <Image
-          src="/images/ducky_restaurant_inside.webp"
-          alt="Ducky Restaurant Inside"
-          fill
-          priority={true}
-          className="-z-1 object-cover brightness-75"
-        />
-        <h1 className="z-10 font-semibold text-4xl lg:text-6xl px-2">
-          Group Bookings
-        </h1>
-        <h3 className="z-10 text-xl lg:text-2xl font-semibold px-2">
-          Celebrations, Meetings, and Everything In Between
-        </h3>
-        
-        <ScrollButtons />
-      </header>
+     <Header />
       <section className="bg-whiteBG flex flex-col z-30 py-10">
         <ul className="grid grid-cols-3 grid-rows-3 gap-4 w-[90%] m-auto max-h-[1000px]">
           {images.map((image, index) => (

@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import { motion } from "framer-motion";
+
 import { FiMenu, FiX } from "react-icons/fi";
 
 import { FaFacebookF } from "react-icons/fa";
@@ -42,7 +44,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav
+    <motion.nav
       className={`fixed top-0 left-0 w-full px-4 py-4 z-50 flex items-center justify-between font-semibold gap-4 text-whiteBG transition-colors duration-300 ${
         isMenuOpen
           ? "bg-softBlue "
@@ -50,6 +52,9 @@ export default function Navbar() {
             ? "bg-creamBG lg:bg-navbar-ducks lg:bg-cover shadow-lg "
             : "bg-transparent text-mutedOrange"
       }`}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
     >
       <button
         className="text-3xl md:hidden flex z-50 text-mutedOrange"
@@ -65,7 +70,6 @@ export default function Navbar() {
           alt="Stone Ducky Logo"
           width={100}
           height={80}
-          
         />
       </Link>
       <Link className="hidden z-50 cursor-pointer lg:flex justify-end" href="/">
@@ -165,6 +169,6 @@ export default function Navbar() {
           </li>
         </ul>
       </div>
-    </nav>
+    </motion.nav>
   );
 }
