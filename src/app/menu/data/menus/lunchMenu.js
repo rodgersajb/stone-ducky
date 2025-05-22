@@ -41,7 +41,7 @@ const lunchMenu = {
   Mains: [
     {
       title: "Lobster Roll",
-      price: null, // Market Price
+      price: "MP", // Market Price
       description:
         "Decadent house made lobster salad in a garlic butter toasted roll, crisp lettuce, served with lemon, coleslaw, and fries.",
       glutenFree: false,
