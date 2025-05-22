@@ -5,25 +5,17 @@ const lunchMenu = {
   Subs: [
     {
       title: "Brisket Horseradish Sub",
-      price: 18,
+      price: 21,
       description:
-        "Tender, slow-braised brisket layered with creamy horseradish aioli, provolone, smothered in a Bakeapple BBQ sauce. Finished with arugula and crispy shallots for an irresistible crunch.",
+        "Tender, slow-braised brisket layered with creamy horseradish aioli, provolone. Smothered in a Bakeapple BBQ sauce. Finished with arugula and crispy shallots for an irresistible crunch.",
       glutenFree: false,
       dairyFree: false,
     },
     {
       title: "Chicken Pesto Sub",
-      price: 17,
+      price: 20,
       description:
         "Perfectly grilled chicken paired with vibrant pesto mayo, sun-dried tomatoes, and arugula, topped with freshly shaved parmesan.",
-      glutenFree: false,
-      dairyFree: false,
-    },
-    {
-      title: "Cold Cut Sub",
-      price: 18,
-      description:
-        "A hearty classic stacked with layers of pepperoni, genoa salami, roast beef, ham, and turkey, melted mozza, banana peppers, pickles, lettuce, and mayo.",
       glutenFree: false,
       dairyFree: false,
     },
@@ -31,68 +23,80 @@ const lunchMenu = {
   Burgers: [
     {
       title: "Carol Ann’s Fried Chicken Burger",
-      price: 23,
+      price: 25,
       description:
-        "Tossed in our secret herb and spice blend. Topped with smoky jalapeño aioli, crispy bacon, fresh lettuce. This sandwich is packed with bold flavor that hits the spot every time!",
-      glutenFree: false,
-      dairyFree: false,
-    },
-    {
-      title: "The Stone Ducky Burger",
-      price: 23,
-      description:
-        "6oz beef patty, perfectly seasoned and grilled, topped with creamy cheddar, smoky jalapeño aioli, crispy bacon for a bold twist. Fresh lettuce, ripe tomato, and crispy onions.",
+        "Tossed in our secret herb and spice blend. Topped with smoky jalapeño aioli, crispy bacon, fresh lettuce. This sandwich is packed with bold flavour that hits the spot every time!",
       glutenFree: false,
       dairyFree: false,
     },
     {
       title: "The Stone Ducky Brisket Burger",
-      price: 27,
+      price: 28,
       description:
-        "Dressed like our House burger, but smothered in our in-house braised Bakeapple BBQ Brisket.",
+        "Dressed like our House burger, but smothered in our in house braised Bakeapple BBQ Brisket.",
       glutenFree: false,
       dairyFree: false,
     },
   ],
   Mains: [
     {
-      title: "Chicken Wings",
-      price: 18,
+      title: "Lobster Roll",
+      price: null, // Market Price
       description:
-        "One pound of juicy chicken wings, cooked to perfection and tossed in your choice of Mild, Medium, Hot, Honey Garlic, or our unique, made-in-house Bakeapple BBQ sauce for a flavor experience to savor.",
+        "Decadent house made lobster salad in a garlic butter toasted roll, crisp lettuce, served with lemon, coleslaw, and fries.",
+      glutenFree: false,
+      dairyFree: false,
+    },
+    {
+      title: "Chicken Wings",
+      price: 19,
+      description:
+        "One pound of juicy chicken wings, cooked to perfection and tossed in your choice of Mild, Medium, Hot, Honey Garlic, or our unique, made in house Bakeapple BBQ sauce for a flavour experience to savour.",
       glutenFree: true,
       dairyFree: true,
       image: [glutenFree, dairyFree],
     },
     {
       title: "Fish & Chips",
-      price: 18,
+      price: 22,
       description:
-        "Cod that is delicately battered and fried to golden perfection, is served with a generous portion of fries. Accompanied by our house-made tartar sauce.",
+        "Cod that is delicately battered and fried to golden perfection, is served with a generous portion of fries. Accompanied by our housemade tartar sauce & coleslaw.",
       glutenFree: false,
       dairyFree: true,
       image: dairyFree,
     },
     {
       title: "Chicken Fingers & Fries",
-      price: 18,
+      price: 19,
       description:
-        "5 tender strips of chicken, lightly battered and fried until golden and crispy. Perfectly accompanied by a handful of seasoned fries.",
+        "5 southern fried strips of chicken, fried until golden and crispy. Perfectly accompanied by a handful of seasoned fries.",
       glutenFree: false,
       dairyFree: true,
       image: dairyFree,
     },
-  ],
-  Shareables: [
     {
-      title: "Nachos",
-      price: 21,
+      title: "Mussels",
+      price: 20,
       description:
-        "A vibrant mix of jalapeños, tomatoes, red onions, black olives, and green onions over house-made nacho chips. Perfectly baked, layered, and packed with flavor in every bite.",
-      additional: "Add Brisket or Duck: $5",
-      glutenFree: true,
+        "White wine and garlic or Smoked jalapeno cream sauce. Served with lemon, and slice of house made bread.",
+      glutenFree: false,
       dairyFree: false,
-      image: glutenFree,
+    },
+    {
+      title: "Lobster Mac & Cheese",
+      price: "MP", // Market Price
+      description:
+        "Baked cavatappi pasta in a rich 3 Cheese cream sauce, loaded with local lobster and baked with a crispy garlic bread crumb.",
+      glutenFree: false,
+      dairyFree: false,
+    },
+    {
+      title: "Seafood Chowder",
+      price: { cup: 12, bowl: 19 },
+      description:
+        "Creamy potato and leek base, delicate chunks of fresh cod, shrimp and mussels, corn and crispy bacon.",
+      glutenFree: false,
+      dairyFree: false,
     },
   ],
 };

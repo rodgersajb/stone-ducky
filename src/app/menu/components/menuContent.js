@@ -80,7 +80,14 @@ export default function MenuContent({
                       )}
                     </figure>
                   </div>
-                  <p className="text-lg font-bold">{item.price}</p>
+                  {typeof item.price === "object" && item.price !== null ? (
+                    <div className="flex gap-2 text-lg font-bold">
+                      {item.price.cup && <p> {item.price.cup}</p>}
+                      {item.price.bowl && <p> {item.price.bowl}</p>}
+                    </div>
+                  ) : (
+                    <p className="text-lg font-bold">{item.price}</p>
+                  )}
                 </div>
                 <p className="text-md text-gray-700 mt-2 lg:w-3/4">
                   {item.description}

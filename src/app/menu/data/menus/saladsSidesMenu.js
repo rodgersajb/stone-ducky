@@ -11,10 +11,10 @@ const saladSidesMenu = {
       dairyFree: false,
     },
     {
-      title: "Watermelon Feta Salad",
+      title: "Strawberry Spinach Salad",
       price: 16,
       description:
-        "Arugula, watermelon, feta, cucumber, red onion, blueberries, EVOO, balsamic glaze.",
+        "Spinach, strawberries, red onion, praline pecan, crumbled goat cheese. Sparkling strawberry vinaigrette, balsamic glaze.",
       glutenFree: true,
       dairyFree: false,
       image: glutenFree,
@@ -30,29 +30,29 @@ const saladSidesMenu = {
   ],
   "Sides - Add Ons": [
     {
-      title: "Chicken (6oz)",
-      price: 12,
+      title: "Chicken ",
+      price: 10,
       glutenFree: true,
       dairyFree: true,
       image: [glutenFree, dairyFree],
     },
     {
       title: "Shrimp (3)",
-      price: 15,
+      price: 13,
       glutenFree: true,
       dairyFree: true,
       image: [glutenFree, dairyFree],
     },
     {
-      title: "Brisket (4oz)",
-      price: 7,
+      title: "Brisket ",
+      price: 6,
       glutenFree: true,
       dairyFree: true,
       image: [glutenFree, dairyFree],
     },
     {
-      title: "Duck (4oz)",
-      price: 7,
+      title: "Duck",
+      price: 12,
       glutenFree: true,
       dairyFree: true,
       image: [glutenFree, dairyFree],
@@ -76,6 +76,12 @@ const saladSidesMenu = {
       glutenFree: false,
       dairyFree: false,
     },
+    {
+      title: "Soup",
+      price: 4,
+      glutenFree: false,
+      dairyFree: false,
+    }
   ],
 };
 
