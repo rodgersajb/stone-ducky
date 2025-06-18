@@ -32,11 +32,11 @@ export default function Visit() {
 
         <div className="flex flex-col lg:flex-row  justify-center lg:justify-around lg:w-[85%] items-center gap-2 lg:text-xl ">
           <div className="text-center">
-            <p className="font-semibold">Tuesday/Thursday</p>
+            <p className="font-semibold">Sunday - Thursday</p>
             <p>11:00 am - 8:00 pm</p>
           </div>
           <div className="text-center">
-            <p className="font-semibold">Friday/Sunday</p>
+            <p className="font-semibold">Friday - Saturday</p>
             <p>11:00 am - 10:00 pm</p>
           </div>
         </div>
