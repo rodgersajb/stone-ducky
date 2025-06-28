@@ -41,7 +41,7 @@ export default function Visit() {
           </div>
         </div>
 
-        <div className="flex flex-col pb-4 lg:pb-0 lg:flex-row-reverse w-full lg:justify-start lg:w-[60%]  justify-center items-center gap-4 lg:text-xl relative lg:static ">
+        {/* <div className="flex flex-col pb-4 lg:pb-0 lg:flex-row-reverse w-full lg:justify-start lg:w-[60%]  justify-center items-center gap-4 lg:text-xl relative lg:static ">
           <Image
             src="/images/duck_sleepy.png"
             alt="Sleepy Duck"
@@ -52,7 +52,7 @@ export default function Visit() {
           <p className="relative before:content-[''] before:block before:h-52 before:w-52 before:bg-circle-scribble before:bg-contain before:bg-no-repeat before:absolute before:-top-10 before:-left-12 lg:before:-left-8 before:text-mutedOrange font-semibold ">
             Closed Mondays
           </p>
-        </div>
+        </div> */}
         <div className="flex lg:flex-row flex-col gap-8 z-10 w-[95%] lg:w-full items-center justify-center pb-2">
           <button
             className="btn btn-richNavy btn-richNavy:hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-duckyBlue w-full lg:w-1/3 "
