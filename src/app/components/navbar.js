@@ -45,40 +45,35 @@ export default function Navbar() {
 
   return (
     <motion.nav
-      className={`fixed top-0 left-0 w-full px-4 py-4 z-50 flex items-center justify-between font-semibold gap-4 text-whiteBG transition-colors duration-300 ${
-        isMenuOpen
-          ? "bg-softBlue "
-          : isScrolled
-            ? "bg-creamBG lg:bg-navbar-ducks lg:bg-cover shadow-lg "
-            : "bg-transparent text-mutedOrange"
-      }`}
+      className={`fixed top-0 left-0 w-full px-4 py-4 z-50 flex items-center justify-between font-semibold gap-4 text-warmBeige transition-colors duration-300 bg-[#5A6B5B]  `}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
     >
       <button
-        className="text-3xl md:hidden flex z-50 text-mutedOrange"
+        className="text-3xl md:hidden flex z-50 text-warmBeige"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         aria-label="Toggle menu"
       >
         {isMenuOpen ? <FiX /> : <FiMenu />}
       </button>
+      <button className="text-whiteBg">Reserve</button>
 
-      <Link className="lg:hidden md:hidden z-50 cursor-pointer" href="/">
+      {/* <Link className="lg:hidden md:hidden z-50 cursor-pointer " href="/">
         <Image
           src="/images/logo_stone_ducky.png"
           alt="Stone Ducky Logo"
           width={100}
           height={80}
         />
-      </Link>
+      </Link> */}
       <Link className="hidden z-50 cursor-pointer lg:flex justify-end" href="/">
         <Image
           src="/images/logo_stone_ducky.png"
           alt="Stone Ducky Logo"
           width={200}
           height={160}
-          className={`transition-width duration-300 ease-in-out object-contain ${
+          className={`transition-width duration-300 ease-in-out object-contain  ${
             isScrolled ? "w-32" : ""
           }`}
         />
@@ -115,18 +110,18 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`absolute top-full left-0 w-full h-svh flex flex-col items-center justify-start bg-softBlue bg-contain bg-no-repeat border-t-2 z-49 border-t-duckyOrange text-duckyOrange bg-mobile-duck-bg shadow-lg transition-all duration-300 ease-in-out ${
+        className={`absolute top-full left-0 w-full h-svh flex flex-col items-center justify-start z-49 bg-warmBeige text-[#5A6B5B] g transition-all duration-300 ease-in-out ${
           isMenuOpen
             ? "translate-y-0 opacity-100"
             : "-translate-y-full opacity-0"
         }`}
       >
-        <ul className="flex flex-col mt-8 items-start border-2 border-duckyBlue rounded justify-center z-50 gap-4 p-4  w-[80%]   bg-softBlue text-sm text-duckyBlue font-Libre_Baskerville">
+        <ul className="flex flex-col mt-8 items-start  justify-center z-50 gap-4 p-4  w-[80%] text-sm text-whiteBG font-Libre_Baskerville">
           {navLinks.map((link, index) => (
             <li
               key={index}
               className={`cursor-pointer ${
-                pathname === link.href ? "text-mutedOrange font-bold" : ""
+                pathname === link.href ? "text-[#5A6B5B] font-bold" : ""
               }`}
             >
               <Link href={link.href} onClick={() => setIsMenuOpen(false)}>
@@ -134,7 +129,7 @@ export default function Navbar() {
               </Link>
             </li>
           ))}
-          <li className="cursor-pointer text-center grid place-items-center w-full py-2 px-4 border-2 border-duckyBlue text-duckyBlue  rounded">
+          <li className="cursor-pointer text-center grid place-items-center w-full py-2 px-4 border-2 border-[#5A6B5B] text-[#5A6B5B]  rounded">
             <Link
               href="https://order.tbdine.com/pickup/50580/menu"
               className=""
@@ -142,13 +137,13 @@ export default function Navbar() {
               Order Online
             </Link>
           </li>
-          <li className=" cursor-pointer text-center grid place-items-center w-full py-2 px-4 bg-duckyBlue text-creamBG rounded">
+          <li className=" cursor-pointer text-center grid place-items-center w-full py-2 px-4 bg-[#5A6B5B] text-creamBG rounded">
             <Link href="https://www.tbdine.com/book/restaurant/stone-ducky?idApp=71672&language=en-us">
               Book a Table
             </Link>
           </li>
           <li
-            className="flex items-center justify-evenly w-full text-duckyBlue"
+            className="flex items-center justify-evenly w-full text-[#5A6B5B]"
             aria-label="Visit our FaceBook Page"
           >
             <Link href="https://www.facebook.com/p/Stone-Ducky-NL-61553172230504/">

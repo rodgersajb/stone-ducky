@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Visit() {
   return (
-    <section className="lg:grid lg:grid-cols-2 flex flex-col-reverse w-full bg-warmBeige">
+    <section className="lg:grid lg:grid-cols-2 flex flex-col-reverse w-full ">
       <FadeInImageContainer
         className="h-[400px] lg:min-h-[500px] w-[90%] m-auto lg:w-full"
         delay={0.5}
@@ -19,25 +19,35 @@ export default function Visit() {
           className="object-contain lg:object-cover"
         />
       </FadeInImageContainer>
-      <div className="min-h-[625px] lg:min-h-[500px] w-full text-coolGray flex flex-col items-center justify-evenly  lg:justify-center gap-4 ">
+      <div className="min-h-[625px] lg:min-h-[500px] w-full flex flex-col items-center justify-center  lg:justify-center gap-4 bg-border bg-contain bg-no-repeat bg-whiteBG">
         <div className="z-10 relative">
-          <h2 className="text-2xl lg:text-4xl relative  ">Visit Us</h2>
+          <h2 className="text-2xl lg:text-4xl relative text-warmTaupe ">
+            Visit Us
+          </h2>
         </div>
 
-        <div className="lg:text-xl text-center font-semibold">
+        <div className="lg:text-xl text-sm text-center font-semibold text-[#5A6B5B] ">
           <p>56 St Johns Rd</p>
           <p>Bay Bulls, NL A0A 1C0</p>
           <p>(709) 334-3825</p>
         </div>
 
-        <div className="flex flex-col lg:flex-row  justify-center lg:justify-around lg:w-[85%] items-center gap-2 lg:text-xl ">
+        <div className="flex flex-col lg:flex-row  justify-center lg:justify-around lg:w-[85%] items-center gap-2 lg:text-xl text-warmTaupe">
           <div className="text-center">
-            <p className="font-semibold">Sunday - Thursday</p>
+            <p className="font-semibold">Monday</p>
+            <p>Closed</p>
+          </div>
+          <div className="text-center">
+            <p className="font-semibold">Tuesday - Thursday</p>
             <p>11:00 am - 8:00 pm</p>
           </div>
           <div className="text-center">
             <p className="font-semibold">Friday - Saturday</p>
             <p>11:00 am - 10:00 pm</p>
+          </div>
+          <div className="text-center">
+            <p className="font-semibold">Sunday</p>
+            <p>11:00 am - 8:00 pm</p>
           </div>
         </div>
 
@@ -53,23 +63,21 @@ export default function Visit() {
             Closed Mondays
           </p>
         </div> */}
-        <div className="flex lg:flex-row flex-col gap-8 z-10 w-[95%] lg:w-full items-center justify-center pb-2">
+        <div className="flex lg:flex-row flex-col gap-2 lg:gap-8 z-10 w-[50%] lg:w-full items-center justify-center pb-2 text-sm">
           <button
-            className="btn btn-richNavy btn-richNavy:hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-duckyBlue w-full lg:w-1/3 "
+            className="btn btn-warmTaupe btn-warmTaupe:hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-warmTaupe w-full lg:w-1/3"
             aria-label="Book A Table"
           >
             <Link href="https://www.tbdine.com/book/restaurant/stone-ducky?idApp=71672&language=en-us">
               <span>Book a Table</span>
             </Link>
           </button>
+
           <button
-            className="btn btn-mutedOrange btn-mutedOrange:hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-duckyBlue w-full lg:w-1/3 "
+            className="btn btn-outlineTaupe btn-outlineTaupe:hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-warmTaupe w-full lg:w-1/3"
             aria-label="Order Online"
           >
-            <Link
-              href="https://order.tbdine.com/pickup/50580/menu"
-              className=""
-            >
+            <Link href="https://order.tbdine.com/pickup/50580/menu">
               <span>Order Online</span>
             </Link>
           </button>

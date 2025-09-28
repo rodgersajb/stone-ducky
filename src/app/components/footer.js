@@ -3,9 +3,6 @@ import Link from "next/link";
 
 import { FaFacebookF, FaTiktok } from "react-icons/fa6";
 import { GrInstagram } from "react-icons/gr";
-import FooterNav from "./footerNav";
-
-
 
 const socialIcons = [
   {
@@ -18,12 +15,14 @@ const socialIcons = [
 
 export default function Footer() {
   return (
-    <footer className="bg-creamBG bg-contain w-full pt-8">
-      <section className=" flex flex-col">
-       <FooterNav />
-      </section>
-      <section className="w-full flex m-auto justify-around items-center pt-8 pb-4 border-t-2">
-        <p className="text-sm">© Copyright 2024</p>
+    <footer className="bg-[#5A6B5B] bg-contain w-full pt-8 text-whiteBG font-semibold relative">
+     
+      <section className="w-full flex flex-col m-auto justify-center gap-4 items-center pt-8 pb-4 ">
+        <div className="lg:text-xl text-sm text-center flex flex-col ">
+          <p>56 St Johns Rd</p>
+          <p>Bay Bulls, NL A0A 1C0</p>
+          <p>(709) 334-3825</p>
+        </div>
         <Image
           src="/images/logo_stone_ducky.png"
           alt="Stone Ducky Logo"
@@ -33,10 +32,16 @@ export default function Footer() {
         <ul className="flex gap-4 items-center">
           {socialIcons.map((social, index) => (
             <li key={index}>
-              <Link href={social.href} aria-label={`Visit our ${social.label} page`}>{social.icon}</Link>
+              <Link
+                href={social.href}
+                aria-label={`Visit our ${social.label} page`}
+              >
+                {social.icon}
+              </Link>
             </li>
           ))}
         </ul>
+        <p className="text-sm">© 2024 Stone Ducky</p>
       </section>
     </footer>
   );

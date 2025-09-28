@@ -5,11 +5,10 @@
 /* Define custom fonts */
 :root {
   /* --font-poppins: "Poppins", sans-serif; */
-  
+
   --font-libreBaskerville: "Libre Baskerville", serif;
-  
+
   --font-sourceSansPro: "Source Sans Pro", sans-serif;
-  
 }
 
 /* Base styles */
@@ -38,8 +37,31 @@
 
 @layer components {
   .btn {
-    @apply py-3 px-8 rounded font-semibold uppercase transition ease-in-out delay-150 duration-300;
+    @apply py-3 px-8 rounded font-semibold  transition ease-in-out delay-150 duration-300;
     touch-action: manipulation; /* Improve button behavior on touch devices */
+  }
+
+  /* Warm Taupe Button */
+  .btn-warmTaupe {
+    @apply bg-warmTaupe border-2 border-warmTaupe text-white text-sm lg:text-lg; 
+  }
+  .btn-warmTaupe:hover,
+  .btn-warmTaupe:focus-visible {
+    @apply hover:-translate-y-1 hover:scale-110 hover:bg-white hover:text-warmTaupe;
+  }
+  .btn-warmTaupe:active {
+    @apply scale-100 bg-warmTaupe text-white shadow-inner;
+  }
+
+  .btn-outlineTaupe {
+    @apply bg-transparent border-2 border-warmTaupe text-warmTaupe text-sm lg:text-lg;
+  }
+  .btn-outlineTaupe:hover,
+  .btn-outlineTaupe:focus-visible {
+    @apply hover:-translate-y-1 hover:scale-110 hover:bg-warmTaupe hover:text-white;
+  }
+  .btn-outlineTaupe:active {
+    @apply scale-100 bg-warmTaupe text-white shadow-inner;
   }
 
   /* Rich Navy Button */

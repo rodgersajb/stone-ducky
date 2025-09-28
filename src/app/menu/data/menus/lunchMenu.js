@@ -2,51 +2,36 @@ const glutenFree = "/images/gluten-free.png";
 const dairyFree = "/images/dairy-free.png";
 
 const lunchMenu = {
-  Subs: [
+  Sandwiches: [
     {
-      title: "Brisket Horseradish Sub",
-      price: 21,
+      title: "Cod Sandwich",
+      price: 24,
       description:
-        "Tender, slow-braised brisket layered with creamy horseradish aioli, provolone. Smothered in a Bakeapple BBQ sauce. Finished with arugula and crispy shallots for an irresistible crunch.",
+        "Fresh battered cod, served on our homemade brioche with tartar sauce and coleslaw.",
       glutenFree: false,
-      dairyFree: false,
+      dairyFree: true,
+      image: dairyFree,
     },
     {
-      title: "Chicken Pesto Sub",
-      price: 20,
+      title: "Chicken Club Sandwich",
+      price: 23,
       description:
-        "Perfectly grilled chicken paired with vibrant pesto mayo, sun-dried tomatoes, and arugula, topped with freshly shaved parmesan.",
+        "Tender chicken breast stacked with smoky bacon, lettuce, tomato, and smoked jalapeño aioli on toasted white bread.",
       glutenFree: false,
       dairyFree: false,
     },
   ],
   Burgers: [
     {
-      title: "Carol Ann’s Fried Chicken Burger",
+      title: "The Stone Ducky House Burger",
       price: 25,
       description:
-        "Tossed in our secret herb and spice blend. Topped with smoky jalapeño aioli, crispy bacon, fresh lettuce. This sandwich is packed with bold flavour that hits the spot every time!",
-      glutenFree: false,
-      dairyFree: false,
-    },
-    {
-      title: "The Stone Ducky Brisket Burger",
-      price: 28,
-      description:
-        "Dressed like our House burger, but smothered in our in house braised Bakeapple BBQ Brisket.",
+        "6oz beef patty, perfectly seasoned and grilled, topped with creamy cheddar, smoky jalapeño aioli, crispy bacon for a bold twist. Fresh lettuce, ripe tomato, and crispy onions.",
       glutenFree: false,
       dairyFree: false,
     },
   ],
   Mains: [
-    {
-      title: "Lobster Roll",
-      price: "MP", // Market Price
-      description:
-        "Decadent house made lobster salad in a garlic butter toasted roll, crisp lettuce, served with lemon, coleslaw, and fries.",
-      glutenFree: false,
-      dairyFree: false,
-    },
     {
       title: "Chicken Wings",
       price: 19,
@@ -60,41 +45,52 @@ const lunchMenu = {
       title: "Fish & Chips",
       price: 22,
       description:
-        "Cod that is delicately battered and fried to golden perfection, is served with a generous portion of fries. Accompanied by our housemade tartar sauce & coleslaw.",
+        "Cod that is delicately battered and fried to golden perfection, served with a generous portion of fries. Accompanied by our housemade tartar sauce & coleslaw.",
       glutenFree: false,
       dairyFree: true,
       image: dairyFree,
     },
     {
-      title: "Chicken Fingers & Fries",
-      price: 19,
+      title: "Chicken & Ribs",
+      price: 35,
       description:
-        "5 southern fried strips of chicken, fried until golden and crispy. Perfectly accompanied by a handful of seasoned fries.",
+        "Golden fried chicken and fall-off-the-bone slow-braised ribs, brushed with our signature Bakeapple BBQ sauce. Served with coleslaw, and a choice of side.",
       glutenFree: false,
-      dairyFree: true,
-      image: dairyFree,
+      dairyFree: false,
     },
+  ],
+  Salads: [
     {
-      title: "Mussels",
-      price: 20,
+      title: "Kale Caesar Salad",
+      price: 16,
       description:
-        "White wine and garlic or Smoked jalapeno cream sauce. Served with lemon, and slice of house made bread.",
+        "Kale, house-made croutons, bacon lardons, shaved Bella Lodi cheese, and fried capers.",
       glutenFree: false,
       dairyFree: false,
     },
     {
-      title: "Lobster Mac & Cheese",
-      price: "MP", // Market Price
+      title: "Roasted Beet Salad",
+      price: 16,
       description:
-        "Baked cavatappi pasta in a rich 3 Cheese cream sauce, loaded with local lobster and baked with a crispy garlic bread crumb.",
+        "Roasted beets, whipped goat cheese, arugula, shallots, candied pecans, maple balsamic dressing.",
+      glutenFree: false,
+      dairyFree: false,
+    },
+  ],
+  Soups: [
+    {
+      title: "Split Pea Soup",
+      price: 14,
+      description:
+        "Traditional split peas gently simmered with root vegetables and salt beef, served with a warm bread roll.",
       glutenFree: false,
       dairyFree: false,
     },
     {
-      title: "Seafood Chowder",
-      price: { cup: 12, bowl: 19 },
+      title: "Creamy Tomato Soup",
+      price: 13,
       description:
-        "Creamy potato and leek base, delicate chunks of fresh cod, shrimp and mussels, corn and crispy bacon.",
+        "Silky tomato soup enriched with cream, topped with house-made croutons and a drizzle of balsamic glaze.",
       glutenFree: false,
       dairyFree: false,
     },

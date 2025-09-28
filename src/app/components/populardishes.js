@@ -43,11 +43,11 @@ export default function Test() {
   }, [embla]);
 
   return (
-    <section className=" w-full flex flex-col items-center justify-center bg-softBlue ">
+    <section className=" w-full flex flex-col items-center justify-center bg-whiteBG ">
       <div className=" lg:flex lg:flex-row flex-col w-full relative ">
         {/* Left Section */}
-        
-          {/* <Image
+
+        {/* <Image
             src="images/blue_duck.svg"
             alt="Blue Duck"
             width={150}
@@ -56,22 +56,15 @@ export default function Test() {
             loading="lazy"
           />
          */}
-        <div className=" relative w-[95%] min-h-[500px]  lg:w-1/2 m-auto  flex flex-col items-center justify-center gap-10 z-10 text-richNavy">
-          <h2 className="lg:text-4xl text-2xl font-semibold text-center">
+        <div className=" relative w-[95%]  lg:w-1/2 m-auto  flex flex-col items-center justify-center gap-10 z-10">
+          <div className="w-full bg-flying-ducks bg-cover h-[125px] "></div>
+          {/* <h2 className="lg:text-4xl text-2xl font-semibold text-center">
             Our Menu
           </h2>
           <h3 className=" text-xl px-2 lg:text-2xl text-center lg:px-8 ">
             A Vibrant Dining Experience with Fantastic Cuisine and Exceptional
             Service.
-          </h3>
-          <button
-            className="btn btn-richNavy w-full lg:w-1/2 "
-            aria-label="View our menu"
-          >
-            <Link href="/menu">
-              <span>View Menu</span>
-            </Link>
-          </button>
+          </h3> */}
         </div>
 
         {/* Right Section */}
@@ -95,18 +88,10 @@ export default function Test() {
                       />
                       {/* Text Overlay */}
                       <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white p-4">
-                        <h2 className="text-xl lg:text-4xl font-semibold mb-2 text-center">
+                        <h2 className="text-lg lg:text-4xl font-semibold mb-2 text-center">
                           {image.alt}
                         </h2>
-                        <figure className="relative mb-2">
-                          <Image
-                            src="/images/squiggle.png"
-                            alt="Squiggly underline"
-                            width={150}
-                            height={15}
-                            lazy="true"
-                          />
-                        </figure>
+
                         <p className="text-sm lg:text-xl font-semibold w-3/4 text-center">
                           {image.description}
                         </p>
@@ -131,6 +116,15 @@ export default function Test() {
               ))}
             </div>
           </div>
+          <button
+            className="btn btn-warmTaupe w-1/2 mt-5 mb-10 "
+            aria-label="View our menu"
+          >
+            <Link href="/menu">
+              <span>View Menu</span>
+            </Link>
+          </button>
+          <div className="w-full bg-flying-ducks bg-cover h-[125px] mb-10"></div>
         </div>
       </div>
     </section>
