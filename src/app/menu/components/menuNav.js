@@ -4,7 +4,7 @@ import { useRef, useState, useEffect } from "react";
 import SupperMenu from "./supperMenu";
 import LunchMenu from "./lunchMenu";
 import PizzaMenu from "./pizzaMenu";
-import DessertMenu from "./dessertMenu";
+// import DessertMenu from "./dessertMenu";
 import DrinkMenu from "./drinkMenu";
 import SaladsSidesMenu from "./saladsSides";
 
@@ -14,7 +14,7 @@ const menus = [
   { title: "Supper", component: SupperMenu },
   { title: "Lunch", component: LunchMenu },
   { title: "Pizza", component: PizzaMenu },
-  { title: "Dessert", component: DessertMenu },
+  // { title: "Dessert", component: DessertMenu },
   { title: "Drinks", component: DrinkMenu },
   { title: "Salads/Sides", component: SaladsSidesMenu },
 ];

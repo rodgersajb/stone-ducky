@@ -1,5 +1,6 @@
 const glutenFree = "/images/gluten-free.png";
 
+
 const pizzaMenu = {
   Pizzas: [
     {
@@ -12,12 +13,11 @@ const pizzaMenu = {
     },
     {
       title: "Margherita",
-      price: 22,
+      price: 20,
       description:
         "San Marzano tomato sauce, fior di latte mozzarella, basil, drizzle of EVOO.",
       glutenFree: true,
       dairyFree: false,
-      image: glutenFree,
     },
     {
       title: "Pepperoni",
@@ -26,7 +26,6 @@ const pizzaMenu = {
         "San Marzano tomato sauce, Stone Ducky's 3-cheese blend, pepperoni, oregano.",
       glutenFree: true,
       dairyFree: false,
-      image: glutenFree,
     },
     {
       title: "Stone Ducky Supreme",
@@ -35,25 +34,22 @@ const pizzaMenu = {
         "San Marzano tomato sauce, Stone Ducky's 3-cheese blend, pepperoni, Newlander's Italian sausage, green peppers, mushrooms, red onion, black olives.",
       glutenFree: true,
       dairyFree: false,
-      image: glutenFree,
     },
     {
-      title: "Meat Lovers",
+      title: "The Bianca",
       price: 30,
       description:
-        "San Marzano tomato sauce, Stone Ducky's 3-cheese blend, pepperoni, Genoa salami, ham, Newlander Meat's Italian sausage.",
+        "Creamy Bianca sauce, Smoked Mozzarella, Fior Di Latte, Roasted Apples, Pancetta, Sesame Seed Crust.",
       glutenFree: true,
       dairyFree: false,
-      image: glutenFree,
     },
     {
       title: "BBQ Chicken",
-      price: 24,
+      price: 25,
       description:
         "Bakeapple BBQ sauce, Stone Ducky's 3-cheese blend, grilled chicken, red onions.",
       glutenFree: true,
       dairyFree: false,
-      image: glutenFree,
     },
     {
       title: "Spicy Duck Diavolo",
@@ -62,7 +58,6 @@ const pizzaMenu = {
         "Firey garlic tomato sauce, Stone Ducky's 3-cheese blend, duck confit, roasted red peppers, red onions, jalapeños.",
       glutenFree: true,
       dairyFree: false,
-      image: glutenFree,
     },
     {
       title: "Vegetarian",
@@ -71,16 +66,53 @@ const pizzaMenu = {
         "San Marzano tomato sauce, Stone Ducky's 3-cheese blend, Windy Heights Farm's mushrooms, green pepper, red onion, black olives, tomato.",
       glutenFree: true,
       dairyFree: false,
-      image: glutenFree,
     },
     {
-      title: "Chicken Pesto",
-      price: 24,
+      title: "Prosciutto Parmesan",
+      price: 28,
       description:
-        "Sunflower seed pesto, Stone Ducky's 3-cheese blend, chicken, sundried tomato, balsamic glaze.",
+        "San Marzano tomato sauce, Fior Di Latte, Bella Lodi Cheese, Prosciutto, Cherry Tomato, Arugula, Olive Oil.",
       glutenFree: true,
       dairyFree: false,
-      image: glutenFree,
+    },
+    {
+      title: "Capricciosa",
+      price: 25,
+      description:
+        "San Marzano tomato sauce, mushroom, artichoke, black olives, sliced ham.",
+      glutenFree: true,
+      dairyFree: false,
+    },
+    {
+      title: "Garlic Fingers",
+      price: 19,
+      description: "Garlic oil base, Stone Ducky's 3-cheese blend, oregano.",
+      glutenFree: true,
+      dairyFree: false,
+    },
+    {
+      title: "The Big Smoke",
+      price: 25,
+      description:
+        "Firey garlic tomato sauce, Smoked Mozzarella, Calabrese Salami, Jalapeño, Smoked Jalapeño Drizzle.",
+      glutenFree: true,
+      dairyFree: false,
+    },
+    {
+      title: "The Truffle Hunter",
+      price: 28,
+      description:
+        "Creamy Bianca sauce, Windy Heights Farm mushroom blend, truffle oil, arugula.",
+      glutenFree: true,
+      dairyFree: false,
+    },
+    {
+      title: "Brisket",
+      price: 26,
+      description:
+        "Bakeapple BBQ sauce, Smoked Mozzarella, oregano, roasted red pepper, braised brisket.",
+      glutenFree: true,
+      dairyFree: false,
     },
   ],
 };

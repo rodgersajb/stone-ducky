@@ -14,7 +14,7 @@ export default function Menu() {
     <main>
       <HeaderFadeContainer>
         <Image
-          src="/images/chicken_salmon.webp"
+          src="/images/ducky-braised-beef-short-rib.webp"
           alt="Steak Dinner"
           fill
           className="object-cover "

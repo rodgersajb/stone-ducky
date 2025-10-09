@@ -46,7 +46,7 @@ const saladSidesMenu = {
       title: "Duck Confit",
       price: 12,
       glutenFree: true,
-      dairyFree: true,
+      dairyFree: false,
       image: glutenFree,
     },
     {
