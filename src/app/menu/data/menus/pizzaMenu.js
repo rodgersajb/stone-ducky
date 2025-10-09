@@ -2,9 +2,14 @@ const glutenFree = "/images/gluten-free.png";
 
 const pizzaMenu = {
   Pizzas: [
-    {title: "**All Pizza Dough Made Fresh In House & Cold Fermented For 24 Hours"      
+    {
+      title:
+        "**All Pizza Dough Made Fresh In House & Cold Fermented For 24 Hours",
     },
-    { title: "** Gluten-Free crusts are available for small pizzas only" },
+    {
+      title:
+        "** Gluten-Free crusts are available for small pizzas only. Subject to availability.",
+    },
     {
       title: "Margherita",
       price: 22,

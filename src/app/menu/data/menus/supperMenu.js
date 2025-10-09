@@ -4,21 +4,21 @@ const dairyFree = "/images/dairy-free.png";
 const supperMenu = {
   Starters: [
     {
-      title: "Mussels",
-      price: 20,
-      description:
-        "White wine and garlic or Smoked jalapeño cream sauce. Served with lemon, and slice of house made bread.",
-      glutenFree: false,
-      dairyFree: true,
-      image: dairyFree,
+      title: "Split Pea Fries",
+      price: 16,
+      description: "Shredded Salt Beef, Mustard Pickles.",
+      glutenFree: true,
+      dairyFree: false,
+      image: glutenFree,
     },
     {
-      title: "Mushroom Arancini",
-      price: 16,
+      title: "Seared Scallops",
+      price: 25,
       description:
-        "Crispy risotto balls filled with Windy Heights Farms mushrooms, fried to golden perfection. Served with a truffle aioli and shaved Parmesan for a rich, earthy finish.",
-      glutenFree: false,
+        "Jerusalem Artichoke Puree, Jerusalem Artichoke Chips, Bakeapple Sauce.",
+      glutenFree: true,
       dairyFree: false,
+      image: glutenFree,
     },
     {
       title: "Chicken Wings",
@@ -36,58 +36,61 @@ const supperMenu = {
       price: 21,
       description:
         "A vibrant mix of jalapeños, tomatoes, red onions, black olives, and green onions over house-made nacho chips. Perfectly baked, layered and packed with flavour in every bite.",
-      additional: "Add Brisket or Spiced Chicken: $6",
+      additional: "Add Brisket or Spicy Chicken",
       glutenFree: true,
       dairyFree: false,
       image: glutenFree,
     },
     {
       title: "Spinach & Artichoke Dip",
-      price: 19,
+      price: 18,
       description:
         "A creamy blend of tender spinach, artichoke hearts, melted cheddar cheese and smoked jalapeño. Served with our house-made nacho chips.",
-      glutenFree: false,
+      glutenFree: true,
       dairyFree: false,
+      image: glutenFree,
     },
     {
-      title: "Focaccia",
-      price: 6,
-      description: "House baked daily, EVOO & balsamic.",
+      title: "Baked Brie",
+      price: 18,
+      description:
+        "Warm brie with Baguette, offered with your choice of bakeapple & rosemary, maple-pecan, or caramelized onion & bacon.",
       glutenFree: false,
-      dairyFree: true,
-      image: dairyFree,
+      dairyFree: false,
     },
   ],
   Entrees: [
     {
-      title: "Sausage & Mushroom Cavatappi",
-      price: 29,
+      title: "Pan Fried Cod",
+      price: 32,
       description:
-        "Newlander Meat’s Italian sausage and earthy, locally sourced Windy Heights Farm's mushrooms, tossed in our 60 clove garlic tomato sauce.",
+        "Crispy Smashed Potato, Roasted Carrots, scrunchion, lemon & chive drawn butter.",
+      glutenFree: true,
+      dairyFree: false,
+      image: glutenFree,
+    },
+    {
+      title: "Chicken & Ribs",
+      price: 35,
+      description:
+        "Golden fried chicken and fall-off-the-bone slow-braised ribs, brushed with our signature bakeapple BBQ sauce. Served with Coleslaw, and a choice of Side.",
       glutenFree: false,
       dairyFree: false,
     },
     {
-      title: "Spaghetti Carbonara",
-      price: 29,
+      title: "Pork Chop",
+      price: 34,
       description:
-        "A classic Italian favorite! Crisp bacon coated in a creamy sauce of rich egg yolks and freshly grated parmesan.",
-      glutenFree: false,
+        "Herb-seared bone-in pork loin, served with crispy smashed potato and tender wilted spinach, finished in a velvety Dijon and wild mushroom cream sauce.",
+      glutenFree: true,
       dairyFree: false,
+      image: glutenFree,
     },
     {
-      title: "Lobster Mac & Cheese",
-      price: "MP",
+      title: "Braised Beef Short Rib",
+      price: 38,
       description:
-        "Baked cavatappi pasta in a rich 3 Cheese cream sauce, loaded with local lobster and baked with a crispy garlic bread crumb.",
-      glutenFree: false,
-      dairyFree: false,
-    },
-    {
-      title: "Crispy Skin-on Salmon",
-      price: 36,
-      description:
-        "Served on a creamy sun-dried tomato and basil risotto, creating a harmonious balance of textures and tastes in every bite.",
+        "Slow-braised beef short rib over creamy garlic mashed potatoes, with honey-glazed carrots, horseradish cream, and a crown of crispy fried onions.",
       glutenFree: true,
       dairyFree: false,
       image: glutenFree,
@@ -98,7 +101,7 @@ const supperMenu = {
       title: "The Stone Ducky House Burger",
       price: 25,
       description:
-        "6oz beef patty, perfectly seasoned and grilled, topped with creamy cheddar, smoky jalapeño aioli, crispy bacon for a bold twist. Fresh lettuce, ripe tomato, and crispy onions.",
+        "6oz beef patty, perfectly seasoned and grilled, topped with creamy cheddar, smoky jalapeño aioli, lettuce, ripe tomato, and crispy onions.",
       glutenFree: false,
       dairyFree: false,
     },
@@ -111,10 +114,10 @@ const supperMenu = {
       dairyFree: false,
     },
     {
-      title: "The Stone Ducky Brisket Burger",
-      price: 28,
+      title: "Cod Sandwich",
+      price: 23,
       description:
-        "Dressed like our House burger, but smothered in our in-house braised Bakeapple BBQ Brisket.",
+        "Fresh battered cod, served on our homemade brioche with tartar sauce and coleslaw.",
       glutenFree: false,
       dairyFree: false,
     },
