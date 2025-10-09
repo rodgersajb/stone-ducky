@@ -9,8 +9,8 @@ const lunchMenu = {
       description:
         "Fresh battered cod, served on our homemade brioche with tartar sauce and coleslaw.",
       glutenFree: false,
-      dairyFree: true,
-      image: dairyFree,
+      dairyFree: false,
+      
     },
     {
       title: "Chicken Club Sandwich",
@@ -38,8 +38,8 @@ const lunchMenu = {
       description:
         "One pound of juicy chicken wings, cooked to perfection and tossed in your choice of Mild, Medium, Hot, Honey Garlic, or our unique, made in house Bakeapple BBQ sauce for a flavour experience to savour.",
       glutenFree: true,
-      dairyFree: true,
-      image: [glutenFree, dairyFree],
+      dairyFree: false,
+      image: glutenFree,
     },
     {
       title: "Fish & Chips",
@@ -47,8 +47,8 @@ const lunchMenu = {
       description:
         "Cod that is delicately battered and fried to golden perfection, served with a generous portion of fries. Accompanied by our housemade tartar sauce & coleslaw.",
       glutenFree: false,
-      dairyFree: true,
-      image: dairyFree,
+      dairyFree: false,
+      
     },
     {
       title: "Chicken & Ribs",
@@ -73,8 +73,9 @@ const lunchMenu = {
       price: 16,
       description:
         "Roasted beets, whipped goat cheese, arugula, shallots, candied pecans, maple balsamic dressing.",
-      glutenFree: false,
+      glutenFree: true,
       dairyFree: false,
+      image: glutenFree,
     },
   ],
   Soups: [

@@ -7,24 +7,27 @@ const supperMenu = {
       title: "Split Pea Fries",
       price: 16,
       description: "Shredded Salt Beef, Mustard Pickles.",
-      glutenFree: false,
+      glutenFree: true,
       dairyFree: false,
+      image: glutenFree,
     },
     {
       title: "Seared Scallops",
       price: 25,
       description:
         "Jerusalem Artichoke Puree, Jerusalem Artichoke Chips, Bakeapple Sauce.",
-      glutenFree: false,
+      glutenFree: true,
       dairyFree: false,
+      image: glutenFree,
     },
     {
       title: "Chicken Wings",
       price: 19,
       description:
         "One pound of juicy chicken wings, cooked to perfection and tossed in your choice of Mild, Medium, Hot, Honey Garlic, or our unique, made-in-house Bakeapple BBQ sauce for a flavour experience to savour.",
-      glutenFree: false,
+      glutenFree: true,
       dairyFree: false,
+      image: glutenFree,
     },
   ],
   Shareables: [
@@ -34,16 +37,18 @@ const supperMenu = {
       description:
         "A vibrant mix of jalapeños, tomatoes, red onions, black olives, and green onions over house-made nacho chips. Perfectly baked, layered and packed with flavour in every bite.",
       additional: "Add Brisket or Spicy Chicken",
-      glutenFree: false,
+      glutenFree: true,
       dairyFree: false,
+      image: glutenFree,
     },
     {
       title: "Spinach & Artichoke Dip",
       price: 18,
       description:
         "A creamy blend of tender spinach, artichoke hearts, melted cheddar cheese and smoked jalapeño. Served with our house-made nacho chips.",
-      glutenFree: false,
+      glutenFree: true,
       dairyFree: false,
+      image: glutenFree,
     },
     {
       title: "Baked Brie",
@@ -60,8 +65,9 @@ const supperMenu = {
       price: 32,
       description:
         "Crispy Smashed Potato, Roasted Carrots, scrunchion, lemon & chive drawn butter.",
-      glutenFree: false,
+      glutenFree: true,
       dairyFree: false,
+      image: glutenFree,
     },
     {
       title: "Chicken & Ribs",
@@ -76,16 +82,18 @@ const supperMenu = {
       price: 34,
       description:
         "Herb-seared bone-in pork loin, served with crispy smashed potato and tender wilted spinach, finished in a velvety Dijon and wild mushroom cream sauce.",
-      glutenFree: false,
+      glutenFree: true,
       dairyFree: false,
+      image: glutenFree,
     },
     {
       title: "Braised Beef Short Rib",
       price: 38,
       description:
         "Slow-braised beef short rib over creamy garlic mashed potatoes, with honey-glazed carrots, horseradish cream, and a crown of crispy fried onions.",
-      glutenFree: false,
+      glutenFree: true,
       dairyFree: false,
+      image: glutenFree,
     },
   ],
   Handhelds: [
