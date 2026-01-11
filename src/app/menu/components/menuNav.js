@@ -80,11 +80,11 @@ export default function MenuNav() {
           <button
             key={index}
             onClick={() => handleButtonClick(menu.title)}
-            className={`px-6 py-2 w-full m-auto text-center lg:min-h-[50px] text-sm lg:text-2xl font-semibold border transition-all rounded ease-in-out duration-300 cursor-pointer lg:last:text-xl  hover:text-whiteBG hover:bg-duckyBlue border-charcoal ${
+            className={`px-6 py-2 w-full m-auto text-center lg:min-h-[50px] text-sm lg:text-2xl font-semibold border transition-all rounded ease-in-out duration-300 cursor-pointer lg:last:text-xl  hover:text-whiteBG hover:bg-[#5A6B5B] border-charcoal ${
               selectedMenu === menu.title
-                ? "bg-richNavy text-whiteBG"
+                ? "bg-[#5A6B5B] text-whiteBG"
                 : "bg-whiteBG"
-            } focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-duckyBlue`}
+            } focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#5A6B5B]`}
             aria-label={`View the ${menu.title} menu`}
             aria-current={selectedMenu === menu.title ? "true" : undefined}
           >

@@ -11,10 +11,9 @@ export const metadata = {
 
 export default function Menu() {
   return (
-    <main className="flex flex-col">
+    <main className="flex flex-col ">
       <HeaderFadeContainer>
         <figure className="relative w-full h-[200px]">
-
           <Image
             src="/images/header-food-drink.png"
             alt="Food and Drink"
@@ -25,10 +24,10 @@ export default function Menu() {
         </figure>
         <figure className="relative w-full h-[250px]">
           <Image
-            src="/images/chicken_salmon.webp"
-            alt="Steak Dinner"
+            src="/images/ducky-braised-beef-short-rib.webp"
+            alt="Braised Beef Short Rib"
             fill
-            className="lg-object-cover object-contain "
+            className="lg-object-cover object-cover "
             priority={true}
           />
         </figure>
@@ -37,7 +36,7 @@ export default function Menu() {
         </h1> */}
       </HeaderFadeContainer>
       <section className="w-full pt-4 bg-stone-ducky-icons-background bg-contain">
-        <figure className="flex flex-col justify-center items-center w-2/3 m-auto">
+        {/* <figure className="flex flex-col justify-center items-center w-2/3 m-auto">
           <Image
             src="/images/chef_ducky.png"
             alt="blue ducky icon"
@@ -45,14 +44,14 @@ export default function Menu() {
             width={75}
             height={75}
             lazy="true"
-          />
-          <h2 className="text-center text-sm lg-text-4xl text-duckyBlue font-semibold">
-            Explore Our Menus
-          </h2>
-          <p className="text-center lg-text-xl text-sm">
-            Lunch is available from 11 am to 4 pm
-          </p>
-        </figure>
+          /> */}
+        {/* </figure> */}
+        <h2 className="text-center text-sm lg-text-4xl text-[#5A6B5B] font-semibold">
+          Explore Our Menus
+        </h2>
+        <p className="text-center lg-text-xl text-sm">
+          Lunch is available from 11 am to 4 pm
+        </p>
         <MenuNav />
       </section>
     </main>

@@ -32,22 +32,22 @@ export default function Visit() {
           <p>(709) 334-3825</p>
         </div>
 
-        <div className="flex flex-col lg:flex-row  justify-center lg:justify-around lg:w-[85%] items-center gap-2 lg:text-xl text-warmTaupe">
+        <div className="flex flex-col lg:flex-row  justify-center lg:justify-around lg:w-[85%] items-center gap-2 lg:text-xl ">
           <div className="text-center">
-            <p className="font-semibold">Monday</p>
-            <p>Closed</p>
+            <p className="font-semibold text-warmTaupe">Monday</p>
+            <p className="font-semibold text-xs">Closed</p>
           </div>
           <div className="text-center">
-            <p className="font-semibold">Tuesday - Thursday</p>
-            <p>11:00 am - 8:00 pm</p>
+            <p className="font-semibold text-warmTaupe">Tuesday - Thursday</p>
+            <p className="font-semibold text-xs">11:00 am - 8:00 pm</p>
           </div>
           <div className="text-center">
-            <p className="font-semibold">Friday - Saturday</p>
-            <p>11:00 am - 10:00 pm</p>
+            <p className="font-semibold text-warmTaupe">Friday - Saturday</p>
+            <p className="font-semibold text-xs">11:00 am - 10:00 pm</p>
           </div>
           <div className="text-center">
-            <p className="font-semibold">Sunday</p>
-            <p>11:00 am - 8:00 pm</p>
+            <p className="font-semibold text-warmTaupe">Sunday</p>
+            <p className="font-semibold text-xs">11:00 am - 8:00 pm</p>
           </div>
         </div>
 
