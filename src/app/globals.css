@@ -37,7 +37,7 @@
 
 @layer components {
   .btn {
-    @apply py-3 px-8 rounded font-semibold  transition ease-in-out delay-150 duration-300;
+    @apply py-2 px-4 rounded font-semibold  transition ease-in-out delay-150 duration-300;
     touch-action: manipulation; /* Improve button behavior on touch devices */
   }
 
@@ -90,11 +90,11 @@
 
   /* Teal Green Button */
   .btn-tealGreen {
-    @apply bg-tealGreen border-2 border-tealGreen text-creamBG;
+    @apply bg-[#5A6B5B] border-2 border-tealGreen text-creamBG;
   }
   .btn-tealGreen:hover,
   .btn-tealGreen:focus-visible {
-    @apply hover:-translate-y-1 hover:scale-110 hover:bg-creamBG hover:text-tealGreen;
+    @apply hover:-translate-y-1 hover:scale-110 hover:bg-creamBG hover:text-[#5A6B5B];
   }
   .btn-tealGreen:active {
     @apply scale-100 bg-tealGreen text-creamBG shadow-inner;

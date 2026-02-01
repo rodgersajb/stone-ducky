@@ -22,29 +22,37 @@ export default function ContactForm() {
       }}
       className="w-full flex flex-col gap-4 items-start lg:min-h-[400px]"
     >
-      <h2 className="text-2xl lg:text-4xl text-center font-semibold w-full">Contact Form</h2>
+      <h2 className="text-xl lg:text-4xl text-center font-semibold w-full">
+        Contact Form
+      </h2>
       <div className="flex flex-col w-full">
-        <label htmlFor="name">Name <span className="text-duckyOrange pl-1">*</span></label>
+        <label htmlFor="name">
+          Name <span className="text-[#5A6B5B] pl-1">*</span>
+        </label>
         <input
-          className="bg-warmBeige border-b-2 border-duckyOrange pl-2 focus:outline-none focus:border-duckyOrange"
+          className="bg-warmBeige border-b-2 border-[#5A6B5B] pl-2 focus:outline-none focus:border-[#5A6B5B]"
           type="text"
           name="name"
           placeholder="name"
         />
       </div>
       <div className="flex flex-col w-full">
-        <label htmlFor="email">Email <span className="text-duckyOrange pl-1">*</span></label>
+        <label htmlFor="email">
+          Email <span className="text-[#5A6B5B] pl-1">*</span>
+        </label>
         <input
-          className="bg-warmBeige border-b-2 border-duckyOrange pl-2 focus:outline-none  focus-duckyOrange"
+          className="bg-warmBeige border-b-2 border-[#5A6B5B] pl-2 focus:outline-none  focus-duckyOrange"
           type="text"
           name="email"
           placeholder="email"
         />
       </div>
       <div className="flex flex-col w-full">
-        <label htmlFor="message">Message<span className="text-duckyOrange pl-1">*</span></label>
+        <label htmlFor="message">
+          Message<span className="[#5A6B5B] pl-1">*</span>
+        </label>
         <textarea
-          className="bg-warmBeige border-b-2 border-duckyOrange pl-2 focus:outline-none focus-duckyOrange"
+          className="bg-warmBeige border-b-2 border-[#5A6B5B] pl-2 focus:outline-none focus-duckyOrange"
           name="message"
           id="message"
           placeholder="message"

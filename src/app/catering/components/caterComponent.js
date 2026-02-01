@@ -38,7 +38,7 @@ export default function CaterComponent() {
           Schedule a Catering Request
         </button>
       </HeaderFadeContainer>
-      <section className="w-full flex flex-col items-center justify-center gap-4 pb-8 bg-white">
+      {/* <section className="w-full flex flex-col items-center justify-center gap-4 pb-8 bg-white">
         <Image
           src="/images/cater_duck_blue.webp"
           alt="Catering Duck"
@@ -51,13 +51,13 @@ export default function CaterComponent() {
           Celebrate in Style with Fresh, Flavorful Catering from Stone Ducky
           Restaurant.
         </h2>
-      </section>
+      </section> */}
 
       <div
-        className="w-full px-8 m-auto flex flex-col items-center gap-8 py-8 bg-warmBeige"
+        className="w-full px-8 m-auto flex flex-col items-center gap-8 py-8 bg-creamBG"
         ref={formRef}
       >
-        <h2 className="text-2xl lg:text-4xl text-center">
+        <h2 className="text-xl lg:text-4xl text-center">
           Schedule a date request for your next event catered by Stone Ducky.
         </h2>
         <p className=" lg:w-3/4 text-center lg:text-lg">
