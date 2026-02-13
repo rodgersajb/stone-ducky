@@ -11,21 +11,22 @@ export const metadata = {
 
 export default function Menu() {
   return (
-    <main className="flex flex-col ">
+    <main className="flex flex-col bg-rustic-wood ">
       <HeaderFadeContainer>
-        <figure className="relative w-full h-[200px]">
+        <h1 className="sr-only">Menu</h1>
+        <figure className="relative w-full h-[200px] lg:h-[350px]">
           <Image
             src="/images/header-food-drink.png"
             alt="Food and Drink"
             fill
-            className="lg-object-cover object-contain "
+            className="lg-object-cover object-contain translate-y-12"
             priority={true}
           />
         </figure>
         <figure className="relative w-full h-[250px]">
           <Image
-            src="/images/ducky-braised-beef-short-rib.webp"
-            alt="Braised Beef Short Rib"
+            src="/images/campanelle-bolognese.webp"
+            alt="Campanelle Bolognese"
             fill
             className="lg-object-cover object-cover "
             priority={true}
@@ -46,7 +47,7 @@ export default function Menu() {
             lazy="true"
           /> */}
         {/* </figure> */}
-        <h2 className="text-center text-sm lg-text-4xl text-[#5A6B5B] font-semibold">
+        <h2 className="text-center text-sm lg:text-2xl text-[#5A6B5B] font-semibold">
           Explore Our Menus
         </h2>
         <p className="text-center lg-text-xl text-sm">

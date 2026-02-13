@@ -7,7 +7,8 @@ export default async function Blog() {
   const posts = await getAllPosts();
 
   return (
-    <main className="flex flex-col gap-8">
+    <main className="flex flex-col gap-8 bg-rustic-wood">
+      <h1 className="sr-only">Ducky Blog</h1>
       <Header />
       <div className="space-y-12 flex items-center justify-end w-[95%] m-auto pb-8">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -25,7 +26,7 @@ export default async function Blog() {
                 lazy="true"
               />
               <div className="flex-1 p-6">
-                <h3 className="text-2xl font-bold leading-tight text-mutedOrange py-4">
+                <h3 className="text-2xl font-bold leading-tight text-[#5A6B5B] py-4">
                   {post.title}
                 </h3>
 

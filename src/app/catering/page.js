@@ -9,10 +9,9 @@ export const metadata = {
 
 export default async function Cater() {
   return (
-    <main className="overflow-x-hidden">
+    <main className=" bg-rustic-wood overflow-x-hidden flex flex-col">
+      <h1 className="sr-only">Catering</h1>
       <CaterComponent />
-      
-      
     </main>
   );
 }

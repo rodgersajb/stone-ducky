@@ -2,20 +2,13 @@ const glutenFree = "/images/gluten-free.png";
 const dairyFree = "/images/dairy-free.png";
 
 const supperMenu = {
-  Starters: [
+  Shareables: [
     {
-      title: "Split Pea Fries",
-      price: 16,
-      description: "Shredded Salt Beef, Mustard Pickles.",
-      glutenFree: true,
-      dairyFree: false,
-      image: glutenFree,
-    },
-    {
-      title: "Seared Scallops",
-      price: 25,
+      title: "Nachos",
+      price: 21,
       description:
-        "Jerusalem Artichoke Puree, Jerusalem Artichoke Chips, Bakeapple Sauce.",
+        "Jalapeños, tomatoes, red onions, black olives, green onions.",
+      additional: "Add brisket ($7), chicken ($7), or duck ($10)",
       glutenFree: true,
       dairyFree: false,
       image: glutenFree,
@@ -24,47 +17,99 @@ const supperMenu = {
       title: "Chicken Wings",
       price: 19,
       description:
-        "One pound of juicy chicken wings, cooked to perfection and tossed in your choice of Mild, Medium, Hot, Honey Garlic, or our unique, made-in-house Bakeapple BBQ sauce for a flavour experience to savour.",
+        "Choice of Mild, Medium, Hot, Honey Garlic, or Bakeapple BBQ sauce.",
       glutenFree: true,
       dairyFree: false,
       image: glutenFree,
     },
   ],
-  Shareables: [
+
+  Snacks: [
     {
-      title: "Nachos",
-      price: 21,
-      description:
-        "A vibrant mix of jalapeños, tomatoes, red onions, black olives, and green onions over house-made nacho chips. Perfectly baked, layered and packed with flavour in every bite.",
-      additional: "Add Brisket or Spicy Chicken",
+      title: "Truffle Fries",
+      price: 14,
+      description: "Green onion, truffle, Parmesan, truffle aioli.",
       glutenFree: true,
       dairyFree: false,
       image: glutenFree,
     },
     {
-      title: "Spinach & Artichoke Dip",
-      price: 18,
+      title: "Whipped Goat Cheese",
+      price: 19,
       description:
-        "A creamy blend of tender spinach, artichoke hearts, melted cheddar cheese and smoked jalapeño. Served with our house-made nacho chips.",
-      glutenFree: true,
-      dairyFree: false,
-      image: glutenFree,
-    },
-    {
-      title: "Baked Brie",
-      price: 18,
-      description:
-        "Warm brie with Baguette, offered with your choice of bakeapple & rosemary, maple-pecan, or caramelized onion & bacon.",
+        "Chive crema, chili flakes, olive oil, honey, pistachio, bread.",
       glutenFree: false,
       dairyFree: false,
     },
   ],
+
+  Handhelds: [
+    {
+      title: "The Stone Ducky Burger",
+      price: 25,
+      description:
+        "6oz chuck patty, bacon, American cheddar, romaine lettuce, tomato, red onion, ketchup, mustard, potato bun.",
+      glutenFree: false,
+      dairyFree: false,
+    },
+    {
+      title: "Carol Ann’s Fried Chicken Burger",
+      price: 25,
+      description:
+        "Smoked jalapeño aioli, crispy bacon, romaine lettuce, potato bun.",
+      glutenFree: false,
+      dairyFree: false,
+    },
+    {
+      title: "Brisket Melt",
+      price: 24,
+      description:
+        "Bakeapple BBQ brisket, horseradish aioli, provolone, romaine lettuce, potato bun.",
+      glutenFree: false,
+      dairyFree: false,
+    },
+  ],
+
+  Pasta: [
+    {
+      title: "Chicken Parm",
+      price: 28,
+      description:
+        "Italian herb-crusted chicken, bucatini, diavolo sauce, provolone.",
+      glutenFree: false,
+      dairyFree: false,
+    },
+    {
+      title: "Sausage & Mushroom Campanelle",
+      price: 30,
+      description:
+        "Campanelle pasta, Italian sausage, mushrooms, cream sauce, toasted bread crumbs.",
+      glutenFree: false,
+      dairyFree: false,
+    },
+    {
+      title: "Pesto Bucatini",
+      price: 30,
+      description: "Bucatini, pesto cream, brown butter, toasted breadcrumbs.",
+      glutenFree: false,
+      dairyFree: false,
+    },
+    {
+      title: "Campanelle Bolognese",
+      price: 30,
+      description:
+        "Campanelle pasta, beef and pork bolognese, Bella Lodi parmesan, toasted breadcrumbs.",
+      glutenFree: false,
+      dairyFree: false,
+    },
+  ],
+
   Entrees: [
     {
-      title: "Pan Fried Cod",
-      price: 32,
+      title: "Duck Confit Risotto",
+      price: 29,
       description:
-        "Crispy Smashed Potato, Roasted Carrots, scrunchion, lemon & chive drawn butter.",
+        "Brown butter, Parmesan, romesco sauce, celeriac & apple slaw.",
       glutenFree: true,
       dairyFree: false,
       image: glutenFree,
@@ -73,55 +118,82 @@ const supperMenu = {
       title: "Chicken & Ribs",
       price: 35,
       description:
-        "Golden fried chicken and fall-off-the-bone slow-braised ribs, brushed with our signature bakeapple BBQ sauce. Served with Coleslaw, and a choice of Side.",
+        "Carol Ann’s fried chicken, bakeapple BBQ ribs, coleslaw, fries.",
       glutenFree: false,
       dairyFree: false,
     },
     {
-      title: "Pork Chop",
-      price: 34,
+      title: "Skin-On Salmon",
+      price: 35,
       description:
-        "Herb-seared bone-in pork loin, served with crispy smashed potato and tender wilted spinach, finished in a velvety Dijon and wild mushroom cream sauce.",
+        "Maple balsamic glaze, celeriac purée, candied pecans, green apple.",
       glutenFree: true,
       dairyFree: false,
       image: glutenFree,
     },
     {
-      title: "Braised Beef Short Rib",
-      price: 38,
+      title: "Scallops",
+      price: 25,
+      description: "Smoked pork belly, celeriac purée, apple slaw.",
+      glutenFree: true,
+      dairyFree: false,
+      image: glutenFree,
+    },
+    {
+      title: "Baked Brie",
+      price: 18,
       description:
-        "Slow-braised beef short rib over creamy garlic mashed potatoes, with honey-glazed carrots, horseradish cream, and a crown of crispy fried onions.",
+        "Bakeapple & rosemary, maple–pecan, or caramelized onion & bacon.",
+      glutenFree: false,
+      dairyFree: false,
+    },
+  ],
+
+  SaladsSoups: [
+    {
+      title: "Roasted Beet Salad",
+      price: 16,
+      description:
+        "Whipped goat cheese, candied pecans, red onion, maple balsamic vinaigrette.",
+      glutenFree: true,
+      dairyFree: false,
+      image: glutenFree,
+    },
+    {
+      title: "Caesar Salad",
+      price: 14,
+      description:
+        "Romaine lettuce, crisp bacon, Parmesan, croutons, asiago dressing.",
+      glutenFree: false,
+      dairyFree: false,
+    },
+    {
+      title: "Potato & Bacon Chowder",
+      price: 18,
+      description: "Bacon, corn, green onion, cheddar.",
+      glutenFree: true,
+      dairyFree: false,
+      image: glutenFree,
+    },
+    {
+      title: "Fisherman’s Soup",
+      price: 17,
+      description: "Cod, tomato, fennel, chili broth.",
+      glutenFree: true,
+      dairyFree: true,
+      image: glutenFree,
+    },
+    {
+      title: "Tomato Bisque",
+      price: 10,
+      description: "Sundried tomato crumble, extra virgin olive oil.",
       glutenFree: true,
       dairyFree: false,
       image: glutenFree,
     },
   ],
-  Handhelds: [
-    {
-      title: "The Stone Ducky House Burger",
-      price: 25,
-      description:
-        "6oz beef patty, perfectly seasoned and grilled, topped with creamy cheddar, smoky jalapeño aioli, lettuce, ripe tomato, and crispy onions.",
-      glutenFree: false,
-      dairyFree: false,
-    },
-    {
-      title: "Carol Ann’s Fried Chicken Sandwich",
-      price: 25,
-      description:
-        "Tossed in a secret herb and spice blend. Topped with smoky jalapeño aioli, crispy bacon, fresh lettuce. This sandwich is packed with bold flavour that hits the spot every time!",
-      glutenFree: false,
-      dairyFree: false,
-    },
-    {
-      title: "Cod Sandwich",
-      price: 23,
-      description:
-        "Fresh battered cod, served on our homemade brioche with tartar sauce and coleslaw.",
-      glutenFree: false,
-      dairyFree: false,
-    },
-  ],
+
+  
 };
 
 export default supperMenu;

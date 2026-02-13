@@ -11,24 +11,33 @@ export const metadata = {
 
 export default async function Contact() {
   return (
-    <main className=" bg-warmBeige overflow-x-hidden flex flex-col">
-      <HeaderFadeContainer>
-        <figure className="relative w-full h-[250px]">
-
-        <Image
-          className="object-contain brightness-75  "
-          src="/images/popular_dishes.webp"
-          alt="Popular Stone Ducky dishes on a table"
-          fill
-          priority={true}
-        />
+    <main className=" bg-rustic-wood overflow-x-hidden flex flex-col">
+      <h1 className="sr-only">Contact</h1>
+      <HeaderFadeContainer className="h-[65svh]">
+        <figure className="relative w-full h-[200px] lg:h-[350px]">
+          <Image
+            src="/images/contact-header.png"
+            alt="Contact Stone Ducky"
+            fill
+            className="lg-object-cover object-contain translate-y-12"
+            priority={true}
+          />
         </figure>
-
-        {/* <h1 className="z-10 text-white text-4xl lg:text-6xl">Contact</h1> */}
+        <figure className="relative w-full h-[250px]">
+          <Image
+            className="object-contain lg:object-cover brightness-75  "
+            src="/images/popular_dishes.webp"
+            alt="Popular Stone Ducky dishes on a table"
+            fill
+            priority={true}
+          />
+        </figure>
       </HeaderFadeContainer>
       <section className="grid grid-rows-2 lg:grid-cols-2 lg:grid-rows-1 place-items-start w-[95%] lg:w-[80%] m-auto  pt-4 lg:gap-12 lg:py-8">
         <div className="flex flex-col text-center gap-4 min-h-[400px]">
-          <h2 className="text-xl lg:text-4xl text-center font-semibold">Contact Stone Ducky</h2>
+          <h2 className="text-xl lg:text-3xl text-center font-semibold">
+            Contact Stone Ducky
+          </h2>
           <p>
             If you’re passionate about Italian flavors and fresh seafood, Stone
             Ducky Restaurant is your perfect destination. Just a short, scenic

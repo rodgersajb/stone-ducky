@@ -8,14 +8,15 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 export default function Header() {
   return (
     <motion.header
-      className="h-[70svh] lg:h-dvh w-full flex flex-col justify-center items-center text-white bg-rustic-wood z-10"
+      className="h-[65svh] lg:h-dvh w-full lg:flex lg:flex-col lg:justify-evenly lg:items-center  z-10"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
     >
+      <h1 className="sr-only">Stone Ducky</h1>
       {/* Top: Title Image */}
       <motion.div
-        className=" w-full h-[250px] flex justify-center items-start relative"
+        className=" w-full h-[200px] lg:h-[350px] relative"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2, delay: 0.3 }}
@@ -25,13 +26,13 @@ export default function Header() {
           alt="Stone Ducky Title"
           fill
           priority={true}
-          className="w-full flex justify-center items-start relative px-4"
+          className="object-contain translate-y-12"
         />
       </motion.div>
 
       {/* Bottom: Watercolor Image */}
       <motion.div
-        className="w-full  flex justify-center items-center "
+        className="w-full  flex justify-center h-[300px] lg:h-[80%]  relative "
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2, delay: 0.6 }}
@@ -39,20 +40,11 @@ export default function Header() {
         <Image
           src="/images/stone-ducky-brush-frame.png"
           alt="Watercolor painting of Stone Ducky Restaurant"
-          width={800}
-          height={500}
+          fill
           priority={true}
-          className="object-contain brightness-90"
+          className="object-contain  brightness-90"
         />
       </motion.div>
-      <button
-        className=" flex z-40 text-[#5A6B5B] font-semibold text-lg items-center justify-center gap-2 rounded-full border-4 px-2 py-1
-      "
-      >
-        See menu <FaLongArrowAltRight />
-      </button>
-      {/* Optional Scroll Button */}
-      {/* <ScrollButton /> */}
     </motion.header>
   );
 }

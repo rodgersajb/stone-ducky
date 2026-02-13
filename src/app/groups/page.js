@@ -37,30 +37,29 @@ const images = [
 
 export default function LargeGroups() {
   return (
-    <main className="">
-      <HeaderFadeContainer>
-        <figure className="relative w-full h-[200px]">
+    <main className="bg-rustic-wood">
+      <HeaderFadeContainer className="h-[65svh]">
+        <h1 className="sr-only">Large Group Reservations</h1>
+        <figure className="relative w-full h-[200px] lg:h-[450px]">
           <Image
-            src="/images/header-food-drink.png"
-            alt="Food and Drink"
+            src="/images/group-bookings.png"
+            alt="Group Bookings"
             fill
-            className="lg-object-cover object-contain "
+            className="lg-object-cover object-contain translate-y-12"
             priority={true}
           />
         </figure>
-        <figure className="relative w-full h-[250px]">
+        <figure className="relative w-full h-[250px] lg:h-[400px]">
           <Image
-            src="/images/ducky-braised-beef-short-rib.webp"
+            src="/images/ducky_inside_view.jpg"
             alt="Braised Beef Short Rib"
             fill
             className="lg-object-cover object-cover "
             priority={true}
           />
         </figure>
-        {/* <h1 className="z-10 font-semibold text-center  text-xl lg:text-6xl text-white">
-               Food & Drink
-             </h1> */}
-          <ScrollButtons />
+
+        <ScrollButtons />
       </HeaderFadeContainer>
       <section className="bg-whiteBG flex flex-col z-30 py-10">
         <ul className="grid grid-cols-3 grid-rows-3 gap-4 w-[90%] m-auto max-h-[1000px]">

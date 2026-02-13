@@ -14,6 +14,9 @@ const socialIcons = [
 ];
 
 export default function Footer() {
+  const today = new Date();
+  const currentYear = today.getFullYear();
+
   return (
     <footer className="bg-[#5A6B5B] bg-contain w-full pt-8 text-whiteBG font-semibold relative">
      
@@ -41,7 +44,7 @@ export default function Footer() {
             </li>
           ))}
         </ul>
-        <p className="text-sm">© 2024 Stone Ducky</p>
+        <p className="text-sm">© {currentYear} Stone Ducky</p>
       </section>
     </footer>
   );

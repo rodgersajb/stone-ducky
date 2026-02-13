@@ -19,51 +19,49 @@ export default function Visit() {
           className="object-contain lg:object-cover"
         />
       </FadeInImageContainer>
-      <div className="min-h-[625px] lg:min-h-[500px] w-full flex flex-col items-center justify-center  lg:justify-center gap-4 bg-border bg-contain bg-no-repeat bg-whiteBG">
-        <div className="z-10 relative">
-          <h2 className="text-2xl lg:text-4xl relative text-warmTaupe ">
-            Visit Us
-          </h2>
-        </div>
+      <div className="min-h-[500px] w-full flex flex-col items-center justify-center  lg:justify-center gap-4  ">
+        <h2 className="text-2xl lg:text-3xl relative text-[#5A6B5B] ">
+          Visit Us
+        </h2>
 
-        <div className="lg:text-xl text-sm text-center font-semibold text-[#5A6B5B] ">
+        <div className="lg:text-base text-sm text-center font-semibold text-[#5A6B5B] ">
           <p>56 St Johns Rd</p>
           <p>Bay Bulls, NL A0A 1C0</p>
           <p>(709) 334-3825</p>
         </div>
 
-        <div className="flex flex-col lg:flex-row  justify-center lg:justify-around lg:w-[85%] items-center gap-2 lg:text-xl ">
+        <div className="flex flex-col justify-center lg:justify-around lg:w-[85%] items-center gap-2 lg:text-xl ">
           <div className="text-center">
-            <p className="font-semibold text-warmTaupe">Monday</p>
-            <p className="font-semibold text-xs">Closed</p>
+            <p className="font-semibold text-warmTaupe">Monday - Wednesday</p>
+            <p className="font-semibold text-sm">Closed</p>
           </div>
           <div className="text-center">
-            <p className="font-semibold text-warmTaupe">Tuesday - Thursday</p>
-            <p className="font-semibold text-xs">11:00 am - 8:00 pm</p>
+            <p className="font-semibold text-warmTaupe"> Thursday</p>
+            <p className="font-semibold text-sm">
+              4:00 pm - 8:00 pm
+            </p>
           </div>
           <div className="text-center">
-            <p className="font-semibold text-warmTaupe">Friday - Saturday</p>
-            <p className="font-semibold text-xs">11:00 am - 10:00 pm</p>
+            <p className="font-semibold text-warmTaupe">Friday</p>
+            <p className="font-semibold text-sm">
+              12:00 pm - 8:00 pm
+            </p>
+          </div>
+          <div className="text-center">
+            <p className="font-semibold text-warmTaupe">Saturday</p>
+            <p className="font-semibold text-sm">
+              11:00 am - 8:00 pm
+            </p>
           </div>
           <div className="text-center">
             <p className="font-semibold text-warmTaupe">Sunday</p>
-            <p className="font-semibold text-xs">11:00 am - 8:00 pm</p>
+            <p className="font-semibold text-sm">
+              11:00 am - 7:00 pm
+            </p>
           </div>
         </div>
 
-        {/* <div className="flex flex-col pb-4 lg:pb-0 lg:flex-row-reverse w-full lg:justify-start lg:w-[60%]  justify-center items-center gap-4 lg:text-xl relative lg:static ">
-          <Image
-            src="/images/duck_sleepy.png"
-            alt="Sleepy Duck"
-            height={120}
-            width={120}
-            className="-left-10 -bottom-6 absolute scale-x-[-1] lg:block lg:scale-x-[1] lg:left-0 lg:bottom-0 lg:static"
-          />
-          <p className="relative before:content-[''] before:block before:h-52 before:w-52 before:bg-circle-scribble before:bg-contain before:bg-no-repeat before:absolute before:-top-10 before:-left-12 lg:before:-left-8 before:text-mutedOrange font-semibold ">
-            Closed Mondays
-          </p>
-        </div> */}
-        <div className="flex lg:flex-row flex-col gap-2 lg:gap-8 z-10 w-[50%] lg:w-full items-center justify-center pb-2 text-sm">
+        <div className="flex flex-col lg:flex-row gap-2 lg:gap-8 z-10 w-[95%] lg:w-full items-center justify-center pb-2 text-sm">
           <button
             className="btn btn-warmTaupe btn-warmTaupe:hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-warmTaupe w-full lg:w-1/3"
             aria-label="Book A Table"

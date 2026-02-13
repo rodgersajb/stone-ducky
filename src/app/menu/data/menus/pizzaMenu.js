@@ -2,80 +2,93 @@ const glutenFree = "/images/gluten-free.png";
 
 const pizzaMenu = {
   Pizzas: [
-    {title: "**All Pizza Dough Made Fresh In House & Cold Fermented For 24 Hours"      
-    },
-    { title: "** Gluten-Free crusts are available for small pizzas only. Subject to availability." },
     {
-      title: "Margherita",
-      price: 22,
-      description:
-        "San Marzano tomato sauce, fior di latte mozzarella, basil, drizzle of EVOO.",
-      glutenFree: true,
-      dairyFree: false,
-      image: glutenFree,
+      title:
+        "**All Pizza Dough Made Fresh In House & Cold Fermented For 24 Hours",
+    },
+    {
+      title:
+        "** Gluten-Free crusts are available for small pizzas only. Subject to availability.",
     },
     {
       title: "Pepperoni",
+      price: 19,
+      description: "Tomato sauce, 3-cheese blend, pepperoni.",
+      glutenFree: false,
+      dairyFree: false,
+    },
+    {
+      title: "The Townie",
+      price: 23,
+      description:
+        "Tomato sauce, 3-cheese blend, mushrooms, green pepper, red onion, black olives, tomato.",
+      glutenFree: false,
+      dairyFree: false,
+    },
+    {
+      title: "Vegetarian",
       price: 24,
       description:
-        "San Marzano tomato sauce, Stone Ducky's 3-cheese blend, pepperoni, oregano.",
-      glutenFree: true,
+        "Tomato sauce, Fior di Latte, goat cheese, sun-dried tomato, Parmesan.",
+      glutenFree: false,
       dairyFree: false,
-      image: glutenFree,
     },
     {
       title: "Stone Ducky Supreme",
-      price: 27,
+      price: 31,
       description:
-        "San Marzano tomato sauce, Stone Ducky's 3-cheese blend, pepperoni, Newlander's Italian sausage, green peppers, mushrooms, red onion, black olives.",
-      glutenFree: true,
+        "Tomato sauce, 3-cheese blend, pepperoni, Italian sausage, green peppers, mushrooms, red onion, black olives.",
+      glutenFree: false,
       dairyFree: false,
-      image: glutenFree,
     },
     {
-      title: "Meat Lovers",
+      title: "The Bianca",
       price: 30,
       description:
-        "San Marzano tomato sauce, Stone Ducky's 3-cheese blend, pepperoni, Genoa salami, ham, Newlander Meat's Italian sausage.",
-      glutenFree: true,
+        "Bianca sauce, smoked mozzarella, Fior di Latte, apple, pancetta, sesame seed crust.",
+      glutenFree: false,
       dairyFree: false,
-      image: glutenFree,
     },
     {
       title: "BBQ Chicken",
-      price: 24,
+      price: 25,
       description:
-        "Bakeapple BBQ sauce, Stone Ducky's 3-cheese blend, grilled chicken, red onions.",
-      glutenFree: true,
+        "Bakeapple BBQ sauce, 3-cheese blend, grilled chicken, red onions.",
+      glutenFree: false,
       dairyFree: false,
-      image: glutenFree,
     },
     {
       title: "Spicy Duck Diavolo",
       price: 30,
       description:
-        "Firey garlic tomato sauce, Stone Ducky's 3-cheese blend, duck confit, roasted red peppers, red onions, jalapeños.",
-      glutenFree: true,
+        "Diavolo sauce, 3-cheese blend, duck confit, roasted red peppers, red onions, jalapeños.",
+      glutenFree: false,
       dairyFree: false,
-      image: glutenFree,
     },
     {
-      title: "Vegetarian",
-      price: 23,
+      title: "The Baymen",
+      price: 25,
       description:
-        "San Marzano tomato sauce, Stone Ducky's 3-cheese blend, Windy Heights Farm's mushrooms, green pepper, red onion, black olives, tomato.",
-      glutenFree: true,
+        "Bianca sauce, Italian sausage, sliced potato, rosemary, mozzarella, blue cheese.",
+      glutenFree: false,
       dairyFree: false,
-      image: glutenFree,
     },
     {
       title: "Chicken Pesto",
-      price: 24,
+      price: 26,
       description:
-        "Sunflower seed pesto, Stone Ducky's 3-cheese blend, chicken, sundried tomato, balsamic glaze.",
-      glutenFree: true,
+        "Pesto, 3-cheese blend, goat cheese, grilled chicken, roasted red peppers. Finished with fresh Parmesan.",
+      glutenFree: false,
       dairyFree: false,
-      image: glutenFree,
+    },
+  ],
+  Notes: [
+    {
+      title: "Pizza Notes",
+      description:
+        "Add sesame crust +1.50. Gluten-free crust available +3.99. Add a dip for 2.75. Pizza dough made daily in-house and cold fermented for 24 hours.",
+      glutenFree: false,
+      dairyFree: false,
     },
   ],
 };

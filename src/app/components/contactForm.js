@@ -22,7 +22,7 @@ export default function ContactForm() {
       }}
       className="w-full flex flex-col gap-4 items-start lg:min-h-[400px]"
     >
-      <h2 className="text-xl lg:text-4xl text-center font-semibold w-full">
+      <h2 className="text-xl lg:text-3xl text-center font-semibold w-full">
         Contact Form
       </h2>
       <div className="flex flex-col w-full">
@@ -30,7 +30,7 @@ export default function ContactForm() {
           Name <span className="text-[#5A6B5B] pl-1">*</span>
         </label>
         <input
-          className="bg-warmBeige border-b-2 border-[#5A6B5B] pl-2 focus:outline-none focus:border-[#5A6B5B]"
+          className=" border-b-2 border-[#5A6B5B] pl-2 focus:outline-none focus:border-[#5A6B5B]"
           type="text"
           name="name"
           placeholder="name"
@@ -41,7 +41,7 @@ export default function ContactForm() {
           Email <span className="text-[#5A6B5B] pl-1">*</span>
         </label>
         <input
-          className="bg-warmBeige border-b-2 border-[#5A6B5B] pl-2 focus:outline-none  focus-duckyOrange"
+          className=" border-b-2 border-[#5A6B5B] pl-2 focus:outline-none  focus-duckyOrange"
           type="text"
           name="email"
           placeholder="email"
@@ -52,7 +52,7 @@ export default function ContactForm() {
           Message<span className="[#5A6B5B] pl-1">*</span>
         </label>
         <textarea
-          className="bg-warmBeige border-b-2 border-[#5A6B5B] pl-2 focus:outline-none focus-duckyOrange"
+          className=" border-b-2 border-[#5A6B5B] pl-2 focus:outline-none focus-duckyOrange"
           name="message"
           id="message"
           placeholder="message"

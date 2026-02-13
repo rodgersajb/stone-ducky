@@ -16,22 +16,27 @@ export default function CaterComponent() {
   };
   return (
     <>
-      <HeaderFadeContainer className="h-svh lg:h-dvh w-full relative flex flex-col items-center justify-center gap-8">
-        <Image
-          src="/images/mushroom_fritter_soup.webp"
-          alt="Mushroom Fritter Soup"
-          fill
-          priority
-          className="-z-1 object-cover brightness-50"
-        />
-        <h1 className="text-4xl lg:text-6xl z-10 text-center text-whiteBG font-semibold">
-          Stone Ducky Catering
-        </h1>
-        <h3 className="text-xl lg:text-3xl z-10 text-center text-whiteBG font-semibold">
-          Tailored Catering Solutions for Gatherings Big and Small
-        </h3>
+      <HeaderFadeContainer className="h-[65svh] lg:flex lg:flex-col lg:items-center">
+        <figure className="relative w-full h-[200px] lg:h-[350px]">
+          <Image
+            src="/images/catering-header.png"
+            alt="Catering Header"
+            fill
+            className="lg-object-cover object-contain translate-y-12 "
+            priority={true}
+          />
+        </figure>
+        <figure className="relative w-full h-[250px]">
+          <Image
+            src="/images/catering_biscuits.webp"
+            alt="Braised Beef Short Rib"
+            fill
+            className=" object-cover "
+            priority={true}
+          />
+        </figure>
         <button
-          className="z-10 bg-mutedOrange font-semibold text-whiteBG border border-mutedOrange py-4 px-6 rounded text-sm lg:text-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-mutedOrange"
+          className="btn btn-tealGreen z-10 font-semibold gap-2 text-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-tealGreen w-[95%] lg:w-1/4 mx-auto"
           onClick={handleScroll}
           aria-label="Schedule a catering request"
         >

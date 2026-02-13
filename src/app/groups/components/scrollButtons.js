@@ -15,7 +15,7 @@ export default function ScrollButtons() {
     }
   };
   return (
-    <div className="grid grid-cols-2 gap-4 pt-4 text-sm lg:text-lg">
+    <div className="flex flex-col lg:flex-row m-auto w-[95%]  lg:justify-center gap-4 pt-4 text-sm lg:text-lg">
       <button
         onClick={() => scrollToSection("form-section")}
         className="btn btn-warmTaupe z-10 rounded font-semibold gap-2 text-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-warmTaupe "

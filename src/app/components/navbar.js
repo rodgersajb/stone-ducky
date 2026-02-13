@@ -45,28 +45,19 @@ export default function Navbar() {
 
   return (
     <motion.nav
-      className={`fixed top-0 left-0 w-full px-4 py-4 z-50 flex items-center justify-between font-semibold gap-4 text-warmBeige transition-colors duration-300 bg-[#5A6B5B]  `}
+      className={`fixed top-0 left-0 w-full px-4 pt-4 z-50 flex items-center justify-between font-semibold gap-4 text-warmBeige transition-colors duration-300 ${isScrolled ? "border-b-2 border-[#5A6B5B] bg-rustic-wood pb-2"  : ""}`}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
     >
       <button
-        className="text-3xl md:hidden flex z-50 text-warmBeige"
+        className="text-3xl md:hidden  flex z-50 text-warmBeige"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         aria-label="Toggle menu"
       >
         {isMenuOpen ? <FiX /> : <FiMenu />}
       </button>
-      <button className="text-whiteBg">Reserve</button>
 
-      {/* <Link className="lg:hidden md:hidden z-50 cursor-pointer " href="/">
-        <Image
-          src="/images/logo_stone_ducky.png"
-          alt="Stone Ducky Logo"
-          width={100}
-          height={80}
-        />
-      </Link> */}
       <Link className="hidden z-50 cursor-pointer lg:flex justify-end" href="/">
         <Image
           src="/images/logo_stone_ducky.png"
@@ -74,15 +65,15 @@ export default function Navbar() {
           width={200}
           height={160}
           className={`transition-width duration-300 ease-in-out object-contain  ${
-            isScrolled ? "w-32" : ""
+            isScrolled ? "w-28" : "w-32"
           }`}
         />
       </Link>
 
       {/* Desktop Navigation */}
       <ul
-        className={`hidden md:flex items-center justify-center gap-10 text-xl z-50 ${
-          isScrolled ? "text-coolGray" : "text-whiteBG"
+        className={`hidden md:flex  items-center justify-center gap-10  z-50 ${
+          isScrolled ? "text-coolGray" : "text-[#5A6B5B]"
         }`}
       >
         <li>
@@ -94,14 +85,16 @@ export default function Navbar() {
           <li
             key={index}
             className={`cursor-pointer ${
-              pathname === link.href ? "text-duckyOrange font-bold" : ""
+              pathname === link.href
+                ? "text-mutedOrange font-bold"
+                : "text-[#5A6B5B]"
             }`}
           >
             <Link href={link.href}>{link.label}</Link>
           </li>
         ))}
 
-        <li className="text-whiteBG bg-duckyOrange py-4 px-4 rounded ">
+        <li className="text-whiteBG bg-mutedOrange py-4 px-4 rounded ">
           <Link href="https://www.tbdine.com/book/restaurant/stone-ducky?idApp=71672&language=en-us">
             Book a Table
           </Link>
@@ -110,13 +103,13 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`absolute top-full left-0 w-full h-svh flex flex-col items-center justify-start z-49 bg-warmBeige text-[#5A6B5B] g transition-all duration-300 ease-in-out ${
+        className={`absolute top-full left-0 w-full h-svh flex flex-col items-center justify-start z-49 bg-rustic-wood text-[#5A6B5B] transition-all duration-300 ease-in-out lg:hidden ${
           isMenuOpen
             ? "translate-y-0 opacity-100"
             : "-translate-y-full opacity-0"
         }`}
       >
-        <ul className="flex flex-col mt-8 items-start  justify-center z-50 gap-4 p-4  w-[80%] text-sm text-whiteBG font-Libre_Baskerville">
+        <ul className="flex flex-col mt-8 items-start  justify-center z-50 gap-4 px-4  w-[80%] text-sm text-warmBeige font-Libre_Baskerville">
           {navLinks.map((link, index) => (
             <li
               key={index}
