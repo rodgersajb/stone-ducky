@@ -24,7 +24,7 @@ export default function GroupsAndCatering() {
           </p>
           <div className="flex flex-col lg:grid lg:grid-cols-2 gap-4 w-[95%] lg:w-[100%] mt-4 mr-4 ">
             <button
-              className="btn btn-warmTaupe w-full  "
+              className="btn btn-tealGreen w-full  "
               aria-label="Book a party"
             >
               <Link href="/groups">
@@ -32,7 +32,7 @@ export default function GroupsAndCatering() {
               </Link>
             </button>
             <button
-              className="btn btn-outlineTaupe w-full  "
+              className="btn btn-outlineTealGreen w-full  "
               aria-label="Book catering"
             >
               <Link href="/catering">

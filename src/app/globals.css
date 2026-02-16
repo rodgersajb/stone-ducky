@@ -90,14 +90,25 @@
 
   /* Teal Green Button */
   .btn-tealGreen {
-    @apply bg-[#5A6B5B] border-2 border-tealGreen text-creamBG;
+    @apply bg-[#5A6B5B] border-2 border-[#5A6B5B] text-creamBG;
   }
   .btn-tealGreen:hover,
   .btn-tealGreen:focus-visible {
     @apply hover:-translate-y-1 hover:scale-110 hover:bg-creamBG hover:text-[#5A6B5B];
   }
   .btn-tealGreen:active {
-    @apply scale-100 bg-tealGreen text-creamBG shadow-inner;
+    @apply scale-100 bg-[#5A6B5B] text-creamBG shadow-inner;
+  }
+
+  .btn-outlineTealGreen {
+    @apply bg-transparent border-2 border-[#5A6B5B] text-[#5A6B5B];
+  }
+  .btn-outlineTealGreen:hover,
+  .btn-outlineTealGreen:focus-visible {
+    @apply hover:-translate-y-1 hover:scale-110 hover:bg-[#5A6B5B] hover:text-white;
+  }
+  .btn-outlineTealGreen:active {
+    @apply scale-100 bg-[#5A6B5B] text-white shadow-inner;
   }
 
   /* Cream Teal Button */

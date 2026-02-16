@@ -23,10 +23,10 @@ export default async function Contact() {
             priority={true}
           />
         </figure>
-        <figure className="relative w-full h-[250px]">
+        <figure className="relative w-full h-[250px] lg:h-[450px]">
           <Image
-            className="object-contain lg:object-cover brightness-75  "
-            src="/images/popular_dishes.webp"
+            className="object-cover brightness-75  "
+            src="/images/ducky_whales-min.webp"
             alt="Popular Stone Ducky dishes on a table"
             fill
             priority={true}

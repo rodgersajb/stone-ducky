@@ -19,7 +19,7 @@ export default function Header() {
         <figure className="relative w-full h-[250px]">
           <Image
             src="/images/ducky_inside_view.jpg"
-            alt="Braised Beef Short Rib"
+            alt="Inside view of Stone Ducky"
             fill
             className="lg-object-cover object-cover "
             priority={true}

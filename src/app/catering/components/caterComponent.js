@@ -22,11 +22,11 @@ export default function CaterComponent() {
             src="/images/catering-header.png"
             alt="Catering Header"
             fill
-            className="lg-object-cover object-contain translate-y-12 "
+            className=" object-contain translate-y-12 "
             priority={true}
           />
         </figure>
-        <figure className="relative w-full h-[250px]">
+        <figure className="relative w-full h-[250px] lg:h-[350px]">
           <Image
             src="/images/catering_biscuits.webp"
             alt="Braised Beef Short Rib"
@@ -35,28 +35,15 @@ export default function CaterComponent() {
             priority={true}
           />
         </figure>
-        <button
+        {/* <button
           className="btn btn-tealGreen z-10 font-semibold gap-2 text-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-tealGreen w-[95%] lg:w-1/4 mx-auto"
           onClick={handleScroll}
           aria-label="Schedule a catering request"
         >
           Schedule a Catering Request
-        </button>
+        </button> */}
       </HeaderFadeContainer>
-      {/* <section className="w-full flex flex-col items-center justify-center gap-4 pb-8 bg-white">
-        <Image
-          src="/images/cater_duck_blue.webp"
-          alt="Catering Duck"
-          width={250}
-          height={250}
-          lazy="true"
-          className="w-1/2 lg:w-[15%] lg:h-[15%]"
-        />
-        <h2 className="w-[95%] lg:w-[60%] m-auto text-center text-2xl lg:text-4xl">
-          Celebrate in Style with Fresh, Flavorful Catering from Stone Ducky
-          Restaurant.
-        </h2>
-      </section> */}
+      
 
       <div
         className="w-full px-8 m-auto flex flex-col items-center gap-8 py-8 bg-creamBG"

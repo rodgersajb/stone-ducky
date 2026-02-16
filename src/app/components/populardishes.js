@@ -122,7 +122,7 @@ export default function Test() {
             </div>
           </div>
           <button
-            className="btn btn-warmTaupe w-[95%] lg:w-1/3 mt-5 mb-10 "
+            className="btn btn-tealGreen w-[95%] lg:w-1/3 mt-5 mb-10 "
             aria-label="View our menu"
           >
             <Link href="/menu">

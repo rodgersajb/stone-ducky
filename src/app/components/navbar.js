@@ -45,13 +45,13 @@ export default function Navbar() {
 
   return (
     <motion.nav
-      className={`fixed top-0 left-0 w-full px-4 pt-4 z-50 flex items-center justify-between font-semibold gap-4 text-warmBeige transition-colors duration-300 ${isScrolled ? "border-b-2 border-[#5A6B5B] bg-rustic-wood pb-2"  : ""}`}
+      className={`fixed top-0 left-0 w-full px-4 pt-4 z-50 flex items-center justify-between font-semibold gap-4 text-warmBeige transition-colors duration-300 ${isScrolled ? "border-b-2 border-[#5A6B5B] bg-rustic-wood pb-2" : ""}`}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
     >
       <button
-        className="text-3xl md:hidden  flex z-50 text-warmBeige"
+        className="text-3xl md:hidden  flex z-50 text-[#5A6B5B]"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         aria-label="Toggle menu"
       >
@@ -77,7 +77,10 @@ export default function Navbar() {
         }`}
       >
         <li>
-          <Link href="https://order.tbdine.com/pickup/50580/menu" className="">
+          <Link
+            href="https://order.toasttab.com/online/stone-ducky-restaurant-and-lounge-56-saint-johns-road"
+            className=""
+          >
             Order Online
           </Link>
         </li>
@@ -94,8 +97,8 @@ export default function Navbar() {
           </li>
         ))}
 
-        <li className="text-whiteBG bg-mutedOrange py-4 px-4 rounded ">
-          <Link href="https://www.tbdine.com/book/restaurant/stone-ducky?idApp=71672&language=en-us">
+        <li className="text-whiteBG bg-[#5A6B5B] py-4 px-4 rounded ">
+          <Link href="https://tables.toasttab.com/restaurants/60a98459-a07a-4280-82f4-aea785ed506b/findTime">
             Book a Table
           </Link>
         </li>
@@ -109,12 +112,12 @@ export default function Navbar() {
             : "-translate-y-full opacity-0"
         }`}
       >
-        <ul className="flex flex-col mt-8 items-start  justify-center z-50 gap-4 px-4  w-[80%] text-sm text-warmBeige font-Libre_Baskerville">
+        <ul className="flex flex-col mt-8 items-start  justify-center z-50 gap-4 px-4  w-[80%] text-sm text-[#5A6B5B] font-Libre_Baskerville">
           {navLinks.map((link, index) => (
             <li
               key={index}
               className={`cursor-pointer ${
-                pathname === link.href ? "text-[#5A6B5B] font-bold" : ""
+                pathname === link.href ? "text-mutedOrange font-bold" : ""
               }`}
             >
               <Link href={link.href} onClick={() => setIsMenuOpen(false)}>
@@ -124,14 +127,14 @@ export default function Navbar() {
           ))}
           <li className="cursor-pointer text-center grid place-items-center w-full py-2 px-4 border-2 border-[#5A6B5B] text-[#5A6B5B]  rounded">
             <Link
-              href="https://order.tbdine.com/pickup/50580/menu"
+              href="https://order.toasttab.com/online/stone-ducky-restaurant-and-lounge-56-saint-johns-road"
               className=""
             >
               Order Online
             </Link>
           </li>
           <li className=" cursor-pointer text-center grid place-items-center w-full py-2 px-4 bg-[#5A6B5B] text-creamBG rounded">
-            <Link href="https://www.tbdine.com/book/restaurant/stone-ducky?idApp=71672&language=en-us">
+            <Link href="https://tables.toasttab.com/restaurants/60a98459-a07a-4280-82f4-aea785ed506b/findTime">
               Book a Table
             </Link>
           </li>
@@ -156,6 +159,13 @@ export default function Navbar() {
             </Link>
           </li>
         </ul>
+        <Image
+          src="/images/logo_stone_ducky.png"
+          alt="Stone Ducky Logo"
+          width={80}
+          height={60}
+          className="pt-4"
+        />
       </div>
     </motion.nav>
   );

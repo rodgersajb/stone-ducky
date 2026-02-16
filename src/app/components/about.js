@@ -11,10 +11,10 @@ export default function About() {
       <div className="flex flex-col lg:min-h-[500px]  w-full m-auto lg:gap-8 items-center justify-between pt-4 ">
         <FadeInImageContainer className=" min-h-[250px] w-full m-auto lg:w-full lg:h-[400px]">
           <Image
-            src="/images/whales_houses_duck.webp"
-            alt="Decorative items displayed inside Stone Ducky Restaurant"
+            src="/images/ducky-patio.webp"
+            alt="Patio view overseeing the ocean at Stone Ducky Restaurant"
             fill
-            className="object-cover   "
+            className="object-cover brightness-75  "
             lazy="true"
           />
           <div className="flex flex-col justify-between h-full absolute top-0 left-0">
