@@ -49,7 +49,7 @@ export default function CaterComponent() {
         className="w-full px-8 m-auto flex flex-col items-center gap-8 py-8 bg-creamBG"
         ref={formRef}
       >
-        <h2 className="text-xl lg:text-4xl text-center">
+        <h2 className="text-xl lg:text-3xl text-center">
           Schedule a date request for your next event catered by Stone Ducky.
         </h2>
         <p className=" lg:w-3/4 text-center lg:text-lg">

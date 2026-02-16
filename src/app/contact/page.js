@@ -26,7 +26,7 @@ export default async function Contact() {
         <figure className="relative w-full h-[250px] lg:h-[450px]">
           <Image
             className="object-cover brightness-75  "
-            src="/images/ducky_whales-min.webp"
+            src="/images/ducky_whales.webp"
             alt="Popular Stone Ducky dishes on a table"
             fill
             priority={true}
