@@ -12,7 +12,7 @@ export default function Home() {
       <Header />
       
       <About />
-      <section className="w-full h-[150px] bg-cover lg:h-[275px] lg:bg-contain bg-flying-ducks"></section>
+      
       <section className="m-auto w-full lg:w-3/4">
         <PopularDishes />
       </section>

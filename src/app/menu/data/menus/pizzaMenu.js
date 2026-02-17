@@ -13,7 +13,7 @@ const pizzaMenu = {
     },
     {
       title: "Pepperoni",
-      price: 19,
+      price: 24,
       description: "Tomato sauce, 3-cheese blend, pepperoni.",
       glutenFree: false,
       dairyFree: false,

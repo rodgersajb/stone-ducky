@@ -69,6 +69,11 @@ export default function Navbar() {
           }`}
         />
       </Link>
+      <button className={`btn btn-tealGreen text-xs  ${isMenuOpen ? "hidden" : ""}`}>
+        <Link href="https://tables.toasttab.com/restaurants/60a98459-a07a-4280-82f4-aea785ed506b/findTime">
+          Reserve
+        </Link>
+      </button>
 
       {/* Desktop Navigation */}
       <ul

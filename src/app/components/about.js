@@ -8,6 +8,14 @@ export default function About() {
       id="about-section"
       className="w-full flex flex-col items-center justify-center "
     >
+      <section className="w-full h-[150px] bg-cover lg:h-[275px] lg:bg-contain bg-flying-ducks"></section>
+      <div className=" flex flex-col items-start justify-center gap-4 my-4 text-center lg:w-2/3">
+        <p className="text-coolGray text-sm lg:text-lg font-semibold ">
+          Stone Ducky is a casual and intimate restaurant offering fresh,
+          homemade pizza and creatively inspired dishes. Close proximity to the
+          ocean provides scenic view to enhance your dining experience.
+        </p>
+      </div>
       <div className="flex flex-col lg:min-h-[500px]  w-full m-auto lg:gap-8 items-center justify-between pt-4 ">
         <FadeInImageContainer className=" min-h-[250px] w-full m-auto lg:w-full lg:h-[400px]">
           <Image
@@ -23,13 +31,6 @@ export default function About() {
             </h3>
           </div>
         </FadeInImageContainer>
-        <div className=" flex flex-col items-start justify-center gap-4 my-4 text-center lg:w-2/3">
-          <p className="text-[#5A6B5B] text-sm lg:text-lg font-semibold ">
-            Stone Ducky is a casual and intimate restaurant offering fresh,
-            homemade pizza and creatively inspired dishes. Close proximity to
-            the ocean provides scenic view to enhance your dining experience.
-          </p>
-        </div>
       </div>
     </section>
   );

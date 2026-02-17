@@ -149,7 +149,7 @@ const supperMenu = {
     },
   ],
 
-  SaladsSoups: [
+  "Salads and Soups": [
     {
       title: "Roasted Beet Salad",
       price: 16,

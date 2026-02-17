@@ -46,7 +46,7 @@ export default function GroupsAndCatering() {
           delay={0.5}
         >
           <Image
-            src="/images/ducky_whales-min.webp"
+            src="/images/ducky_whales.webp"
             alt="Whales"
             fill
             className="object-contain lg:object-cover"

@@ -32,23 +32,34 @@ export default function Visit() {
 
         <div className="flex flex-col justify-center lg:justify-around lg:w-[85%] items-center gap-2  ">
           <div className="text-center">
-            <p className="font-semibold border-b-4 border-dotted  border-warmTaupe">Monday - Wednesday</p>
+            <p className="font-semibold border-b-4 border-dotted  border-warmTaupe">
+              Monday - Wednesday
+            </p>
             <p className="font-semibold text-sm">Closed</p>
           </div>
           <div className="text-center">
-            <p className="font-semibold border-b-4 border-dotted  border-warmTaupe"> Thursday</p>
+            <p className="font-semibold border-b-4 border-dotted  border-warmTaupe">
+              {" "}
+              Thursday
+            </p>
             <p className="font-semibold text-sm">4:00 pm - 8:00 pm</p>
           </div>
           <div className="text-center">
-            <p className="font-semibold border-b-4 border-dotted  border-warmTaupe">Friday</p>
+            <p className="font-semibold border-b-4 border-dotted  border-warmTaupe">
+              Friday
+            </p>
             <p className="font-semibold text-sm">12:00 pm - 8:00 pm</p>
           </div>
           <div className="text-center">
-            <p className="font-semibold border-b-4 border-dotted  border-warmTaupe">Saturday</p>
+            <p className="font-semibold border-b-4 border-dotted  border-warmTaupe">
+              Saturday
+            </p>
             <p className="font-semibold text-sm">11:00 am - 8:00 pm</p>
           </div>
           <div className="text-center">
-            <p className="font-semibold border-b-4 border-dotted  border-warmTaupe">Sunday</p>
+            <p className="font-semibold border-b-4 border-dotted  border-warmTaupe">
+              Sunday
+            </p>
             <p className="font-semibold text-sm">11:00 am - 7:00 pm</p>
           </div>
         </div>
@@ -58,7 +69,7 @@ export default function Visit() {
             className="btn btn-tealGreen btn-tealGreen:hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-tealGreen w-full lg:w-1/3"
             aria-label="Book A Table"
           >
-            <Link href="https://www.tbdine.com/book/restaurant/stone-ducky?idApp=71672&language=en-us">
+            <Link href="https://tables.toasttab.com/restaurants/60a98459-a07a-4280-82f4-aea785ed506b/findTime">
               <span>Book a Table</span>
             </Link>
           </button>
@@ -67,7 +78,7 @@ export default function Visit() {
             className="btn btn-outlineTealGreen btn-outlineTealGreen:hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-warmTaupe w-full lg:w-1/3"
             aria-label="Order Online"
           >
-            <Link href="https://order.tbdine.com/pickup/50580/menu">
+            <Link href="https://order.toasttab.com/online/stone-ducky-restaurant-and-lounge-56-saint-johns-road">
               <span>Order Online</span>
             </Link>
           </button>

@@ -4,10 +4,10 @@ const dairyFree = "/images/dairy-free.png";
 const saladSidesMenu = {
   Salads: [
     {
-      title: "Kale Caesar Salad",
+      title: "Caesar Salad",
       price: 16,
       description:
-        "Kale, house-made croutons, bacon lardons, shaved Bella Lodi cheese, fried capers.",
+        "House-made croutons, bacon lardons, shaved Bella Lodi cheese, fried capers.",
       glutenFree: false,
       dairyFree: false,
     },
@@ -28,14 +28,7 @@ const saladSidesMenu = {
       dairyFree: false,
       image: glutenFree,
     },
-    {
-      title: "Shrimp (5)",
-      price: 14,
-      glutenFree: true,
-      dairyFree: false,
-      image: glutenFree,
-    },
-    {
+        {
       title: "Brisket",
       price: 7,
       glutenFree: true,
