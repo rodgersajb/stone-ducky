@@ -10,6 +10,7 @@ const lunchMenu = {
         "Fresh battered cod, served on our homemade brioche with tartar sauce and coleslaw.",
       glutenFree: false,
       dairyFree: false,
+      
     },
     {
       title: "Chicken Club Sandwich",
@@ -47,6 +48,7 @@ const lunchMenu = {
         "Cod that is delicately battered and fried to golden perfection, served with a generous portion of fries. Accompanied by our housemade tartar sauce & coleslaw.",
       glutenFree: false,
       dairyFree: false,
+      
     },
     {
       title: "Chicken & Ribs",

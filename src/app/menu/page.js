@@ -11,35 +11,48 @@ export const metadata = {
 
 export default function Menu() {
   return (
-    <main>
+    <main className="flex flex-col bg-rustic-wood ">
       <HeaderFadeContainer>
-        <Image
-          src="/images/ducky-braised-beef-short-rib.webp"
-          alt="Steak Dinner"
-          fill
-          className="object-cover "
-          priority={true}
-        />
-        <h1 className="z-10 font-semibold text-center  text-4xl lg:text-6xl text-white">
+        <h1 className="sr-only">Menu</h1>
+        <figure className="relative w-full h-[200px] lg:h-[350px]">
+          <Image
+            src="/images/header-food-drink.png"
+            alt="Food and Drink"
+            fill
+            className="lg-object-cover object-contain translate-y-12"
+            priority={true}
+          />
+        </figure>
+        <figure className="relative w-full h-[250px]">
+          <Image
+            src="/images/campanelle-bolognese.webp"
+            alt="Campanelle Bolognese"
+            fill
+            className="lg-object-cover object-cover "
+            priority={true}
+          />
+        </figure>
+        {/* <h1 className="z-10 font-semibold text-center  text-xl lg:text-6xl text-white">
           Food & Drink
-        </h1>
+        </h1> */}
       </HeaderFadeContainer>
-      <section className="w-full pt-20 bg-stone-ducky-icons-background bg-contain">
-        <figure className="flex flex-col justify-center items-center">
+      <section className="w-full pt-4 bg-stone-ducky-icons-background bg-contain">
+        {/* <figure className="flex flex-col justify-center items-center w-2/3 m-auto">
           <Image
             src="/images/chef_ducky.png"
             alt="blue ducky icon"
-            width={200}
-            height={200}
+            className="object-contain"
+            width={75}
+            height={75}
             lazy="true"
-          />
-          <h2 className="text-center text-4xl text-duckyBlue font-semibold">
-            Explore Our Menus
-          </h2>
-          <p className="text-center text-xl">
-            Lunch is available from 11 am to 4 pm
-          </p>
-        </figure>
+          /> */}
+        {/* </figure> */}
+        <h2 className="text-center text-sm lg:text-2xl text-[#5A6B5B] font-semibold">
+          Explore Our Menus
+        </h2>
+        <p className="text-center lg-text-xl text-sm">
+          Lunch is available from 11 am to 4 pm
+        </p>
         <MenuNav />
       </section>
     </main>

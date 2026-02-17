@@ -37,11 +37,11 @@ const faqs = [
 export default function PartyAccordion() {
   return (
     <section className=" w-[95%] lg:w-[75%] m-auto py-10">
-        <h2 className="text-center text-2xl lg:text-4xl">Frequently Asked Questions</h2>
+        <h2 className="text-center text-xl lg:text-3xl">Frequently Asked Questions</h2>
       <Accordion  type="single" collapsible>
         {faqs.map((faq, index) => (
           <AccordionItem value={`faq-${index}`} key={index}>
-            <AccordionTrigger className="text-lg lg:text-xl font-semibold ">{faq.question}</AccordionTrigger>
+            <AccordionTrigger className="lg:text-xl font-semibold ">{faq.question}</AccordionTrigger>
             <AccordionContent className=" lg:text-lg text-charcoal">{faq.answer}</AccordionContent>
           </AccordionItem>
         ))}

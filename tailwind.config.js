@@ -26,6 +26,9 @@ module.exports = {
         "circle-scribble": "url('/images/squiggle.svg')",
         "navbar-waves": "url('/images/waves-2-large.svg')",
         "navbar-ducks": "url('/images/blue_seperator.webp')",
+        "rustic-wood": "url('/images/rustic_wood.webp')",
+        "flying-ducks": "url('/images/flying-ducks-border.png')",
+        border: "url('/images/border.png')",
       },
       colors: {
         whiteBG: "#f7f7f7",
@@ -43,6 +46,7 @@ module.exports = {
         mutedOrange: "#E89E38",
         tealGreen: "#2A746E",
         goldenYellow: "#F9D77E",
+        warmTaupe: "#A68C75",
 
         card: {
           DEFAULT: "#ffffff",

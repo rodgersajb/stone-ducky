@@ -45,53 +45,42 @@ export default function Navbar() {
 
   return (
     <motion.nav
-      className={`fixed top-0 left-0 w-full px-4 py-4 z-50 flex items-center justify-between font-semibold gap-4 text-whiteBG transition-colors duration-300 ${
-        isMenuOpen
-          ? "bg-softBlue "
-          : isScrolled
-            ? "bg-creamBG lg:bg-navbar-ducks lg:bg-cover shadow-lg "
-            : "bg-transparent text-mutedOrange"
-      }`}
+      className={`fixed top-0 left-0 w-full px-4 pt-4 z-50 flex items-center justify-between font-semibold gap-4 text-warmBeige transition-colors duration-300 ${isScrolled ? "border-b-2 border-[#5A6B5B] bg-rustic-wood pb-2" : ""}`}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
     >
       <button
-        className="text-3xl md:hidden flex z-50 text-mutedOrange"
+        className="text-3xl md:hidden  flex z-50 text-[#5A6B5B]"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         aria-label="Toggle menu"
       >
         {isMenuOpen ? <FiX /> : <FiMenu />}
       </button>
 
-      <Link className="lg:hidden md:hidden z-50 cursor-pointer" href="/">
-        <Image
-          src="/images/logo_stone_ducky.png"
-          alt="Stone Ducky Logo"
-          width={100}
-          height={80}
-        />
-      </Link>
       <Link className="hidden z-50 cursor-pointer lg:flex justify-end" href="/">
         <Image
           src="/images/logo_stone_ducky.png"
           alt="Stone Ducky Logo"
           width={200}
           height={160}
-          className={`transition-width duration-300 ease-in-out object-contain ${
-            isScrolled ? "w-32" : ""
+          className={`transition-width duration-300 ease-in-out object-contain  ${
+            isScrolled ? "w-28" : "w-32"
           }`}
         />
       </Link>
 
       {/* Desktop Navigation */}
       <ul
-        className={`hidden md:flex items-center justify-center gap-10 text-xl z-50 ${
-          isScrolled ? "text-coolGray" : "text-whiteBG"
+        className={`hidden md:flex  items-center justify-center gap-10  z-50 ${
+          isScrolled ? "text-coolGray" : "text-[#5A6B5B]"
         }`}
       >
         <li>
-          <Link href="https://order.tbdine.com/pickup/50580/menu" className="">
+          <Link
+            href="https://order.toasttab.com/online/stone-ducky-restaurant-and-lounge-56-saint-johns-road"
+            className=""
+          >
             Order Online
           </Link>
         </li>
@@ -99,15 +88,17 @@ export default function Navbar() {
           <li
             key={index}
             className={`cursor-pointer ${
-              pathname === link.href ? "text-duckyOrange font-bold" : ""
+              pathname === link.href
+                ? "text-mutedOrange font-bold"
+                : "text-[#5A6B5B]"
             }`}
           >
             <Link href={link.href}>{link.label}</Link>
           </li>
         ))}
 
-        <li className="text-whiteBG bg-duckyOrange py-4 px-4 rounded ">
-          <Link href="https://www.tbdine.com/book/restaurant/stone-ducky?idApp=71672&language=en-us">
+        <li className="text-whiteBG bg-[#5A6B5B] py-4 px-4 rounded ">
+          <Link href="https://tables.toasttab.com/restaurants/60a98459-a07a-4280-82f4-aea785ed506b/findTime">
             Book a Table
           </Link>
         </li>
@@ -115,13 +106,13 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`absolute top-full left-0 w-full h-svh flex flex-col items-center justify-start bg-softBlue bg-contain bg-no-repeat border-t-2 z-49 border-t-duckyOrange text-duckyOrange bg-mobile-duck-bg shadow-lg transition-all duration-300 ease-in-out ${
+        className={`absolute top-full left-0 w-full h-svh flex flex-col items-center justify-start z-49 bg-rustic-wood text-[#5A6B5B] transition-all duration-300 ease-in-out lg:hidden ${
           isMenuOpen
             ? "translate-y-0 opacity-100"
             : "-translate-y-full opacity-0"
         }`}
       >
-        <ul className="flex flex-col mt-8 items-start border-2 border-duckyBlue rounded justify-center z-50 gap-4 p-4  w-[80%]   bg-softBlue text-sm text-duckyBlue font-Libre_Baskerville">
+        <ul className="flex flex-col mt-8 items-start  justify-center z-50 gap-4 px-4  w-[80%] text-sm text-[#5A6B5B] font-Libre_Baskerville">
           {navLinks.map((link, index) => (
             <li
               key={index}
@@ -134,21 +125,21 @@ export default function Navbar() {
               </Link>
             </li>
           ))}
-          <li className="cursor-pointer text-center grid place-items-center w-full py-2 px-4 border-2 border-duckyBlue text-duckyBlue  rounded">
+          <li className="cursor-pointer text-center grid place-items-center w-full py-2 px-4 border-2 border-[#5A6B5B] text-[#5A6B5B]  rounded">
             <Link
-              href="https://order.tbdine.com/pickup/50580/menu"
+              href="https://order.toasttab.com/online/stone-ducky-restaurant-and-lounge-56-saint-johns-road"
               className=""
             >
               Order Online
             </Link>
           </li>
-          <li className=" cursor-pointer text-center grid place-items-center w-full py-2 px-4 bg-duckyBlue text-creamBG rounded">
-            <Link href="https://www.tbdine.com/book/restaurant/stone-ducky?idApp=71672&language=en-us">
+          <li className=" cursor-pointer text-center grid place-items-center w-full py-2 px-4 bg-[#5A6B5B] text-creamBG rounded">
+            <Link href="https://tables.toasttab.com/restaurants/60a98459-a07a-4280-82f4-aea785ed506b/findTime">
               Book a Table
             </Link>
           </li>
           <li
-            className="flex items-center justify-evenly w-full text-duckyBlue"
+            className="flex items-center justify-evenly w-full text-[#5A6B5B]"
             aria-label="Visit our FaceBook Page"
           >
             <Link href="https://www.facebook.com/p/Stone-Ducky-NL-61553172230504/">
@@ -168,6 +159,13 @@ export default function Navbar() {
             </Link>
           </li>
         </ul>
+        <Image
+          src="/images/logo_stone_ducky.png"
+          alt="Stone Ducky Logo"
+          width={80}
+          height={60}
+          className="pt-4"
+        />
       </div>
     </motion.nav>
   );

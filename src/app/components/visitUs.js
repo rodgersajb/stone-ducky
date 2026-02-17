@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function VisitUs() {
   return (
     <section className="h-dvh grid lg:grid-cols-2 gap-8 place-items-center bg-whiteBG w-full m-auto lp-2 pt-4 lg:p-8 ">
-      <div className=" h-full flex flex-col items-center justify-around py-4 lg:justify-center text-center bg-duck_tracks bg-cover bg-no-repeat  gap-8  bg-warmBeige w-[95%] m-auto -z-1 border-2 border-duckyOrange ">
+      <div className=" h-full flex flex-col items-center justify-around py-4 lg:justify-center text-center bg-duck_tracks bg-cover bg-no-repeat  gap-8  w-[95%] m-auto -z-1 border-2 border-duckyOrange ">
         <div className=" z-10 relative ">
           <h2 className="text-4xl lg:text-6xl relative pb-2 ">
             Visit Us

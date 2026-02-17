@@ -8,16 +8,16 @@ import Link from "next/link";
 
 const images = [
   {
-    src: "/images/mushroom-cavatappi.webp",
-    alt: "Mushroom Cavatappi",
+    src: "/images/ducky-chicken-ribs.webp",
+    alt: "Chicken & Ribs",
     description:
-      "Cream sauce, windy heights oyster mushrooms, Newlander meat Italian sausage , parmesan, toasted garlic crumble.",
+      "Carol Ann’s fried chicken, bakeapple BBQ ribs, coleslaw, fries.",
   },
   {
-    src: "/images/catering_biscuits.webp",
-    alt: "Dauphinoise Potatoes",
+    src: "/images/ducky-bianca-pizza.webp",
+    alt: "The Bianca",
     description:
-      "Thinly sliced and stacked potatoes, garlic infused cream sauce.",
+      "Bianca sauce, smoked mozzarella, Fior di Latte, apple, pancetta, sesame seed crust.",
   },
   {
     src: "/images/the_amore.webp",
@@ -25,9 +25,23 @@ const images = [
     description: "Bourbon, cherry brandy, lemon, spiced cherry syrup, soda",
   },
   {
-    src: "/images/catering_mushroom_fritter_soup.webp",
-    alt: "Mushroom Soup with Country Fried Oyster Mushroom",
-    description: "Mushroom Soup with Country Fried Oyster Mushroom",
+    src: "/images/ducky-beet-salad.webp",
+    alt: "Roasted Beet Salad",
+    description:
+      "Roasted Beets, Whipped Goat Cheese, Arugula, Shallots, Candied Pecans, Maple Balsamic Dressing.",
+  },
+  {
+    src: "/images/sausage-mushroom-capanelli.webp",
+    alt: "Sausage & Mushroom Capanelli",
+    description:
+      "Campanelle pasta, Italian sausage, mushrooms, cream sauce, toasted bread crumbs.",
+  },
+  {
+    src: "/images/campanelle-bolognese.webp",
+    alt: "Campanelle Bolognese",
+    description:
+              "Campanelle pasta, beef and pork bolognese, Bella Lodi parmesan, toasted breadcrumbs.",
+
   },
 ];
 
@@ -43,39 +57,23 @@ export default function Test() {
   }, [embla]);
 
   return (
-    <section className=" w-full flex flex-col items-center justify-center bg-softBlue ">
-      <div className=" lg:flex lg:flex-row flex-col w-full relative ">
+    <section className=" w-full flex flex-col items-center justify-center  ">
+      <div className=" lg:flex  flex-col w-full relative items-center justify-center ">
         {/* Left Section */}
-        
-          {/* <Image
-            src="images/blue_duck.svg"
-            alt="Blue Duck"
-            width={150}
-            height={150}
-            className=" absolute left-4 bottom-0 z-10 "
-            loading="lazy"
-          />
-         */}
-        <div className=" relative w-[95%] min-h-[500px]  lg:w-1/2 m-auto  flex flex-col items-center justify-center gap-10 z-10 text-richNavy">
-          <h2 className="lg:text-4xl text-2xl font-semibold text-center">
+
+        <div className=" m-auto  flex flex-col items-center justify-center gap-10 z-10 pt-8 ">
+          {/* <div className="w-full bg-flying-ducks bg-cover h-[125px]  "></div> */}
+          <h2 className="lg:text-3xl text-xl font-semibold text-center text-[#5A6B5B]">
             Our Menu
           </h2>
-          <h3 className=" text-xl px-2 lg:text-2xl text-center lg:px-8 ">
+          <h3 className=" px-2 lg:text-xl text-center lg:px-8 ">
             A Vibrant Dining Experience with Fantastic Cuisine and Exceptional
             Service.
           </h3>
-          <button
-            className="btn btn-richNavy w-full lg:w-1/2 "
-            aria-label="View our menu"
-          >
-            <Link href="/menu">
-              <span>View Menu</span>
-            </Link>
-          </button>
         </div>
 
         {/* Right Section */}
-        <div className="w-full lg:w-1/2 relative flex flex-col items-center justify-center  lg:min-h-[500px]">
+        <div className="w-full  relative flex flex-col items-center justify-center">
           <div className="relative w-full">
             <div className="overflow-hidden w-full" ref={emblaRef}>
               <div className="flex">
@@ -85,7 +83,7 @@ export default function Test() {
                     key={index}
                   >
                     {/* Image Container */}
-                    <div className="relative w-[95%] my-4 lg:w-full aspect-square">
+                    <div className="relative w-[95%] my-4 lg:w-full aspect-square lg:aspect-video">
                       <Image
                         src={image.src}
                         alt={image.alt}
@@ -95,18 +93,10 @@ export default function Test() {
                       />
                       {/* Text Overlay */}
                       <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white p-4">
-                        <h2 className="text-xl lg:text-4xl font-semibold mb-2 text-center">
+                        <h2 className="text-lg lg:text-4xl font-semibold mb-2 text-center">
                           {image.alt}
                         </h2>
-                        <figure className="relative mb-2">
-                          <Image
-                            src="/images/squiggle.png"
-                            alt="Squiggly underline"
-                            width={150}
-                            height={15}
-                            lazy="true"
-                          />
-                        </figure>
+
                         <p className="text-sm lg:text-xl font-semibold w-3/4 text-center">
                           {image.description}
                         </p>
@@ -131,6 +121,14 @@ export default function Test() {
               ))}
             </div>
           </div>
+          <button
+            className="btn btn-tealGreen w-[95%] lg:w-1/3 mt-5 mb-10 "
+            aria-label="View our menu"
+          >
+            <Link href="/menu">
+              <span>View Menu</span>
+            </Link>
+          </button>
         </div>
       </div>
     </section>

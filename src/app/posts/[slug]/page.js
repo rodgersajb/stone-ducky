@@ -1,6 +1,7 @@
 import { getPost } from "../../../../lib/api";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import Image from "next/image";
+import BackButton from "./previousPage";
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
@@ -72,6 +73,7 @@ export default async function PostPage({ params }) {
             : "No content available for this post."}
         </div>
       </article>
+      <BackButton />
     </main>
   );
 }

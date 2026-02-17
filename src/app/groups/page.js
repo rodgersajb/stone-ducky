@@ -1,8 +1,10 @@
-
 import PartyAccordion from "./components/accordion";
 import PartyForm from "./components/partyForm";
 import PartyImages from "./components/partyImages";
 import Header from "./components/header";
+import HeaderFadeContainer from "../components/headerFadeContainer";
+import Image from "next/image";
+import ScrollButtons from "./components/scrollButtons";
 
 export const metadata = {
   title: "Catering ",
@@ -35,8 +37,30 @@ const images = [
 
 export default function LargeGroups() {
   return (
-    <main className="">
-     <Header />
+    <main className="bg-rustic-wood">
+      <HeaderFadeContainer className="h-[65svh]">
+        <h1 className="sr-only">Large Group Reservations</h1>
+
+        <figure className="relative w-full h-[200px] lg:h-[450px]">
+          <Image
+            src="/images/group-bookings.png"
+            alt="Group Bookings"
+            fill
+            className="lg-object-cover object-contain translate-y-12"
+            priority={true}
+          />
+        </figure>
+        <ScrollButtons />
+        <figure className="relative w-full h-[250px] lg:h-[400px]">
+          <Image
+            src="/images/set_table_birds_eye.webp"
+            alt="Inside decor of Stone Ducky Restaurant"
+            fill
+            className="lg-object-contain object-cover "
+            priority={true}
+          />
+        </figure>
+      </HeaderFadeContainer>
       <section className="bg-whiteBG flex flex-col z-30 py-10">
         <ul className="grid grid-cols-3 grid-rows-3 gap-4 w-[90%] m-auto max-h-[1000px]">
           {images.map((image, index) => (
@@ -47,7 +71,7 @@ export default function LargeGroups() {
       <div id="faq-section">
         <PartyAccordion />
       </div>
-      <h2 className="lg:text-4xl text-2xl text-center pb-8">
+      <h2 className="lg:text-3xl text-xl text-center pb-8">
         Submit Your Request for Your Large Party Reservation
       </h2>
       <div id="form-section">
