@@ -14,7 +14,7 @@ export const metadata = {
 
 const images = [
   {
-    src: "/images/ducky_whales-min.webp",
+    src: "/images/ducky_whales.webp",
     alt: "Corner view of inside Stone Ducky Restaurant with the logo and a whale mural on the wall",
   },
   {
