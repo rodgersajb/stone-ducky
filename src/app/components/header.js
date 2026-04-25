@@ -8,7 +8,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 export default function Header() {
   return (
     <motion.header
-      className="h-[65svh] lg:h-dvh w-full lg:flex lg:flex-col lg:justify-evenly lg:items-center  z-10"
+      className="h-[85svh] lg:h-dvh w-full lg:flex lg:flex-col lg:justify-evenly lg:items-center  z-10"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}

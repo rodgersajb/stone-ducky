@@ -1,6 +1,5 @@
 const glutenFree = "/images/gluten-free.png";
 
-
 const pizzaMenu = {
   Pizzas: [
     {
@@ -15,14 +14,6 @@ const pizzaMenu = {
       title: "Pepperoni",
       price: 24,
       description: "Tomato sauce, 3-cheese blend, pepperoni.",
-      glutenFree: false,
-      dairyFree: false,
-    },
-    {
-      title: "The Townie",
-      price: 23,
-      description:
-        "Tomato sauce, 3-cheese blend, mushrooms, green pepper, red onion, black olives, tomato.",
       glutenFree: false,
       dairyFree: false,
     },
@@ -63,14 +54,6 @@ const pizzaMenu = {
       price: 30,
       description:
         "Diavolo sauce, 3-cheese blend, duck confit, roasted red peppers, red onions, jalapeños.",
-      glutenFree: false,
-      dairyFree: false,
-    },
-    {
-      title: "The Baymen",
-      price: 25,
-      description:
-        "Bianca sauce, Italian sausage, sliced potato, rosemary, mozzarella, blue cheese.",
       glutenFree: false,
       dairyFree: false,
     },

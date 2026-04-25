@@ -41,6 +41,14 @@ const supperMenu = {
       glutenFree: false,
       dairyFree: false,
     },
+    {
+      title: "Baked Brie",
+      price: 18,
+      description:
+        "Bakeapple & rosemary, maple–pecan, or caramelized onion & bacon.",
+      glutenFree: false,
+      dairyFree: false,
+    },
   ],
 
   Handhelds: [
@@ -60,20 +68,12 @@ const supperMenu = {
       glutenFree: false,
       dairyFree: false,
     },
-    {
-      title: "Brisket Melt",
-      price: 24,
-      description:
-        "Bakeapple BBQ brisket, horseradish aioli, provolone, romaine lettuce, potato bun.",
-      glutenFree: false,
-      dairyFree: false,
-    },
   ],
 
   Pasta: [
     {
       title: "Chicken Parm",
-      price: 28,
+      price: 32,
       description:
         "Italian herb-crusted chicken, bucatini, diavolo sauce, provolone.",
       glutenFree: false,
@@ -88,15 +88,8 @@ const supperMenu = {
       dairyFree: false,
     },
     {
-      title: "Pesto Bucatini",
-      price: 30,
-      description: "Bucatini, pesto cream, brown butter, toasted breadcrumbs.",
-      glutenFree: false,
-      dairyFree: false,
-    },
-    {
       title: "Campanelle Bolognese",
-      price: 30,
+      price: 28,
       description:
         "Campanelle pasta, beef and pork bolognese, Bella Lodi parmesan, toasted breadcrumbs.",
       glutenFree: false,
@@ -107,7 +100,7 @@ const supperMenu = {
   Entrees: [
     {
       title: "Duck Confit Risotto",
-      price: 29,
+      price: 25,
       description:
         "Brown butter, Parmesan, romesco sauce, celeriac & apple slaw.",
       glutenFree: true,
@@ -119,31 +112,6 @@ const supperMenu = {
       price: 35,
       description:
         "Carol Ann’s fried chicken, bakeapple BBQ ribs, coleslaw, fries.",
-      glutenFree: false,
-      dairyFree: false,
-    },
-    {
-      title: "Skin-On Salmon",
-      price: 35,
-      description:
-        "Maple balsamic glaze, celeriac purée, candied pecans, green apple.",
-      glutenFree: true,
-      dairyFree: false,
-      image: glutenFree,
-    },
-    {
-      title: "Scallops",
-      price: 25,
-      description: "Smoked pork belly, celeriac purée, apple slaw.",
-      glutenFree: true,
-      dairyFree: false,
-      image: glutenFree,
-    },
-    {
-      title: "Baked Brie",
-      price: 18,
-      description:
-        "Bakeapple & rosemary, maple–pecan, or caramelized onion & bacon.",
       glutenFree: false,
       dairyFree: false,
     },
@@ -161,7 +129,7 @@ const supperMenu = {
     },
     {
       title: "Caesar Salad",
-      price: 14,
+      price: 16,
       description:
         "Romaine lettuce, crisp bacon, Parmesan, croutons, asiago dressing.",
       glutenFree: false,
@@ -169,31 +137,22 @@ const supperMenu = {
     },
     {
       title: "Potato & Bacon Chowder",
-      price: 18,
+      price: 11,
       description: "Bacon, corn, green onion, cheddar.",
       glutenFree: true,
       dairyFree: false,
       image: glutenFree,
     },
-    {
-      title: "Fisherman’s Soup",
-      price: 17,
-      description: "Cod, tomato, fennel, chili broth.",
-      glutenFree: true,
-      dairyFree: true,
-      image: glutenFree,
-    },
+
     {
       title: "Tomato Bisque",
-      price: 10,
+      price: 8,
       description: "Sundried tomato crumble, extra virgin olive oil.",
       glutenFree: true,
       dairyFree: false,
       image: glutenFree,
     },
   ],
-
-  
 };
 
 export default supperMenu;
