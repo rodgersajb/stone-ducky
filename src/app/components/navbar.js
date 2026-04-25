@@ -69,7 +69,7 @@ export default function Navbar() {
           }`}
         />
       </Link>
-      <button className={`btn btn-tealGreen text-xs  ${isMenuOpen ? "hidden" : ""}`}>
+      <button className={`btn btn-tealGreen text-sm lg:hidden  ${isMenuOpen ? "hidden" : ""}`}>
         <Link href="https://tables.toasttab.com/restaurants/60a98459-a07a-4280-82f4-aea785ed506b/findTime">
           Reserve
         </Link>
@@ -94,7 +94,7 @@ export default function Navbar() {
             key={index}
             className={`cursor-pointer ${
               pathname === link.href
-                ? "text-mutedOrange font-bold"
+                ? "border-b-[0.2rem] border-dotted border-mutedOrange pt-1"
                 : "text-[#5A6B5B]"
             }`}
           >
