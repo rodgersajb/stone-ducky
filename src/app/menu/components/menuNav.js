@@ -4,21 +4,21 @@ import { useRef, useState, useEffect } from "react";
 import SupperMenu from "./supperMenu";
 // import LunchMenu from "./lunchMenu";
 import PizzaMenu from "./pizzaMenu";
-// import DessertMenu from "./dessertMenu";
+import DessertMenu from "./dessertMenu";
 import DrinkMenu from "./drinkMenu";
-import SaladsSidesMenu from "./saladsSides";
-import BrunchMenu from "./brunchMenu";
+// import SaladsSidesMenu from "./saladsSides";
+// import BrunchMenu from "./brunchMenu";
 
 import { FaChevronUp } from "react-icons/fa";
 
 const menus = [
   { title: "Supper", component: SupperMenu },
-  { title: "Brunch", component: BrunchMenu },
+  // { title: "Brunch", component: BrunchMenu },
   // { title: "Lunch", component: LunchMenu },
-  { title: "Pizza", component: PizzaMenu },
-  // { title: "Dessert", component: DessertMenu },
+  { title: "Pizza/Pasta", component: PizzaMenu },
+  { title: "Dessert", component: DessertMenu },
   { title: "Drinks", component: DrinkMenu },
-  { title: "Salads/Sides", component: SaladsSidesMenu },
+  // { title: "Salads/Sides", component: SaladsSidesMenu },
 ];
 
 export default function MenuNav() {

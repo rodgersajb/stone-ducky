@@ -2,39 +2,45 @@ const glutenFree = "/images/gluten-free.png";
 const dairyFree = "/images/dairy-free.png";
 
 const dessertMenu = {
-  Desserts: [
+  Dessert: [
     {
-      title: "Chocolate Cake",
-      price: 12,
-      description: "Whipped cream, cocoa nibs.",
+      title: "Vegan Chocolate Cake",
+      price: 10,
+      description: "",
       glutenFree: false,
-      dairyFree: false,
+      dairyFree: true,
     },
     {
       title: "GF Turtle Cheesecake",
-      price: 10,
-      description: "Whipped cream, chocolate sauce, caramel sauce.",
+      price: 12,
+      description: "",
       glutenFree: true,
       dairyFree: false,
       image: glutenFree,
     },
     {
+      title: "Lemon Tartlet",
+      price: 10,
+      description: "",
+      glutenFree: false,
+      dairyFree: false,
+    },
+    {
       title: "White Chocolate Blueberry Cheesecake",
       price: 10,
-      description: "Whipped cream, blueberry sauce.",
+      description: "",
       glutenFree: false,
       dairyFree: false,
     },
     {
       title: "Ice Cream",
-      price: null,
-      description:
-        "Three scoops with raspberry coulis, chocolate sauce, or caramel sauce.",
-      glutenFree: true,
+      price: 8,
+      description: "",
+      glutenFree: false,
       dairyFree: false,
-      image: glutenFree,
     },
   ],
 };
+;
 
-// export default dessertMenu;
+export default dessertMenu;

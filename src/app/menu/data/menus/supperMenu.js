@@ -22,6 +22,20 @@ const supperMenu = {
       dairyFree: false,
       image: glutenFree,
     },
+    {
+      title: "Southern Fried Calamari",
+      price: 19,
+      description: "Smoked jalapeño aioli, sesame seed, chive.",
+      glutenFree: false,
+      dairyFree: false,
+    },
+    {
+      title: "Mussels",
+      price: 21,
+      description: "Shallot, garlic, white wine, smoked jalapeño, cream.",
+      glutenFree: false,
+      dairyFree: false,
+    },
   ],
 
   Snacks: [
@@ -34,120 +48,138 @@ const supperMenu = {
       image: glutenFree,
     },
     {
-      title: "Whipped Goat Cheese",
-      price: 19,
-      description:
-        "Chive crema, chili flakes, olive oil, honey, pistachio, bread.",
+      title: "Marinated Olives",
+      price: 8,
+      description: "Chili flakes, fennel, balsamic.",
+      glutenFree: true,
+      dairyFree: true,
+      image: glutenFree,
+    },
+    {
+      title: "Bread & Butter",
+      price: 7,
+      description: "Whipped butter, balsamic, olive oil.",
       glutenFree: false,
       dairyFree: false,
     },
     {
-      title: "Baked Brie",
-      price: 18,
+      title: "Whipped Goat Cheese",
+      price: 19,
       description:
-        "Bakeapple & rosemary, maple–pecan, or caramelized onion & bacon.",
+        "Chive crema, chili flakes, olive oil, honey, toasted pistachio, house bread.",
       glutenFree: false,
       dairyFree: false,
+    },
+  ],
+
+  "From The Sea": [
+    {
+      title: "Whole Lobster",
+      price: "MP",
+      description: "Garlic butter, potato salad, coleslaw.",
+      glutenFree: false,
+      dairyFree: false,
+    },
+    {
+      title: "Fish and Chips",
+      price: 24,
+      description: "Battered cod, coleslaw, tartar, fries.",
+      glutenFree: false,
+      dairyFree: true,
+      image: dairyFree,
+    },
+  ],
+
+  "From The Land": [
+    {
+      title: "Duck Confit Risotto",
+      price: 29,
+      description:
+        "Windy Heights Farm oyster mushrooms, brown butter, balsamic.",
+      glutenFree: false,
+      dairyFree: false,
+    },
+    {
+      title: "Chicken & Ribs",
+      price: 35,
+      description: "CA's fried chicken, bakeapple BBQ ribs, coleslaw, fries.",
+      glutenFree: false,
+      dairyFree: false,
+    },
+    {
+      title: "Pork Tenderloin",
+      price: 32,
+      description: "Roasted fingerling potato, romesco sauce, grilled greens.",
+      glutenFree: false,
+      dairyFree: true,
+      image: dairyFree,
     },
   ],
 
   Handhelds: [
     {
-      title: "The Stone Ducky Burger",
+      title: "House Burger",
       price: 25,
       description:
-        "6oz chuck patty, bacon, American cheddar, romaine lettuce, tomato, red onion, ketchup, mustard, potato bun.",
+        "Two 3oz chuck patties, bacon, American cheddar, iceberg lettuce, tomato, red onion, ketchup, mustard, potato bun.",
       glutenFree: false,
       dairyFree: false,
     },
     {
-      title: "Carol Ann’s Fried Chicken Burger",
+      title: "Carol Ann’s Fried Chicken Sandwich",
       price: 25,
       description:
-        "Smoked jalapeño aioli, crispy bacon, romaine lettuce, potato bun.",
+        "Smoked jalapeño aioli, crispy bacon, iceberg lettuce, potato bun.",
+      glutenFree: false,
+      dairyFree: false,
+    },
+    {
+      title: "Lobster Roll",
+      price: "MP",
+      description: "Lobster salad, potato bun, coleslaw.",
+      glutenFree: false,
+      dairyFree: false,
+    },
+    {
+      title: "The Quack Attack Burger",
+      price: 25,
+      description:
+        "Two 3oz chuck patties, bacon, jalapeño Monterey Jack, iceberg lettuce, caramelized onion aioli, house made hickory sticks, potato bun.",
       glutenFree: false,
       dairyFree: false,
     },
   ],
 
-  Pasta: [
+  "Salads & Soups": [
     {
-      title: "Chicken Parm",
-      price: 32,
+      title: "Panzanella Salad",
+      price: 17,
       description:
-        "Italian herb-crusted chicken, bucatini, diavolo sauce, provolone.",
+        "Tomato, red onion, cucumber, croutons, fior di latte, basil pesto, Italian dressing.",
       glutenFree: false,
-      dairyFree: false,
-    },
-    {
-      title: "Sausage & Mushroom Campanelle",
-      price: 30,
-      description:
-        "Campanelle pasta, Italian sausage, mushrooms, cream sauce, toasted bread crumbs.",
-      glutenFree: false,
-      dairyFree: false,
-    },
-    {
-      title: "Campanelle Bolognese",
-      price: 28,
-      description:
-        "Campanelle pasta, beef and pork bolognese, Bella Lodi parmesan, toasted breadcrumbs.",
-      glutenFree: false,
-      dairyFree: false,
-    },
-  ],
-
-  Entrees: [
-    {
-      title: "Duck Confit Risotto",
-      price: 25,
-      description:
-        "Brown butter, Parmesan, romesco sauce, celeriac & apple slaw.",
-      glutenFree: true,
-      dairyFree: false,
-      image: glutenFree,
-    },
-    {
-      title: "Chicken & Ribs",
-      price: 35,
-      description:
-        "Carol Ann’s fried chicken, bakeapple BBQ ribs, coleslaw, fries.",
-      glutenFree: false,
-      dairyFree: false,
-    },
-  ],
-
-  "Salads and Soups": [
-    {
-      title: "Roasted Beet Salad",
-      price: 16,
-      description:
-        "Whipped goat cheese, candied pecans, red onion, maple balsamic vinaigrette.",
-      glutenFree: true,
-      dairyFree: false,
-      image: glutenFree,
+      dairyFree: true,
+      image: dairyFree,
     },
     {
       title: "Caesar Salad",
-      price: 16,
+      price: 17,
       description:
-        "Romaine lettuce, crisp bacon, Parmesan, croutons, asiago dressing.",
+        "Romaine lettuce, bacon lardons, Parmesan, croutons, fried capers, asiago dressing.",
       glutenFree: false,
       dairyFree: false,
     },
     {
-      title: "Potato & Bacon Chowder",
-      price: 11,
-      description: "Bacon, corn, green onion, cheddar.",
-      glutenFree: true,
+      title: "Cup of Seafood Chowder",
+      price: 16,
+      description:
+        "Potato and leek base, corn, cod, ice shrimp, mussels, served with a roll.",
+      glutenFree: false,
       dairyFree: false,
-      image: glutenFree,
     },
-
     {
-      title: "Tomato Bisque",
-      price: 8,
-      description: "Sundried tomato crumble, extra virgin olive oil.",
+      title: "Cup of Tomato Bisque",
+      price: 9,
+      description: "Sundried tomato crumble, EVOO, served with a roll.",
       glutenFree: true,
       dairyFree: false,
       image: glutenFree,

@@ -25,17 +25,17 @@ export default function VisitUs() {
         </div>
 
         <div className="font-semibold  lg:text-xl">
-          <p>Tuesday - Thursday</p>
-          <p>11:00 am - 8:00 pm</p>
+          <p>Open Daily</p>
+          <p>12:00 pm - 8:30 pm</p>
         </div>
-        <div className="z-10 font-semibold  lg:text-xl">
+        {/* <div className="z-10 font-semibold  lg:text-xl">
           <p>Friday - Sunday</p>
           <p>11:00 am - 10:00 pm</p>
         </div>
         <div className="font-semibold flex flex-col items-center gap-4 lg:text-xl">
           <Image src="/images/duck_sleepy.png" alt="Sleepy Duck" height={100} width={100} />
           <p>Closed Mondays</p>
-        </div>
+        </div> */}
         <div className="flex lg:flex-row flex-col gap-8 z-10">
           <button className="border-2 rounded py-4 px-8 border-charcoal bg-charcoal text-whiteBG">
             Reserve a Table

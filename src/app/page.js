@@ -4,18 +4,19 @@ import Visit from "./components/visit";
 import Header from "./components/header";
 import GroupsAndCatering from "./components/groupsAndCatering";
 import UpdatesAndHappenings from "./components/updatesAndHappenings";
+import DailySpecial from "./components/dailySpecials";
 
 
 export default function Home() {
   return (
     <main className="w-full flex flex-col bg-rustic-wood bg-repeat">
       <Header />
-      
+      {/* <DailySpecial /> */}
       <About />
       
-      <section className="m-auto w-full lg:w-3/4">
+      {/* <section className="m-auto w-full lg:w-3/4">
         <PopularDishes />
-      </section>
+      </section> */}
       <section className="w-full h-[150px] bg-cover lg:h-[275px] lg:bg-contain bg-flying-ducks"></section>
       <section className="lg:w-[95%] lg:m-auto">
         <Visit />
