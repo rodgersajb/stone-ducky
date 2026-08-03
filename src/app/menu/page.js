@@ -50,9 +50,7 @@ export default function Menu() {
         <h2 className="text-center text-sm lg:text-2xl text-[#5A6B5B] font-semibold">
           Explore Our Menus
         </h2>
-        <p className="text-center lg-text-xl text-sm">
-          Lunch is available from 11 am to 4 pm
-        </p>
+        
         <MenuNav />
       </section>
     </main>
