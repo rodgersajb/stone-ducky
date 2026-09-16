@@ -33,9 +33,15 @@ export default function Visit() {
         <div className="flex flex-col justify-center lg:justify-around lg:w-[85%] items-center gap-2  ">
           <div className="text-center">
             <p className="font-semibold border-b-4 border-dotted  border-warmTaupe">
-              Open Daily
+              Closed Monday & Tuesday
             </p>
-            <p className="font-semibold text-sm">12:00pm - 8:30pm</p>
+            
+          </div>
+          <div className="text-center">
+            <p className="font-semibold border-b-4 border-dotted  border-warmTaupe">
+              Wednesday - Sunday
+            </p>
+            <p className="font-semibold text-sm">12:00pm - 8:00pm</p>
           </div>
           {/* <div className="text-center">
             <p className="font-semibold border-b-4 border-dotted  border-warmTaupe">

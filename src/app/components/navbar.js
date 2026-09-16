@@ -17,7 +17,7 @@ const navLinks = [
   { label: "Home", href: "/" },
   { label: "Menu", href: "/menu" },
   { label: "Group Bookings", href: "/groups" },
-  { label: "Catering", href: "/catering" },
+  // { label: "Catering", href: "/catering" },
   { label: "Contact", href: "/contact" },
   { label: "Blog", href: "/posts" },
 ];
