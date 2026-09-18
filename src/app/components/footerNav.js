@@ -61,11 +61,11 @@ const navItems = [
     icon: <TbWriting className="lg:text-3xl text-duckyOrange" />,
     label: "Blog",
   },
-  {
-    href: "/catering",
-    icon: <GiFullPizza className="lg:text-3xl text-duckyOrange" />,
-    label: "Catering",
-  },
+  // {
+  //   href: "/catering",
+  //   icon: <GiFullPizza className="lg:text-3xl text-duckyOrange" />,
+  //   label: "Catering",
+  // },
 ];
 
 export default function FooterNav() {
