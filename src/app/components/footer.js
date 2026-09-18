@@ -23,7 +23,6 @@ export default function Footer() {
       <section className="w-full flex flex-col m-auto justify-center gap-4 items-center pt-8 pb-4 ">
         <div className="lg:text-xl text-sm text-center flex flex-col ">
           <p>56 St Johns Rd</p>
-          <p>Bay Bulls, NL A0A 1C0</p>
           <p>(709) 334-3825</p>
         </div>
         <Image
